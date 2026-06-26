@@ -1,0 +1,118 @@
+{
+  "date": "2026-06-26",
+  "leader_theme": "AI算力",
+  "top5": [
+    "AI算力",
+    "基建",
+    "新材料",
+    "高端制造"
+  ],
+  "keywords": [
+    "AI",
+    "算力",
+    "光模块",
+    "C39计算机",
+    "基建",
+    "建筑",
+    "工程",
+    "E49建筑安装业",
+    "新材料",
+    "化工",
+    "稀土",
+    "属矿物制品业"
+  ],
+  "active_themes": [
+    {
+      "theme": "AI算力",
+      "keywords": [
+        "AI",
+        "算力",
+        "光模块",
+        "C39计算机",
+        "子设备制造业"
+      ],
+      "industries": [
+        "C39计算机、通信和其他电子设备制造业"
+      ],
+      "mom20": 2.84,
+      "mom60": 31.39,
+      "vol_trend": 1.14,
+      "acceleration": -7.62,
+      "theme_score": 25.0
+    },
+    {
+      "theme": "基建",
+      "keywords": [
+        "基建",
+        "建筑",
+        "工程",
+        "E49建筑安装业",
+        "E50建筑装饰",
+        "装修和其他建筑业"
+      ],
+      "industries": [
+        "E49建筑安装业",
+        "E50建筑装饰、装修和其他建筑业"
+      ],
+      "mom20": -1.96,
+      "mom60": 19.5,
+      "vol_trend": 1.29,
+      "acceleration": -8.45,
+      "theme_score": 20.28
+    },
+    {
+      "theme": "新材料",
+      "keywords": [
+        "新材料",
+        "化工",
+        "稀土",
+        "属矿物制品业",
+        "和压延加工业",
+        "和塑料制品业",
+        "金属矿采选业",
+        "学制品制造业"
+      ],
+      "industries": [
+        "C30非金属矿物制品业",
+        "C32有色金属冶炼和压延加工业",
+        "C29橡胶和塑料制品业",
+        "B09有色金属矿采选业",
+        "C26化学原料和化学制品制造业"
+      ],
+      "mom20": -1.16,
+      "mom60": 9.33,
+      "vol_trend": 1.23,
+      "acceleration": -4.27,
+      "theme_score": 14.96
+    },
+    {
+      "theme": "高端制造",
+      "keywords": [
+        "机器人",
+        "工业母机",
+        "自动化",
+        "用设备制造业",
+        "器仪表制造业"
+      ],
+      "industries": [
+        "C35专用设备制造业",
+        "C40仪器仪表制造业"
+      ],
+      "mom20": -4.9,
+      "mom60": 9.91,
+      "vol_trend": 1.15,
+      "acceleration": -8.21,
+      "theme_score": 9.31
+    }
+  ],
+  "switched_in": [],
+  "switched_out": [],
+  "rotation": false,
+  "strategy_bias": {
+    "mode": "balanced",
+    "prefer": [
+      "late_session_surge",
+      "oversold_reversal"
+    ]
+  }
+}

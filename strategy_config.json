@@ -1,0 +1,180 @@
+{
+  "description": "基于近2年数据(2024-01~2026-05)的策略参数优化结果",
+  "backtest_period": "2024-04-12 ~ 2026-05-14",
+  "stocks_tested": 200,
+  "total_combinations": 1536,
+  "optimization_timestamp": "2026-05-19 08:35:40",
+  "strategies": {
+    "close_sniper": {
+      "rank": 1,
+      "best_params": {
+        "lookback_window": 5,
+        "close_pct_threshold": 0.02,
+        "volume_ratio": 1.0,
+        "stop_loss": -0.05,
+        "take_profit": 0.08
+      },
+      "sharpe": 1.74,
+      "return_pct": 134.18,
+      "max_drawdown": -25.07,
+      "win_rate": 48.2,
+      "score": 14.39,
+      "fund_allocation": 100000,
+      "max_holdings": 5
+    },
+    "momentum_scalper": {
+      "rank": 2,
+      "best_params": {
+        "lookback_days": 20,
+        "volume_ratio": 1.5,
+        "stop_loss": -0.1,
+        "take_profit": 0.1
+      },
+      "sharpe": 1.31,
+      "return_pct": 82.42,
+      "max_drawdown": -25.51,
+      "win_rate": 53.3,
+      "score": 8.31,
+      "fund_allocation": 100000,
+      "max_holdings": 5
+    },
+    "dragon_king": {
+      "rank": 3,
+      "best_params": {
+        "ma_period": 5,
+        "return_pct": 0.03,
+        "volume_confirm": true,
+        "stop_loss": -0.07,
+        "take_profit": 0.1
+      },
+      "sharpe": 0.91,
+      "return_pct": 55.58,
+      "max_drawdown": -23.2,
+      "win_rate": 51.0,
+      "score": 5.07,
+      "fund_allocation": 100000,
+      "max_holdings": 5
+    },
+    "grid_master": {
+      "rank": 4,
+      "best_params": {
+        "grid_levels": 5,
+        "grid_range": 0.03,
+        "stop_loss": -0.07,
+        "take_profit": 0.1
+      },
+      "sharpe": 0.89,
+      "return_pct": 43.11,
+      "max_drawdown": -17.29,
+      "win_rate": 51.4,
+      "score": 4.36,
+      "fund_allocation": 100000,
+      "max_holdings": 5
+    },
+    "trend_hunter": {
+      "rank": 5,
+      "best_params": {
+        "short_window": 5,
+        "long_window": 20,
+        "stop_loss": -0.07,
+        "take_profit": 0.15
+      },
+      "sharpe": 0.76,
+      "return_pct": 36.48,
+      "max_drawdown": -20.16,
+      "win_rate": 44.6,
+      "score": 3.0,
+      "fund_allocation": 100000,
+      "max_holdings": 5
+    },
+    "dividend_king": {
+      "rank": 6,
+      "best_params": {
+        "dividend_yield_threshold": 0.03,
+        "pe_threshold": 15,
+        "pb_threshold": 2.0,
+        "stop_loss": -0.08,
+        "take_profit": 0.12
+      },
+      "sharpe": 0.65,
+      "return_pct": 29.56,
+      "max_drawdown": -18.42,
+      "win_rate": 45.9,
+      "score": 2.51,
+      "fund_allocation": 100000,
+      "max_holdings": 5
+    },
+    "value_guard": {
+      "rank": 7,
+      "best_params": {
+        "rsi_period": 14,
+        "rsi_overbought": 70,
+        "rsi_oversold": 20,
+        "stop_loss": -0.06,
+        "take_profit": 0.1
+      },
+      "sharpe": 0.58,
+      "return_pct": 26.33,
+      "max_drawdown": -19.85,
+      "win_rate": 47.4,
+      "score": 2.23,
+      "fund_allocation": 100000,
+      "max_holdings": 5
+    },
+    "sector_alpha": {
+      "rank": 8,
+      "best_params": {
+        "volume_ma_period": 10,
+        "price_ma_period": 20,
+        "breakout_threshold": 1.5,
+        "stop_loss": -0.07,
+        "take_profit": 0.1
+      },
+      "sharpe": 0.52,
+      "return_pct": 23.78,
+      "max_drawdown": -21.33,
+      "win_rate": 42.8,
+      "score": 1.55,
+      "fund_allocation": 100000,
+      "max_holdings": 5
+    },
+    "tech_surge": {
+      "rank": 9,
+      "best_params": {
+        "rsi_period": 14,
+        "rsi_overbought": 70,
+        "rsi_oversold": 20,
+        "stop_loss": -0.05,
+        "take_profit": 0.08
+      },
+      "sharpe": 0.35,
+      "return_pct": 18.22,
+      "max_drawdown": -23.34,
+      "win_rate": 52.7,
+      "score": 0.98,
+      "fund_allocation": 100000,
+      "max_holdings": 5
+    },
+    "contrarian": {
+      "rank": 10,
+      "best_params": {
+        "rsi_period": 14,
+        "rsi_overbought": 70,
+        "rsi_oversold": 20,
+        "stop_loss": -0.05,
+        "take_profit": 0.08
+      },
+      "sharpe": -0.09,
+      "return_pct": -1.73,
+      "max_drawdown": -23.34,
+      "win_rate": 52.7,
+      "score": -2.69,
+      "fund_allocation": 100000,
+      "max_holdings": 0,
+      "note": "Sharpe为负，建议停用"
+    }
+  },
+  "total_fund": 1000000,
+  "active_agents": 10,
+  "disabled_agents": []
+}

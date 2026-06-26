@@ -1,0 +1,267 @@
+{
+  "timestamp": "2026-06-01 16:08:16",
+  "date": "2026-06-01",
+  "total_pool": 975,
+  "total_scored": 657,
+  "top_picks": [
+    {
+      "code": "603979",
+      "price": 72.0,
+      "final_score": 72,
+      "avg_score": 72,
+      "coverage": 1,
+      "coverage_bonus": 0,
+      "confidence": 57,
+      "strategies": {
+        "trend_sector": {
+          "score": 72,
+          "weight": 1.0,
+          "reason": "趋势强劲(89)",
+          "confidence": 57,
+          "stop_loss": 66.96,
+          "take_profit": 82.8
+        }
+      },
+      "reason": "[趋势板块共振]趋势强劲(89)",
+      "stop_loss": 66.96,
+      "take_profit": 82.8
+    },
+    {
+      "code": "603466",
+      "price": 11.06,
+      "final_score": 72,
+      "avg_score": 72,
+      "coverage": 1,
+      "coverage_bonus": 0,
+      "confidence": 57,
+      "strategies": {
+        "trend_sector": {
+          "score": 72,
+          "weight": 1.0,
+          "reason": "趋势强劲(87) + 热门板块(R88文化艺术业)",
+          "confidence": 57,
+          "stop_loss": 10.29,
+          "take_profit": 12.72
+        }
+      },
+      "reason": "[趋势板块共振]趋势强劲(87) + 热门板块(R88文化艺术业)",
+      "stop_loss": 10.29,
+      "take_profit": 12.72
+    },
+    {
+      "code": "600758",
+      "price": 4.57,
+      "final_score": 71,
+      "avg_score": 71,
+      "coverage": 1,
+      "coverage_bonus": 0,
+      "confidence": 56,
+      "strategies": {
+        "trend_sector": {
+          "score": 71,
+          "weight": 1.0,
+          "reason": "趋势强劲(87) + 热门板块(B06煤炭开采和洗选业)",
+          "confidence": 56,
+          "stop_loss": 4.25,
+          "take_profit": 5.26
+        }
+      },
+      "reason": "[趋势板块共振]趋势强劲(87) + 热门板块(B06煤炭开采和洗选业)",
+      "stop_loss": 4.25,
+      "take_profit": 5.26
+    },
+    {
+      "code": "300163",
+      "price": 6.26,
+      "final_score": 70,
+      "avg_score": 70,
+      "coverage": 1,
+      "coverage_bonus": 0,
+      "confidence": 56,
+      "strategies": {
+        "trend_sector": {
+          "score": 70,
+          "weight": 1.0,
+          "reason": "趋势强劲(90)",
+          "confidence": 56,
+          "stop_loss": 5.82,
+          "take_profit": 7.2
+        }
+      },
+      "reason": "[趋势板块共振]趋势强劲(90)",
+      "stop_loss": 5.82,
+      "take_profit": 7.2
+    },
+    {
+      "code": "300570",
+      "price": 170.4,
+      "final_score": 69,
+      "avg_score": 69,
+      "coverage": 1,
+      "coverage_bonus": 0,
+      "confidence": 55,
+      "strategies": {
+        "trend_sector": {
+          "score": 69,
+          "weight": 1.0,
+          "reason": "趋势强劲(82)",
+          "confidence": 55,
+          "stop_loss": 158.47,
+          "take_profit": 195.96
+        }
+      },
+      "reason": "[趋势板块共振]趋势强劲(82)",
+      "stop_loss": 158.47,
+      "take_profit": 195.96
+    },
+    {
+      "code": "601566",
+      "price": 10.96,
+      "final_score": 69,
+      "avg_score": 69,
+      "coverage": 1,
+      "coverage_bonus": 0,
+      "confidence": 55,
+      "strategies": {
+        "trend_sector": {
+          "score": 69,
+          "weight": 1.0,
+          "reason": "趋势强劲(73) + 热门板块(C18纺织服装、服饰业)",
+          "confidence": 55,
+          "stop_loss": 10.19,
+          "take_profit": 12.6
+        }
+      },
+      "reason": "[趋势板块共振]趋势强劲(73) + 热门板块(C18纺织服装、服饰业)",
+      "stop_loss": 10.19,
+      "take_profit": 12.6
+    },
+    {
+      "code": "301031",
+      "price": 180.99,
+      "final_score": 68,
+      "avg_score": 68,
+      "coverage": 1,
+      "coverage_bonus": 0,
+      "confidence": 54,
+      "strategies": {
+        "trend_sector": {
+          "score": 68,
+          "weight": 1.0,
+          "reason": "趋势强劲(86)",
+          "confidence": 54,
+          "stop_loss": 168.32,
+          "take_profit": 208.14
+        }
+      },
+      "reason": "[趋势板块共振]趋势强劲(86)",
+      "stop_loss": 168.32,
+      "take_profit": 208.14
+    },
+    {
+      "code": "300259",
+      "price": 7.07,
+      "final_score": 68,
+      "avg_score": 68,
+      "coverage": 1,
+      "coverage_bonus": 0,
+      "confidence": 54,
+      "strategies": {
+        "trend_sector": {
+          "score": 68,
+          "weight": 1.0,
+          "reason": "趋势强劲(90)",
+          "confidence": 54,
+          "stop_loss": 6.58,
+          "take_profit": 8.13
+        }
+      },
+      "reason": "[趋势板块共振]趋势强劲(90)",
+      "stop_loss": 6.58,
+      "take_profit": 8.13
+    },
+    {
+      "code": "603256",
+      "price": 197.91,
+      "final_score": 67,
+      "avg_score": 67,
+      "coverage": 1,
+      "coverage_bonus": 0,
+      "confidence": 53,
+      "strategies": {
+        "trend_sector": {
+          "score": 67,
+          "weight": 1.0,
+          "reason": "趋势强劲(96)",
+          "confidence": 53,
+          "stop_loss": 184.06,
+          "take_profit": 227.6
+        }
+      },
+      "reason": "[趋势板块共振]趋势强劲(96)",
+      "stop_loss": 184.06,
+      "take_profit": 227.6
+    },
+    {
+      "code": "600114",
+      "price": 39.55,
+      "final_score": 66,
+      "avg_score": 66,
+      "coverage": 1,
+      "coverage_bonus": 0,
+      "confidence": 52,
+      "strategies": {
+        "trend_sector": {
+          "score": 66,
+          "weight": 1.0,
+          "reason": "趋势强劲(90)",
+          "confidence": 52,
+          "stop_loss": 36.78,
+          "take_profit": 45.48
+        }
+      },
+      "reason": "[趋势板块共振]趋势强劲(90)",
+      "stop_loss": 36.78,
+      "take_profit": 45.48
+    }
+  ],
+  "buy_actions": [
+    {
+      "ok": true,
+      "code": "603979",
+      "price": 72.0,
+      "shares": 277,
+      "amount": 19944.0
+    },
+    {
+      "ok": true,
+      "code": "603466",
+      "price": 11.06,
+      "shares": 1808,
+      "amount": 19996.48
+    },
+    {
+      "ok": true,
+      "code": "600758",
+      "price": 4.57,
+      "shares": 4376,
+      "amount": 19998.32
+    },
+    {
+      "ok": true,
+      "code": "300163",
+      "price": 6.26,
+      "shares": 3194,
+      "amount": 19994.44
+    },
+    {
+      "ok": true,
+      "code": "300570",
+      "price": 170.4,
+      "shares": 117,
+      "amount": 19936.8
+    }
+  ],
+  "stop_actions": [],
+  "account_value": 99990.01
+}

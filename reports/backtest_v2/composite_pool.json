@@ -1,0 +1,12 @@
+{
+  "updated_at": "2026-06-18 14:46:45",
+  "min_return_pct": 0.0,
+  "strategies": [
+    "sector_leader",
+    "oversold_reversal"
+  ],
+  "returns": {
+    "sector_leader": 56.71,
+    "oversold_reversal": 49.0
+  }
+}

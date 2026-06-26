@@ -1,0 +1,218 @@
+{
+  "sentiment_score": 68.6,
+  "price_action_score": 75.4,
+  "news_sentiment_score": 58.4,
+  "hot_concepts": [
+    {
+      "name": "算力概念",
+      "heat": 303
+    },
+    {
+      "name": "元宇宙概念",
+      "heat": 42
+    },
+    {
+      "name": "广电",
+      "heat": 16
+    },
+    {
+      "name": "5G概念",
+      "heat": 8
+    },
+    {
+      "name": "彩票概念",
+      "heat": 7
+    }
+  ],
+  "hot_stocks": [
+    {
+      "rank": 1,
+      "code": "SZ000725",
+      "name": "京东方Ａ",
+      "price": 4.69,
+      "change_pct": 10.09
+    },
+    {
+      "rank": 3,
+      "code": "SH600611",
+      "name": "大众交通",
+      "price": 5.57,
+      "change_pct": 10.08
+    },
+    {
+      "rank": 4,
+      "code": "SZ002036",
+      "name": "联创电子",
+      "price": 9.36,
+      "change_pct": 9.99
+    },
+    {
+      "rank": 5,
+      "code": "SH600578",
+      "name": "京能电力",
+      "price": 8.18,
+      "change_pct": 9.95
+    },
+    {
+      "rank": 6,
+      "code": "SZ002050",
+      "name": "三花智控",
+      "price": 52.83,
+      "change_pct": 4.51
+    },
+    {
+      "rank": 7,
+      "code": "SZ001896",
+      "name": "豫能控股",
+      "price": 16.37,
+      "change_pct": 10.01
+    },
+    {
+      "rank": 8,
+      "code": "SH600584",
+      "name": "长电科技",
+      "price": 66.84,
+      "change_pct": 0.94
+    },
+    {
+      "rank": 9,
+      "code": "SZ002342",
+      "name": "巨力索具",
+      "price": 12.79,
+      "change_pct": -9.99
+    },
+    {
+      "rank": 10,
+      "code": "SZ002703",
+      "name": "浙江世宝",
+      "price": 19.92,
+      "change_pct": 9.99
+    },
+    {
+      "rank": 11,
+      "code": "SZ000536",
+      "name": "华映科技",
+      "price": 4.29,
+      "change_pct": 10.0
+    },
+    {
+      "rank": 12,
+      "code": "SZ002747",
+      "name": "埃斯顿",
+      "price": 28.7,
+      "change_pct": 9.96
+    },
+    {
+      "rank": 13,
+      "code": "SZ301666",
+      "name": "大普微-UW",
+      "price": NaN,
+      "change_pct": NaN
+    },
+    {
+      "rank": 14,
+      "code": "SZ002920",
+      "name": "德赛西威",
+      "price": 106.12,
+      "change_pct": 10.0
+    },
+    {
+      "rank": 15,
+      "code": "SH603767",
+      "name": "中马传动",
+      "price": 24.34,
+      "change_pct": 9.99
+    },
+    {
+      "rank": 16,
+      "code": "SH600707",
+      "name": "彩虹股份",
+      "price": 11.42,
+      "change_pct": 9.91
+    },
+    {
+      "rank": 17,
+      "code": "SH603316",
+      "name": "诚邦股份",
+      "price": 27.25,
+      "change_pct": 10.01
+    },
+    {
+      "rank": 18,
+      "code": "SZ002766",
+      "name": "索菱股份",
+      "price": 5.14,
+      "change_pct": 10.06
+    },
+    {
+      "rank": 19,
+      "code": "SZ002442",
+      "name": "龙星科技",
+      "price": 7.37,
+      "change_pct": 10.0
+    },
+    {
+      "rank": 20,
+      "code": "SH603779",
+      "name": "威龙股份",
+      "price": 14.52,
+      "change_pct": 10.0
+    },
+    {
+      "rank": 21,
+      "code": "SH600360",
+      "name": "华微电子",
+      "price": 12.07,
+      "change_pct": 10.03
+    }
+  ],
+  "news_summary": [
+    {
+      "tag": "华尔街原声",
+      "summary": "富国银行证券（Wells Fargo Securities）宏观策略主管Michael Schumacher表示，日本央行目前处境艰难，正在经历2021年美联储面临的局面"
+    },
+    {
+      "tag": "市场动态",
+      "summary": "摩根大通首席执行官杰米‧戴蒙表示，随着AI技术加速普及，这家华尔街巨头未来可能会僱用更多AI专家，减少传统银行家的招聘"
+    },
+    {
+      "tag": "市场动态",
+      "summary": "高盛表示，由于中东战争久拖不决导致供应持续受阻，本月全球原油及成品油库存以创纪录的速度下降"
+    },
+    {
+      "tag": "市场动态",
+      "summary": "随着油价飙升导致印尼财政吃紧，5月初，总统普拉博沃召集几位最信任的顾问到他在雅加达南部的家中，商讨如何增加财政收入"
+    },
+    {
+      "tag": "市场动态",
+      "summary": "据知情人士透露，印度央行正在考虑所有稳定卢比汇率的可用办法，包括加息、增加货币互换以及从海外投资者处筹集美元"
+    },
+    {
+      "tag": "今日热点",
+      "summary": "人形机器人盘中走高，上纬新材涨13.81%，华升股份、凯众股份、埃斯顿、北特科技、锋龙股份、伯特利、昊志机电涨停"
+    },
+    {
+      "tag": "霍尔木兹日报",
+      "summary": "北京时间5月20日03:58，一艘挂中国船旗的超大型液体散货船“YUAN GUI YANG”号驶出阿曼湾，突破美军封锁"
+    },
+    {
+      "tag": "市场动态",
+      "summary": "韩国5月份前20天的出口保持强劲增长，显示外需韧性仍在。不过，油价上涨和更广泛的通胀担忧可能给决策前景带来挑战"
+    },
+    {
+      "tag": "市场动态",
+      "summary": "穆迪评级将墨西哥的信用评级下调至投资级的最低级别，理由是该国财政状况恶化，这引发了人们对拉丁美洲第二大经济体正走向垃圾级的担忧"
+    },
+    {
+      "tag": "市场动态",
+      "summary": "据知情人士称，美国总统唐纳德·特朗普准备最早于周四颁布一道旨在加强人工智能网络安全的行政命令，并已邀请科技行业领袖参加此次活动"
+    }
+  ],
+  "data_sources": {
+    "hot_rank_count": 98,
+    "keywords_count": 5,
+    "news_count": 100,
+    "calendar_count": 99
+  },
+  "timestamp": "2026-05-22 08:30:28"
+}

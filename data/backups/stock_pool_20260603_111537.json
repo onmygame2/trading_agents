@@ -1,0 +1,6827 @@
+[
+  {
+    "code": "600359",
+    "code_name": "新农开发",
+    "industry_code": "A01农业",
+    "industry_name": "A01农业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002772",
+    "code_name": "众兴菌业",
+    "industry_code": "A01农业",
+    "industry_name": "A01农业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600108",
+    "code_name": "亚盛集团",
+    "industry_code": "A01农业",
+    "industry_name": "A01农业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300970",
+    "code_name": "华绿生物",
+    "industry_code": "A01农业",
+    "industry_name": "A01农业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600540",
+    "code_name": "新赛股份",
+    "industry_code": "A01农业",
+    "industry_name": "A01农业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601118",
+    "code_name": "海南橡胶",
+    "industry_code": "A01农业",
+    "industry_name": "A01农业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600598",
+    "code_name": "北大荒",
+    "industry_code": "A01农业",
+    "industry_name": "A01农业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300511",
+    "code_name": "雪榕生物",
+    "industry_code": "A01农业",
+    "industry_name": "A01农业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002679",
+    "code_name": "福建金森",
+    "industry_code": "A02林业",
+    "industry_name": "A02林业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000663",
+    "code_name": "永安林业",
+    "industry_code": "A02林业",
+    "industry_name": "A02林业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600975",
+    "code_name": "新五丰",
+    "industry_code": "A03畜牧业",
+    "industry_name": "A03畜牧业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603477",
+    "code_name": "巨星农牧",
+    "industry_code": "A03畜牧业",
+    "industry_name": "A03畜牧业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000735",
+    "code_name": "罗牛山",
+    "industry_code": "A03畜牧业",
+    "industry_name": "A03畜牧业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300761",
+    "code_name": "立华股份",
+    "industry_code": "A03畜牧业",
+    "industry_name": "A03畜牧业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002458",
+    "code_name": "益生股份",
+    "industry_code": "A03畜牧业",
+    "industry_name": "A03畜牧业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300498",
+    "code_name": "温氏股份",
+    "industry_code": "A03畜牧业",
+    "industry_name": "A03畜牧业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002157",
+    "code_name": "正邦科技",
+    "industry_code": "A03畜牧业",
+    "industry_name": "A03畜牧业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002982",
+    "code_name": "湘佳股份",
+    "industry_code": "A03畜牧业",
+    "industry_name": "A03畜牧业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603717",
+    "code_name": "天域生物",
+    "industry_code": "A03畜牧业",
+    "industry_name": "A03畜牧业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002234",
+    "code_name": "民和股份",
+    "industry_code": "A03畜牧业",
+    "industry_name": "A03畜牧业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300967",
+    "code_name": "晓鸣股份",
+    "industry_code": "A03畜牧业",
+    "industry_name": "A03畜牧业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000048",
+    "code_name": "京基智农",
+    "industry_code": "A03畜牧业",
+    "industry_name": "A03畜牧业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002124",
+    "code_name": "天邦食品",
+    "industry_code": "A03畜牧业",
+    "industry_name": "A03畜牧业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002321",
+    "code_name": "华英农业",
+    "industry_code": "A03畜牧业",
+    "industry_name": "A03畜牧业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002714",
+    "code_name": "牧原股份",
+    "industry_code": "A03畜牧业",
+    "industry_name": "A03畜牧业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600097",
+    "code_name": "开创国际",
+    "industry_code": "A04渔业",
+    "industry_name": "A04渔业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600257",
+    "code_name": "大湖股份",
+    "industry_code": "A04渔业",
+    "industry_name": "A04渔业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002086",
+    "code_name": "东方海洋",
+    "industry_code": "A04渔业",
+    "industry_name": "A04渔业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600467",
+    "code_name": "好当家",
+    "industry_code": "A04渔业",
+    "industry_name": "A04渔业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002069",
+    "code_name": "獐子岛",
+    "industry_code": "A04渔业",
+    "industry_name": "A04渔业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000798",
+    "code_name": "中水渔业",
+    "industry_code": "A04渔业",
+    "industry_name": "A04渔业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600354",
+    "code_name": "敦煌种业",
+    "industry_code": "A05农、林、牧、渔专业及辅助性活动",
+    "industry_name": "A05农、林、牧、渔专业及辅助性活动",
+    "exchange": "SH"
+  },
+  {
+    "code": "600371",
+    "code_name": "万向德农",
+    "industry_code": "A05农、林、牧、渔专业及辅助性活动",
+    "industry_name": "A05农、林、牧、渔专业及辅助性活动",
+    "exchange": "SH"
+  },
+  {
+    "code": "300087",
+    "code_name": "荃银高科",
+    "industry_code": "A05农、林、牧、渔专业及辅助性活动",
+    "industry_name": "A05农、林、牧、渔专业及辅助性活动",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000713",
+    "code_name": "国投丰乐",
+    "industry_code": "A05农、林、牧、渔专业及辅助性活动",
+    "industry_name": "A05农、林、牧、渔专业及辅助性活动",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002041",
+    "code_name": "登海种业",
+    "industry_code": "A05农、林、牧、渔专业及辅助性活动",
+    "industry_name": "A05农、林、牧、渔专业及辅助性活动",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000998",
+    "code_name": "隆平高科",
+    "industry_code": "A05农、林、牧、渔专业及辅助性活动",
+    "industry_name": "A05农、林、牧、渔专业及辅助性活动",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300189",
+    "code_name": "神农种业",
+    "industry_code": "A05农、林、牧、渔专业及辅助性活动",
+    "industry_name": "A05农、林、牧、渔专业及辅助性活动",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600758",
+    "code_name": "辽宁能源",
+    "industry_code": "B06煤炭开采和洗选业",
+    "industry_name": "B06煤炭开采和洗选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601666",
+    "code_name": "平煤股份",
+    "industry_code": "B06煤炭开采和洗选业",
+    "industry_name": "B06煤炭开采和洗选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600121",
+    "code_name": "郑州煤电",
+    "industry_code": "B06煤炭开采和洗选业",
+    "industry_name": "B06煤炭开采和洗选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000983",
+    "code_name": "山西焦煤",
+    "industry_code": "B06煤炭开采和洗选业",
+    "industry_name": "B06煤炭开采和洗选业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600985",
+    "code_name": "淮北矿业",
+    "industry_code": "B06煤炭开采和洗选业",
+    "industry_name": "B06煤炭开采和洗选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600925",
+    "code_name": "苏能股份",
+    "industry_code": "B06煤炭开采和洗选业",
+    "industry_name": "B06煤炭开采和洗选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601088",
+    "code_name": "中国神华",
+    "industry_code": "B06煤炭开采和洗选业",
+    "industry_name": "B06煤炭开采和洗选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600123",
+    "code_name": "兰花科创",
+    "industry_code": "B06煤炭开采和洗选业",
+    "industry_name": "B06煤炭开采和洗选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000937",
+    "code_name": "冀中能源",
+    "industry_code": "B06煤炭开采和洗选业",
+    "industry_name": "B06煤炭开采和洗选业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600403",
+    "code_name": "大有能源",
+    "industry_code": "B06煤炭开采和洗选业",
+    "industry_name": "B06煤炭开采和洗选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600188",
+    "code_name": "兖矿能源",
+    "industry_code": "B06煤炭开采和洗选业",
+    "industry_name": "B06煤炭开采和洗选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601001",
+    "code_name": "晋控煤业",
+    "industry_code": "B06煤炭开采和洗选业",
+    "industry_name": "B06煤炭开采和洗选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601225",
+    "code_name": "陕西煤业",
+    "industry_code": "B06煤炭开采和洗选业",
+    "industry_name": "B06煤炭开采和洗选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600348",
+    "code_name": "华阳股份",
+    "industry_code": "B06煤炭开采和洗选业",
+    "industry_name": "B06煤炭开采和洗选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600395",
+    "code_name": "盘江股份",
+    "industry_code": "B06煤炭开采和洗选业",
+    "industry_name": "B06煤炭开采和洗选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600256",
+    "code_name": "广汇能源",
+    "industry_code": "B07石油和天然气开采业",
+    "industry_name": "B07石油和天然气开采业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000968",
+    "code_name": "蓝焰控股",
+    "industry_code": "B07石油和天然气开采业",
+    "industry_name": "B07石油和天然气开采业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600028",
+    "code_name": "中国石化",
+    "industry_code": "B07石油和天然气开采业",
+    "industry_name": "B07石油和天然气开采业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300483",
+    "code_name": "首华燃气",
+    "industry_code": "B07石油和天然气开采业",
+    "industry_name": "B07石油和天然气开采业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600938",
+    "code_name": "中国海油",
+    "industry_code": "B07石油和天然气开采业",
+    "industry_name": "B07石油和天然气开采业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603619",
+    "code_name": "中曼石油",
+    "industry_code": "B07石油和天然气开采业",
+    "industry_name": "B07石油和天然气开采业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601857",
+    "code_name": "中国石油",
+    "industry_code": "B07石油和天然气开采业",
+    "industry_name": "B07石油和天然气开采业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300191",
+    "code_name": "潜能恒信",
+    "industry_code": "B07石油和天然气开采业",
+    "industry_name": "B07石油和天然气开采业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600382",
+    "code_name": "广东明珠",
+    "industry_code": "B08黑色金属矿采选业",
+    "industry_name": "B08黑色金属矿采选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601121",
+    "code_name": "宝地矿业",
+    "industry_code": "B08黑色金属矿采选业",
+    "industry_name": "B08黑色金属矿采选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001203",
+    "code_name": "大中矿业",
+    "industry_code": "B08黑色金属矿采选业",
+    "industry_name": "B08黑色金属矿采选业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601969",
+    "code_name": "海南矿业",
+    "industry_code": "B08黑色金属矿采选业",
+    "industry_name": "B08黑色金属矿采选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000923",
+    "code_name": "河钢资源",
+    "industry_code": "B08黑色金属矿采选业",
+    "industry_name": "B08黑色金属矿采选业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000655",
+    "code_name": "金岭矿业",
+    "industry_code": "B08黑色金属矿采选业",
+    "industry_name": "B08黑色金属矿采选业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601168",
+    "code_name": "西部矿业",
+    "industry_code": "B09有色金属矿采选业",
+    "industry_name": "B09有色金属矿采选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002192",
+    "code_name": "融捷股份",
+    "industry_code": "B09有色金属矿采选业",
+    "industry_name": "B09有色金属矿采选业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601069",
+    "code_name": "西部黄金",
+    "industry_code": "B09有色金属矿采选业",
+    "industry_name": "B09有色金属矿采选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001257",
+    "code_name": "盛龙股份",
+    "industry_code": "B09有色金属矿采选业",
+    "industry_name": "B09有色金属矿采选业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600259",
+    "code_name": "中稀有色",
+    "industry_code": "B09有色金属矿采选业",
+    "industry_name": "B09有色金属矿采选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603132",
+    "code_name": "金徽股份",
+    "industry_code": "B09有色金属矿采选业",
+    "industry_name": "B09有色金属矿采选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000688",
+    "code_name": "国城矿业",
+    "industry_code": "B09有色金属矿采选业",
+    "industry_name": "B09有色金属矿采选业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "001280",
+    "code_name": "中国铀业",
+    "industry_code": "B09有色金属矿采选业",
+    "industry_name": "B09有色金属矿采选业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601958",
+    "code_name": "金钼股份",
+    "industry_code": "B09有色金属矿采选业",
+    "industry_name": "B09有色金属矿采选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603993",
+    "code_name": "洛阳钼业",
+    "industry_code": "B09有色金属矿采选业",
+    "industry_name": "B09有色金属矿采选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000506",
+    "code_name": "招金黄金",
+    "industry_code": "B09有色金属矿采选业",
+    "industry_name": "B09有色金属矿采选业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600301",
+    "code_name": "华锡有色",
+    "industry_code": "B09有色金属矿采选业",
+    "industry_name": "B09有色金属矿采选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600547",
+    "code_name": "山东黄金",
+    "industry_code": "B09有色金属矿采选业",
+    "industry_name": "B09有色金属矿采选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600711",
+    "code_name": "盛屯矿业",
+    "industry_code": "B09有色金属矿采选业",
+    "industry_name": "B09有色金属矿采选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600338",
+    "code_name": "西藏珠峰",
+    "industry_code": "B09有色金属矿采选业",
+    "industry_name": "B09有色金属矿采选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "605086",
+    "code_name": "龙高股份",
+    "industry_code": "B10非金属矿采选业",
+    "industry_name": "B10非金属矿采选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603505",
+    "code_name": "金石资源",
+    "industry_code": "B10非金属矿采选业",
+    "industry_name": "B10非金属矿采选业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300084",
+    "code_name": "海默科技",
+    "industry_code": "B11开采专业及辅助性活动",
+    "industry_name": "B11开采专业及辅助性活动",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002683",
+    "code_name": "广东宏大",
+    "industry_code": "B11开采专业及辅助性活动",
+    "industry_name": "B11开采专业及辅助性活动",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600339",
+    "code_name": "中油工程",
+    "industry_code": "B11开采专业及辅助性活动",
+    "industry_name": "B11开采专业及辅助性活动",
+    "exchange": "SH"
+  },
+  {
+    "code": "002629",
+    "code_name": "仁智股份",
+    "industry_code": "B11开采专业及辅助性活动",
+    "industry_name": "B11开采专业及辅助性活动",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603727",
+    "code_name": "博迈科",
+    "industry_code": "B11开采专业及辅助性活动",
+    "industry_name": "B11开采专业及辅助性活动",
+    "exchange": "SH"
+  },
+  {
+    "code": "600871",
+    "code_name": "石化油服",
+    "industry_code": "B11开采专业及辅助性活动",
+    "industry_name": "B11开采专业及辅助性活动",
+    "exchange": "SH"
+  },
+  {
+    "code": "600583",
+    "code_name": "海油工程",
+    "industry_code": "B11开采专业及辅助性活动",
+    "industry_name": "B11开采专业及辅助性活动",
+    "exchange": "SH"
+  },
+  {
+    "code": "300164",
+    "code_name": "通源石油",
+    "industry_code": "B11开采专业及辅助性活动",
+    "industry_name": "B11开采专业及辅助性活动",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601808",
+    "code_name": "中海油服",
+    "industry_code": "B11开采专业及辅助性活动",
+    "industry_name": "B11开采专业及辅助性活动",
+    "exchange": "SH"
+  },
+  {
+    "code": "002554",
+    "code_name": "惠博普",
+    "industry_code": "B11开采专业及辅助性活动",
+    "industry_name": "B11开采专业及辅助性活动",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002828",
+    "code_name": "贝肯能源",
+    "industry_code": "B11开采专业及辅助性活动",
+    "industry_name": "B11开采专业及辅助性活动",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600968",
+    "code_name": "海油发展",
+    "industry_code": "B11开采专业及辅助性活动",
+    "industry_name": "B11开采专业及辅助性活动",
+    "exchange": "SH"
+  },
+  {
+    "code": "603979",
+    "code_name": "金诚信",
+    "industry_code": "B11开采专业及辅助性活动",
+    "industry_name": "B11开采专业及辅助性活动",
+    "exchange": "SH"
+  },
+  {
+    "code": "002311",
+    "code_name": "海大集团",
+    "industry_code": "C13农副食品加工业",
+    "industry_name": "C13农副食品加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600883",
+    "code_name": "博闻科技",
+    "industry_code": "C13农副食品加工业",
+    "industry_name": "C13农副食品加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002330",
+    "code_name": "得利斯",
+    "industry_code": "C13农副食品加工业",
+    "industry_name": "C13农副食品加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603363",
+    "code_name": "傲农生物",
+    "industry_code": "C13农副食品加工业",
+    "industry_name": "C13农副食品加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "605567",
+    "code_name": "春雪食品",
+    "industry_code": "C13农副食品加工业",
+    "industry_name": "C13农副食品加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300094",
+    "code_name": "国联水产",
+    "industry_code": "C13农副食品加工业",
+    "industry_name": "C13农副食品加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002702",
+    "code_name": "海欣食品",
+    "industry_code": "C13农副食品加工业",
+    "industry_name": "C13农副食品加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "001313",
+    "code_name": "粤海饲料",
+    "industry_code": "C13农副食品加工业",
+    "industry_name": "C13农副食品加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002840",
+    "code_name": "华统股份",
+    "industry_code": "C13农副食品加工业",
+    "industry_name": "C13农副食品加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603345",
+    "code_name": "安井食品",
+    "industry_code": "C13农副食品加工业",
+    "industry_name": "C13农副食品加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300999",
+    "code_name": "金龙鱼",
+    "industry_code": "C13农副食品加工业",
+    "industry_name": "C13农副食品加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600251",
+    "code_name": "冠农股份",
+    "industry_code": "C13农副食品加工业",
+    "industry_name": "C13农副食品加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002385",
+    "code_name": "大北农",
+    "industry_code": "C13农副食品加工业",
+    "industry_name": "C13农副食品加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002515",
+    "code_name": "金字火腿",
+    "industry_code": "C13农副食品加工业",
+    "industry_name": "C13农副食品加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603151",
+    "code_name": "邦基科技",
+    "industry_code": "C13农副食品加工业",
+    "industry_name": "C13农副食品加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002570",
+    "code_name": "贝因美",
+    "industry_code": "C14食品制造业",
+    "industry_name": "C14食品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603027",
+    "code_name": "千禾味业",
+    "industry_code": "C14食品制造业",
+    "industry_name": "C14食品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600419",
+    "code_name": "天润乳业",
+    "industry_code": "C14食品制造业",
+    "industry_name": "C14食品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600866",
+    "code_name": "星湖科技",
+    "industry_code": "C14食品制造业",
+    "industry_name": "C14食品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603755",
+    "code_name": "日辰股份",
+    "industry_code": "C14食品制造业",
+    "industry_name": "C14食品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002216",
+    "code_name": "三全食品",
+    "industry_code": "C14食品制造业",
+    "industry_name": "C14食品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300765",
+    "code_name": "新诺威",
+    "industry_code": "C14食品制造业",
+    "industry_name": "C14食品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600429",
+    "code_name": "三元股份",
+    "industry_code": "C14食品制造业",
+    "industry_name": "C14食品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300858",
+    "code_name": "科拓生物",
+    "industry_code": "C14食品制造业",
+    "industry_name": "C14食品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600882",
+    "code_name": "妙可蓝多",
+    "industry_code": "C14食品制造业",
+    "industry_name": "C14食品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603317",
+    "code_name": "天味食品",
+    "industry_code": "C14食品制造业",
+    "industry_name": "C14食品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300973",
+    "code_name": "立高食品",
+    "industry_code": "C14食品制造业",
+    "industry_name": "C14食品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002597",
+    "code_name": "金禾实业",
+    "industry_code": "C14食品制造业",
+    "industry_name": "C14食品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600186",
+    "code_name": "莲花控股",
+    "industry_code": "C14食品制造业",
+    "industry_name": "C14食品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002946",
+    "code_name": "新乳业",
+    "industry_code": "C14食品制造业",
+    "industry_name": "C14食品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "605388",
+    "code_name": "均瑶健康",
+    "industry_code": "C15酒、饮料和精制茶制造业",
+    "industry_name": "C15酒、饮料和精制茶制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600809",
+    "code_name": "山西汾酒",
+    "industry_code": "C15酒、饮料和精制茶制造业",
+    "industry_name": "C15酒、饮料和精制茶制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600573",
+    "code_name": "惠泉啤酒",
+    "industry_code": "C15酒、饮料和精制茶制造业",
+    "industry_name": "C15酒、饮料和精制茶制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "605499",
+    "code_name": "东鹏饮料",
+    "industry_code": "C15酒、饮料和精制茶制造业",
+    "industry_name": "C15酒、饮料和精制茶制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600199",
+    "code_name": "金种子酒",
+    "industry_code": "C15酒、饮料和精制茶制造业",
+    "industry_name": "C15酒、饮料和精制茶制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002568",
+    "code_name": "百润股份",
+    "industry_code": "C15酒、饮料和精制茶制造业",
+    "industry_name": "C15酒、饮料和精制茶制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603589",
+    "code_name": "口子窖",
+    "industry_code": "C15酒、饮料和精制茶制造业",
+    "industry_name": "C15酒、饮料和精制茶制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000729",
+    "code_name": "燕京啤酒",
+    "industry_code": "C15酒、饮料和精制茶制造业",
+    "industry_name": "C15酒、饮料和精制茶制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000799",
+    "code_name": "酒鬼酒",
+    "industry_code": "C15酒、饮料和精制茶制造业",
+    "industry_name": "C15酒、饮料和精制茶制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600519",
+    "code_name": "贵州茅台",
+    "industry_code": "C15酒、饮料和精制茶制造业",
+    "industry_name": "C15酒、饮料和精制茶制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000568",
+    "code_name": "泸州老窖",
+    "industry_code": "C15酒、饮料和精制茶制造业",
+    "industry_name": "C15酒、饮料和精制茶制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600779",
+    "code_name": "水井坊",
+    "industry_code": "C15酒、饮料和精制茶制造业",
+    "industry_name": "C15酒、饮料和精制茶制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603198",
+    "code_name": "迎驾贡酒",
+    "industry_code": "C15酒、饮料和精制茶制造业",
+    "industry_name": "C15酒、饮料和精制茶制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600600",
+    "code_name": "青岛啤酒",
+    "industry_code": "C15酒、饮料和精制茶制造业",
+    "industry_name": "C15酒、饮料和精制茶制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601579",
+    "code_name": "会稽山",
+    "industry_code": "C15酒、饮料和精制茶制造业",
+    "industry_name": "C15酒、饮料和精制茶制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300658",
+    "code_name": "延江股份",
+    "industry_code": "C17纺织业",
+    "industry_name": "C17纺织业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000850",
+    "code_name": "华茂股份",
+    "industry_code": "C17纺织业",
+    "industry_name": "C17纺织业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000955",
+    "code_name": "欣龙控股",
+    "industry_code": "C17纺织业",
+    "industry_name": "C17纺织业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300163",
+    "code_name": "先锋新材",
+    "industry_code": "C17纺织业",
+    "industry_name": "C17纺织业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002516",
+    "code_name": "旷达科技",
+    "industry_code": "C17纺织业",
+    "industry_name": "C17纺织业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300888",
+    "code_name": "稳健医疗",
+    "industry_code": "C17纺织业",
+    "industry_name": "C17纺织业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600626",
+    "code_name": "申达股份",
+    "industry_code": "C17纺织业",
+    "industry_name": "C17纺织业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603307",
+    "code_name": "扬州金泉",
+    "industry_code": "C17纺织业",
+    "industry_name": "C17纺织业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603055",
+    "code_name": "台华新材",
+    "industry_code": "C17纺织业",
+    "industry_name": "C17纺织业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600493",
+    "code_name": "凤竹纺织",
+    "industry_code": "C17纺织业",
+    "industry_name": "C17纺织业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601339",
+    "code_name": "百隆东方",
+    "industry_code": "C17纺织业",
+    "industry_name": "C17纺织业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002042",
+    "code_name": "华孚时尚",
+    "industry_code": "C17纺织业",
+    "industry_name": "C17纺织业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002327",
+    "code_name": "富安娜",
+    "industry_code": "C17纺织业",
+    "industry_name": "C17纺织业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "605080",
+    "code_name": "浙江自然",
+    "industry_code": "C17纺织业",
+    "industry_name": "C17纺织业",
+    "exchange": "SH"
+  },
+  {
+    "code": "605003",
+    "code_name": "众望布艺",
+    "industry_code": "C17纺织业",
+    "industry_name": "C17纺织业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001209",
+    "code_name": "洪兴股份",
+    "industry_code": "C18纺织服装、服饰业",
+    "industry_name": "C18纺织服装、服饰业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002154",
+    "code_name": "报喜鸟",
+    "industry_code": "C18纺织服装、服饰业",
+    "industry_name": "C18纺织服装、服饰业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002832",
+    "code_name": "比音勒芬",
+    "industry_code": "C18纺织服装、服饰业",
+    "industry_name": "C18纺织服装、服饰业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002763",
+    "code_name": "汇洁股份",
+    "industry_code": "C18纺织服装、服饰业",
+    "industry_name": "C18纺织服装、服饰业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603518",
+    "code_name": "锦泓集团",
+    "industry_code": "C18纺织服装、服饰业",
+    "industry_name": "C18纺织服装、服饰业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002612",
+    "code_name": "朗姿股份",
+    "industry_code": "C18纺织服装、服饰业",
+    "industry_name": "C18纺织服装、服饰业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002404",
+    "code_name": "嘉欣丝绸",
+    "industry_code": "C18纺织服装、服饰业",
+    "industry_name": "C18纺织服装、服饰业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603839",
+    "code_name": "安正时尚",
+    "industry_code": "C18纺织服装、服饰业",
+    "industry_name": "C18纺织服装、服饰业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301066",
+    "code_name": "万事利",
+    "industry_code": "C18纺织服装、服饰业",
+    "industry_name": "C18纺织服装、服饰业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603558",
+    "code_name": "健盛集团",
+    "industry_code": "C18纺织服装、服饰业",
+    "industry_name": "C18纺织服装、服饰业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600137",
+    "code_name": "浪莎股份",
+    "industry_code": "C18纺织服装、服饰业",
+    "industry_name": "C18纺织服装、服饰业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600630",
+    "code_name": "龙头股份",
+    "industry_code": "C18纺织服装、服饰业",
+    "industry_name": "C18纺织服装、服饰业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001234",
+    "code_name": "泰慕士",
+    "industry_code": "C18纺织服装、服饰业",
+    "industry_name": "C18纺织服装、服饰业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002003",
+    "code_name": "伟星股份",
+    "industry_code": "C18纺织服装、服饰业",
+    "industry_name": "C18纺织服装、服饰业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601566",
+    "code_name": "九牧王",
+    "industry_code": "C18纺织服装、服饰业",
+    "industry_name": "C18纺织服装、服饰业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300591",
+    "code_name": "万里马",
+    "industry_code": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "industry_name": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300577",
+    "code_name": "开润股份",
+    "industry_code": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "industry_name": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600439",
+    "code_name": "瑞贝卡",
+    "industry_code": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "industry_name": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002674",
+    "code_name": "兴业科技",
+    "industry_code": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "industry_name": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "605068",
+    "code_name": "明新旭腾",
+    "industry_code": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "industry_name": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603116",
+    "code_name": "红蜻蜓",
+    "industry_code": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "industry_name": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603001",
+    "code_name": "奥康国际",
+    "industry_code": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "industry_name": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300979",
+    "code_name": "华利集团",
+    "industry_code": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "industry_name": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603958",
+    "code_name": "哈森股份",
+    "industry_code": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "industry_name": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002494",
+    "code_name": "华斯股份",
+    "industry_code": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "industry_name": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603608",
+    "code_name": "天创时尚",
+    "industry_code": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "industry_name": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001390",
+    "code_name": "古麒绒材",
+    "industry_code": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "industry_name": "C19皮革、毛皮、羽毛及其制品和制鞋业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002631",
+    "code_name": "德尔未来",
+    "industry_code": "C20木材加工和木、竹、藤、棕、草制品业",
+    "industry_name": "C20木材加工和木、竹、藤、棕、草制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002043",
+    "code_name": "兔宝宝",
+    "industry_code": "C20木材加工和木、竹、藤、棕、草制品业",
+    "industry_name": "C20木材加工和木、竹、藤、棕、草制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600076",
+    "code_name": "康欣新材",
+    "industry_code": "C20木材加工和木、竹、藤、棕、草制品业",
+    "industry_name": "C20木材加工和木、竹、藤、棕、草制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001211",
+    "code_name": "双枪科技",
+    "industry_code": "C20木材加工和木、竹、藤、棕、草制品业",
+    "industry_name": "C20木材加工和木、竹、藤、棕、草制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603226",
+    "code_name": "菲林格尔",
+    "industry_code": "C20木材加工和木、竹、藤、棕、草制品业",
+    "industry_name": "C20木材加工和木、竹、藤、棕、草制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603022",
+    "code_name": "新通联",
+    "industry_code": "C20木材加工和木、竹、藤、棕、草制品业",
+    "industry_name": "C20木材加工和木、竹、藤、棕、草制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601996",
+    "code_name": "丰林集团",
+    "industry_code": "C20木材加工和木、竹、藤、棕、草制品业",
+    "industry_name": "C20木材加工和木、竹、藤、棕、草制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301227",
+    "code_name": "森鹰窗业",
+    "industry_code": "C20木材加工和木、竹、藤、棕、草制品业",
+    "industry_name": "C20木材加工和木、竹、藤、棕、草制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603216",
+    "code_name": "梦天家居",
+    "industry_code": "C20木材加工和木、竹、藤、棕、草制品业",
+    "industry_name": "C20木材加工和木、竹、藤、棕、草制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000910",
+    "code_name": "大亚圣象",
+    "industry_code": "C20木材加工和木、竹、藤、棕、草制品业",
+    "industry_name": "C20木材加工和木、竹、藤、棕、草制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603208",
+    "code_name": "江山欧派",
+    "industry_code": "C20木材加工和木、竹、藤、棕、草制品业",
+    "industry_name": "C20木材加工和木、竹、藤、棕、草制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000592",
+    "code_name": "平潭发展",
+    "industry_code": "C20木材加工和木、竹、藤、棕、草制品业",
+    "industry_name": "C20木材加工和木、竹、藤、棕、草制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002572",
+    "code_name": "索菲亚",
+    "industry_code": "C21家具制造业",
+    "industry_name": "C21家具制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603818",
+    "code_name": "曲美家居",
+    "industry_code": "C21家具制造业",
+    "industry_name": "C21家具制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603180",
+    "code_name": "金牌家居",
+    "industry_code": "C21家具制造业",
+    "industry_name": "C21家具制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603816",
+    "code_name": "顾家家居",
+    "industry_code": "C21家具制造业",
+    "industry_name": "C21家具制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300616",
+    "code_name": "尚品宅配",
+    "industry_code": "C21家具制造业",
+    "industry_name": "C21家具制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "001238",
+    "code_name": "浙江正特",
+    "industry_code": "C21家具制造业",
+    "industry_name": "C21家具制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603313",
+    "code_name": "梦百合",
+    "industry_code": "C21家具制造业",
+    "industry_name": "C21家具制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001323",
+    "code_name": "慕思股份",
+    "industry_code": "C21家具制造业",
+    "industry_name": "C21家具制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603661",
+    "code_name": "恒林股份",
+    "industry_code": "C21家具制造业",
+    "industry_name": "C21家具制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603326",
+    "code_name": "我乐家居",
+    "industry_code": "C21家具制造业",
+    "industry_name": "C21家具制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603898",
+    "code_name": "好莱客",
+    "industry_code": "C21家具制造业",
+    "industry_name": "C21家具制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301061",
+    "code_name": "匠心家居",
+    "industry_code": "C21家具制造业",
+    "industry_name": "C21家具制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603600",
+    "code_name": "永艺股份",
+    "industry_code": "C21家具制造业",
+    "industry_name": "C21家具制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603610",
+    "code_name": "麒盛科技",
+    "industry_code": "C21家具制造业",
+    "industry_name": "C21家具制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300729",
+    "code_name": "乐歌股份",
+    "industry_code": "C21家具制造业",
+    "industry_name": "C21家具制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002228",
+    "code_name": "合兴包装",
+    "industry_code": "C22造纸和纸制品业",
+    "industry_name": "C22造纸和纸制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603687",
+    "code_name": "大胜达",
+    "industry_code": "C22造纸和纸制品业",
+    "industry_name": "C22造纸和纸制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600966",
+    "code_name": "博汇纸业",
+    "industry_code": "C22造纸和纸制品业",
+    "industry_name": "C22造纸和纸制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002235",
+    "code_name": "安妮股份",
+    "industry_code": "C22造纸和纸制品业",
+    "industry_name": "C22造纸和纸制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600433",
+    "code_name": "冠豪高新",
+    "industry_code": "C22造纸和纸制品业",
+    "industry_name": "C22造纸和纸制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301501",
+    "code_name": "恒鑫生活",
+    "industry_code": "C22造纸和纸制品业",
+    "industry_name": "C22造纸和纸制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "605500",
+    "code_name": "森林包装",
+    "industry_code": "C22造纸和纸制品业",
+    "industry_name": "C22造纸和纸制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301469",
+    "code_name": "恒达新材",
+    "industry_code": "C22造纸和纸制品业",
+    "industry_name": "C22造纸和纸制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002521",
+    "code_name": "齐峰新材",
+    "industry_code": "C22造纸和纸制品业",
+    "industry_name": "C22造纸和纸制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600793",
+    "code_name": "宜宾纸业",
+    "industry_code": "C22造纸和纸制品业",
+    "industry_name": "C22造纸和纸制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002247",
+    "code_name": "聚力文化",
+    "industry_code": "C22造纸和纸制品业",
+    "industry_name": "C22造纸和纸制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603607",
+    "code_name": "京华激光",
+    "industry_code": "C22造纸和纸制品业",
+    "industry_name": "C22造纸和纸制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "605009",
+    "code_name": "豪悦护理",
+    "industry_code": "C22造纸和纸制品业",
+    "industry_name": "C22造纸和纸制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603091",
+    "code_name": "众鑫股份",
+    "industry_code": "C22造纸和纸制品业",
+    "industry_name": "C22造纸和纸制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603863",
+    "code_name": "松炀资源",
+    "industry_code": "C22造纸和纸制品业",
+    "industry_name": "C22造纸和纸制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "003003",
+    "code_name": "天元股份",
+    "industry_code": "C23印刷和记录媒介复制业",
+    "industry_name": "C23印刷和记录媒介复制业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002951",
+    "code_name": "金时科技",
+    "industry_code": "C23印刷和记录媒介复制业",
+    "industry_name": "C23印刷和记录媒介复制业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603058",
+    "code_name": "永吉股份",
+    "industry_code": "C23印刷和记录媒介复制业",
+    "industry_name": "C23印刷和记录媒介复制业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002836",
+    "code_name": "新宏泽",
+    "industry_code": "C23印刷和记录媒介复制业",
+    "industry_name": "C23印刷和记录媒介复制业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002191",
+    "code_name": "劲嘉股份",
+    "industry_code": "C23印刷和记录媒介复制业",
+    "industry_name": "C23印刷和记录媒介复制业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000812",
+    "code_name": "陕西金叶",
+    "industry_code": "C23印刷和记录媒介复制业",
+    "industry_name": "C23印刷和记录媒介复制业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603499",
+    "code_name": "翔港科技",
+    "industry_code": "C23印刷和记录媒介复制业",
+    "industry_name": "C23印刷和记录媒介复制业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301223",
+    "code_name": "中荣股份",
+    "industry_code": "C23印刷和记录媒介复制业",
+    "industry_name": "C23印刷和记录媒介复制业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002117",
+    "code_name": "东港股份",
+    "industry_code": "C23印刷和记录媒介复制业",
+    "industry_name": "C23印刷和记录媒介复制业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002599",
+    "code_name": "盛通股份",
+    "industry_code": "C23印刷和记录媒介复制业",
+    "industry_name": "C23印刷和记录媒介复制业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "001279",
+    "code_name": "强邦新材",
+    "industry_code": "C23印刷和记录媒介复制业",
+    "industry_name": "C23印刷和记录媒介复制业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002229",
+    "code_name": "鸿博股份",
+    "industry_code": "C23印刷和记录媒介复制业",
+    "industry_name": "C23印刷和记录媒介复制业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600612",
+    "code_name": "老凤祥",
+    "industry_code": "C24文教、工美、体育和娱乐用品制造业",
+    "industry_name": "C24文教、工美、体育和娱乐用品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002862",
+    "code_name": "实丰文化",
+    "industry_code": "C24文教、工美、体育和娱乐用品制造业",
+    "industry_name": "C24文教、工美、体育和娱乐用品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002345",
+    "code_name": "潮宏基",
+    "industry_code": "C24文教、工美、体育和娱乐用品制造业",
+    "industry_name": "C24文教、工美、体育和娱乐用品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603899",
+    "code_name": "晨光股份",
+    "industry_code": "C24文教、工美、体育和娱乐用品制造业",
+    "industry_name": "C24文教、工美、体育和娱乐用品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300329",
+    "code_name": "海伦钢琴",
+    "industry_code": "C24文教、工美、体育和娱乐用品制造业",
+    "industry_name": "C24文教、工美、体育和娱乐用品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002103",
+    "code_name": "广博股份",
+    "industry_code": "C24文教、工美、体育和娱乐用品制造业",
+    "industry_name": "C24文教、工美、体育和娱乐用品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301011",
+    "code_name": "华立科技",
+    "industry_code": "C24文教、工美、体育和娱乐用品制造业",
+    "industry_name": "C24文教、工美、体育和娱乐用品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002678",
+    "code_name": "珠江钢琴",
+    "industry_code": "C24文教、工美、体育和娱乐用品制造业",
+    "industry_name": "C24文教、工美、体育和娱乐用品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000017",
+    "code_name": "深中华A",
+    "industry_code": "C24文教、工美、体育和娱乐用品制造业",
+    "industry_name": "C24文教、工美、体育和娱乐用品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "001300",
+    "code_name": "三柏硕",
+    "industry_code": "C24文教、工美、体育和娱乐用品制造业",
+    "industry_name": "C24文教、工美、体育和娱乐用品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300651",
+    "code_name": "金陵体育",
+    "industry_code": "C24文教、工美、体育和娱乐用品制造业",
+    "industry_name": "C24文教、工美、体育和娱乐用品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002721",
+    "code_name": "金一文化",
+    "industry_code": "C24文教、工美、体育和娱乐用品制造业",
+    "industry_name": "C24文教、工美、体育和娱乐用品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300703",
+    "code_name": "创源股份",
+    "industry_code": "C24文教、工美、体育和娱乐用品制造业",
+    "industry_name": "C24文教、工美、体育和娱乐用品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300640",
+    "code_name": "德艺文创",
+    "industry_code": "C24文教、工美、体育和娱乐用品制造业",
+    "industry_name": "C24文教、工美、体育和娱乐用品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "605299",
+    "code_name": "舒华体育",
+    "industry_code": "C24文教、工美、体育和娱乐用品制造业",
+    "industry_name": "C24文教、工美、体育和娱乐用品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600506",
+    "code_name": "统一股份",
+    "industry_code": "C25石油、煤炭及其他燃料加工业",
+    "industry_name": "C25石油、煤炭及其他燃料加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600688",
+    "code_name": "上海石化",
+    "industry_code": "C25石油、煤炭及其他燃料加工业",
+    "industry_name": "C25石油、煤炭及其他燃料加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601011",
+    "code_name": "宝泰隆",
+    "industry_code": "C25石油、煤炭及其他燃料加工业",
+    "industry_name": "C25石油、煤炭及其他燃料加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300135",
+    "code_name": "宝利国际",
+    "industry_code": "C25石油、煤炭及其他燃料加工业",
+    "industry_name": "C25石油、煤炭及其他燃料加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002778",
+    "code_name": "中晟高科",
+    "industry_code": "C25石油、煤炭及其他燃料加工业",
+    "industry_name": "C25石油、煤炭及其他燃料加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000819",
+    "code_name": "岳阳兴长",
+    "industry_code": "C25石油、煤炭及其他燃料加工业",
+    "industry_name": "C25石油、煤炭及其他燃料加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603798",
+    "code_name": "康普顿",
+    "industry_code": "C25石油、煤炭及其他燃料加工业",
+    "industry_name": "C25石油、煤炭及其他燃料加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000059",
+    "code_name": "华锦股份",
+    "industry_code": "C25石油、煤炭及其他燃料加工业",
+    "industry_name": "C25石油、煤炭及其他燃料加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600740",
+    "code_name": "山西焦化",
+    "industry_code": "C25石油、煤炭及其他燃料加工业",
+    "industry_name": "C25石油、煤炭及其他燃料加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300839",
+    "code_name": "博汇股份",
+    "industry_code": "C25石油、煤炭及其他燃料加工业",
+    "industry_name": "C25石油、煤炭及其他燃料加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600997",
+    "code_name": "开滦股份",
+    "industry_code": "C25石油、煤炭及其他燃料加工业",
+    "industry_name": "C25石油、煤炭及其他燃料加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603351",
+    "code_name": "威尔药业",
+    "industry_code": "C25石油、煤炭及其他燃料加工业",
+    "industry_name": "C25石油、煤炭及其他燃料加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000723",
+    "code_name": "美锦能源",
+    "industry_code": "C25石油、煤炭及其他燃料加工业",
+    "industry_name": "C25石油、煤炭及其他燃料加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002377",
+    "code_name": "国创高新",
+    "industry_code": "C25石油、煤炭及其他燃料加工业",
+    "industry_name": "C25石油、煤炭及其他燃料加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600792",
+    "code_name": "云煤能源",
+    "industry_code": "C25石油、煤炭及其他燃料加工业",
+    "industry_name": "C25石油、煤炭及其他燃料加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002361",
+    "code_name": "神剑股份",
+    "industry_code": "C26化学原料和化学制品制造业",
+    "industry_name": "C26化学原料和化学制品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600722",
+    "code_name": "金牛化工",
+    "industry_code": "C26化学原料和化学制品制造业",
+    "industry_name": "C26化学原料和化学制品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002226",
+    "code_name": "江南化工",
+    "industry_code": "C26化学原料和化学制品制造业",
+    "industry_name": "C26化学原料和化学制品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603360",
+    "code_name": "百傲化学",
+    "industry_code": "C26化学原料和化学制品制造业",
+    "industry_name": "C26化学原料和化学制品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603790",
+    "code_name": "雅运股份",
+    "industry_code": "C26化学原料和化学制品制造业",
+    "industry_name": "C26化学原料和化学制品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300758",
+    "code_name": "七彩化学",
+    "industry_code": "C26化学原料和化学制品制造业",
+    "industry_name": "C26化学原料和化学制品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600486",
+    "code_name": "扬农化工",
+    "industry_code": "C26化学原料和化学制品制造业",
+    "industry_name": "C26化学原料和化学制品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600230",
+    "code_name": "沧州大化",
+    "industry_code": "C26化学原料和化学制品制造业",
+    "industry_name": "C26化学原料和化学制品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603172",
+    "code_name": "万丰股份",
+    "industry_code": "C26化学原料和化学制品制造业",
+    "industry_name": "C26化学原料和化学制品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603407",
+    "code_name": "长裕集团",
+    "industry_code": "C26化学原料和化学制品制造业",
+    "industry_name": "C26化学原料和化学制品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002753",
+    "code_name": "永东股份",
+    "industry_code": "C26化学原料和化学制品制造业",
+    "industry_name": "C26化学原料和化学制品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002637",
+    "code_name": "赞宇科技",
+    "industry_code": "C26化学原料和化学制品制造业",
+    "industry_name": "C26化学原料和化学制品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002409",
+    "code_name": "雅克科技",
+    "industry_code": "C26化学原料和化学制品制造业",
+    "industry_name": "C26化学原料和化学制品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603120",
+    "code_name": "肯特催化",
+    "industry_code": "C26化学原料和化学制品制造业",
+    "industry_name": "C26化学原料和化学制品制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001255",
+    "code_name": "博菲电气",
+    "industry_code": "C26化学原料和化学制品制造业",
+    "industry_name": "C26化学原料和化学制品制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600222",
+    "code_name": "太龙药业",
+    "industry_code": "C27医药制造业",
+    "industry_name": "C27医药制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300463",
+    "code_name": "迈克生物",
+    "industry_code": "C27医药制造业",
+    "industry_name": "C27医药制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002365",
+    "code_name": "永安药业",
+    "industry_code": "C27医药制造业",
+    "industry_name": "C27医药制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300878",
+    "code_name": "维康药业",
+    "industry_code": "C27医药制造业",
+    "industry_name": "C27医药制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002923",
+    "code_name": "润都股份",
+    "industry_code": "C27医药制造业",
+    "industry_name": "C27医药制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301201",
+    "code_name": "诚达药业",
+    "industry_code": "C27医药制造业",
+    "industry_name": "C27医药制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300439",
+    "code_name": "美康生物",
+    "industry_code": "C27医药制造业",
+    "industry_name": "C27医药制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000650",
+    "code_name": "仁和药业",
+    "industry_code": "C27医药制造业",
+    "industry_name": "C27医药制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300401",
+    "code_name": "花园生物",
+    "industry_code": "C27医药制造业",
+    "industry_name": "C27医药制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300357",
+    "code_name": "我武生物",
+    "industry_code": "C27医药制造业",
+    "industry_name": "C27医药制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603858",
+    "code_name": "步长制药",
+    "industry_code": "C27医药制造业",
+    "industry_name": "C27医药制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600332",
+    "code_name": "白云山",
+    "industry_code": "C27医药制造业",
+    "industry_name": "C27医药制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300685",
+    "code_name": "艾德生物",
+    "industry_code": "C27医药制造业",
+    "industry_name": "C27医药制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600521",
+    "code_name": "华海药业",
+    "industry_code": "C27医药制造业",
+    "industry_name": "C27医药制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600594",
+    "code_name": "益佰制药",
+    "industry_code": "C27医药制造业",
+    "industry_name": "C27医药制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600527",
+    "code_name": "江南高纤",
+    "industry_code": "C28化学纤维制造业",
+    "industry_name": "C28化学纤维制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300777",
+    "code_name": "中简科技",
+    "industry_code": "C28化学纤维制造业",
+    "industry_name": "C28化学纤维制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002998",
+    "code_name": "优彩资源",
+    "industry_code": "C28化学纤维制造业",
+    "industry_name": "C28化学纤维制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600810",
+    "code_name": "神马股份",
+    "industry_code": "C28化学纤维制造业",
+    "industry_name": "C28化学纤维制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000782",
+    "code_name": "恒申新材",
+    "industry_code": "C28化学纤维制造业",
+    "industry_name": "C28化学纤维制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603406",
+    "code_name": "天富龙",
+    "industry_code": "C28化学纤维制造业",
+    "industry_name": "C28化学纤维制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002064",
+    "code_name": "华峰化学",
+    "industry_code": "C28化学纤维制造业",
+    "industry_name": "C28化学纤维制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603225",
+    "code_name": "新凤鸣",
+    "industry_code": "C28化学纤维制造业",
+    "industry_name": "C28化学纤维制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300876",
+    "code_name": "蒙泰高新",
+    "industry_code": "C28化学纤维制造业",
+    "industry_name": "C28化学纤维制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300699",
+    "code_name": "光威复材",
+    "industry_code": "C28化学纤维制造业",
+    "industry_name": "C28化学纤维制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002254",
+    "code_name": "泰和新材",
+    "industry_code": "C28化学纤维制造业",
+    "industry_name": "C28化学纤维制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601233",
+    "code_name": "桐昆股份",
+    "industry_code": "C28化学纤维制造业",
+    "industry_name": "C28化学纤维制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000936",
+    "code_name": "华西股份",
+    "industry_code": "C28化学纤维制造业",
+    "industry_name": "C28化学纤维制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301057",
+    "code_name": "汇隆新材",
+    "industry_code": "C28化学纤维制造业",
+    "industry_name": "C28化学纤维制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603332",
+    "code_name": "苏州龙杰",
+    "industry_code": "C28化学纤维制造业",
+    "industry_name": "C28化学纤维制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001378",
+    "code_name": "德冠新材",
+    "industry_code": "C29橡胶和塑料制品业",
+    "industry_name": "C29橡胶和塑料制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "003018",
+    "code_name": "金富科技",
+    "industry_code": "C29橡胶和塑料制品业",
+    "industry_name": "C29橡胶和塑料制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600469",
+    "code_name": "风神股份",
+    "industry_code": "C29橡胶和塑料制品业",
+    "industry_name": "C29橡胶和塑料制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002372",
+    "code_name": "伟星新材",
+    "industry_code": "C29橡胶和塑料制品业",
+    "industry_name": "C29橡胶和塑料制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002108",
+    "code_name": "沧州明珠",
+    "industry_code": "C29橡胶和塑料制品业",
+    "industry_name": "C29橡胶和塑料制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300221",
+    "code_name": "银禧科技",
+    "industry_code": "C29橡胶和塑料制品业",
+    "industry_name": "C29橡胶和塑料制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "605099",
+    "code_name": "共创草坪",
+    "industry_code": "C29橡胶和塑料制品业",
+    "industry_name": "C29橡胶和塑料制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603051",
+    "code_name": "鹿山新材",
+    "industry_code": "C29橡胶和塑料制品业",
+    "industry_name": "C29橡胶和塑料制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603049",
+    "code_name": "中策橡胶",
+    "industry_code": "C29橡胶和塑料制品业",
+    "industry_name": "C29橡胶和塑料制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002243",
+    "code_name": "力合科创",
+    "industry_code": "C29橡胶和塑料制品业",
+    "industry_name": "C29橡胶和塑料制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300321",
+    "code_name": "同大股份",
+    "industry_code": "C29橡胶和塑料制品业",
+    "industry_name": "C29橡胶和塑料制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002676",
+    "code_name": "顺威股份",
+    "industry_code": "C29橡胶和塑料制品业",
+    "industry_name": "C29橡胶和塑料制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300218",
+    "code_name": "安利股份",
+    "industry_code": "C29橡胶和塑料制品业",
+    "industry_name": "C29橡胶和塑料制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301131",
+    "code_name": "聚赛龙",
+    "industry_code": "C29橡胶和塑料制品业",
+    "industry_name": "C29橡胶和塑料制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600143",
+    "code_name": "金发科技",
+    "industry_code": "C29橡胶和塑料制品业",
+    "industry_name": "C29橡胶和塑料制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002282",
+    "code_name": "博深股份",
+    "industry_code": "C30非金属矿物制品业",
+    "industry_name": "C30非金属矿物制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000695",
+    "code_name": "滨海能源",
+    "industry_code": "C30非金属矿物制品业",
+    "industry_name": "C30非金属矿物制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301071",
+    "code_name": "力量钻石",
+    "industry_code": "C30非金属矿物制品业",
+    "industry_name": "C30非金属矿物制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600819",
+    "code_name": "耀皮玻璃",
+    "industry_code": "C30非金属矿物制品业",
+    "industry_name": "C30非金属矿物制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300374",
+    "code_name": "中铁装配",
+    "industry_code": "C30非金属矿物制品业",
+    "industry_name": "C30非金属矿物制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300554",
+    "code_name": "三超新材",
+    "industry_code": "C30非金属矿物制品业",
+    "industry_name": "C30非金属矿物制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002392",
+    "code_name": "北京利尔",
+    "industry_code": "C30非金属矿物制品业",
+    "industry_name": "C30非金属矿物制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000789",
+    "code_name": "万年青",
+    "industry_code": "C30非金属矿物制品业",
+    "industry_name": "C30非金属矿物制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600585",
+    "code_name": "海螺水泥",
+    "industry_code": "C30非金属矿物制品业",
+    "industry_name": "C30非金属矿物制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600172",
+    "code_name": "黄河旋风",
+    "industry_code": "C30非金属矿物制品业",
+    "industry_name": "C30非金属矿物制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603616",
+    "code_name": "韩建河山",
+    "industry_code": "C30非金属矿物制品业",
+    "industry_name": "C30非金属矿物制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "003037",
+    "code_name": "三和管桩",
+    "industry_code": "C30非金属矿物制品业",
+    "industry_name": "C30非金属矿物制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "001216",
+    "code_name": "华瓷股份",
+    "industry_code": "C30非金属矿物制品业",
+    "industry_name": "C30非金属矿物制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603256",
+    "code_name": "宏和科技",
+    "industry_code": "C30非金属矿物制品业",
+    "industry_name": "C30非金属矿物制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000877",
+    "code_name": "天山股份",
+    "industry_code": "C30非金属矿物制品业",
+    "industry_name": "C30非金属矿物制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002075",
+    "code_name": "沙钢股份",
+    "industry_code": "C31黑色金属冶炼和压延加工业",
+    "industry_name": "C31黑色金属冶炼和压延加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601005",
+    "code_name": "重庆钢铁",
+    "industry_code": "C31黑色金属冶炼和压延加工业",
+    "industry_name": "C31黑色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600569",
+    "code_name": "安阳钢铁",
+    "industry_code": "C31黑色金属冶炼和压延加工业",
+    "industry_name": "C31黑色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000761",
+    "code_name": "本钢板材",
+    "industry_code": "C31黑色金属冶炼和压延加工业",
+    "industry_name": "C31黑色金属冶炼和压延加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600307",
+    "code_name": "酒钢宏兴",
+    "industry_code": "C31黑色金属冶炼和压延加工业",
+    "industry_name": "C31黑色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600399",
+    "code_name": "抚顺特钢",
+    "industry_code": "C31黑色金属冶炼和压延加工业",
+    "industry_name": "C31黑色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000717",
+    "code_name": "中南股份",
+    "industry_code": "C31黑色金属冶炼和压延加工业",
+    "industry_name": "C31黑色金属冶炼和压延加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600010",
+    "code_name": "包钢股份",
+    "industry_code": "C31黑色金属冶炼和压延加工业",
+    "industry_name": "C31黑色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000959",
+    "code_name": "首钢股份",
+    "industry_code": "C31黑色金属冶炼和压延加工业",
+    "industry_name": "C31黑色金属冶炼和压延加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600782",
+    "code_name": "新钢股份",
+    "industry_code": "C31黑色金属冶炼和压延加工业",
+    "industry_name": "C31黑色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601003",
+    "code_name": "柳钢股份",
+    "industry_code": "C31黑色金属冶炼和压延加工业",
+    "industry_name": "C31黑色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600507",
+    "code_name": "方大特钢",
+    "industry_code": "C31黑色金属冶炼和压延加工业",
+    "industry_name": "C31黑色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603878",
+    "code_name": "武进不锈",
+    "industry_code": "C31黑色金属冶炼和压延加工业",
+    "industry_name": "C31黑色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600019",
+    "code_name": "宝钢股份",
+    "industry_code": "C31黑色金属冶炼和压延加工业",
+    "industry_name": "C31黑色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600126",
+    "code_name": "杭钢股份",
+    "industry_code": "C31黑色金属冶炼和压延加工业",
+    "industry_name": "C31黑色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000060",
+    "code_name": "中金岭南",
+    "industry_code": "C32有色金属冶炼和压延加工业",
+    "industry_name": "C32有色金属冶炼和压延加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600111",
+    "code_name": "北方稀土",
+    "industry_code": "C32有色金属冶炼和压延加工业",
+    "industry_name": "C32有色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601702",
+    "code_name": "华峰铝业",
+    "industry_code": "C32有色金属冶炼和压延加工业",
+    "industry_name": "C32有色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000612",
+    "code_name": "焦作万方",
+    "industry_code": "C32有色金属冶炼和压延加工业",
+    "industry_name": "C32有色金属冶炼和压延加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601212",
+    "code_name": "白银有色",
+    "industry_code": "C32有色金属冶炼和压延加工业",
+    "industry_name": "C32有色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603978",
+    "code_name": "深圳新星",
+    "industry_code": "C32有色金属冶炼和压延加工业",
+    "industry_name": "C32有色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600490",
+    "code_name": "鹏欣资源",
+    "industry_code": "C32有色金属冶炼和压延加工业",
+    "industry_name": "C32有色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300034",
+    "code_name": "钢研高纳",
+    "industry_code": "C32有色金属冶炼和压延加工业",
+    "industry_name": "C32有色金属冶炼和压延加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600281",
+    "code_name": "华阳新材",
+    "industry_code": "C32有色金属冶炼和压延加工业",
+    "industry_name": "C32有色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600531",
+    "code_name": "豫光金铅",
+    "industry_code": "C32有色金属冶炼和压延加工业",
+    "industry_name": "C32有色金属冶炼和压延加工业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002182",
+    "code_name": "宝武镁业",
+    "industry_code": "C32有色金属冶炼和压延加工业",
+    "industry_name": "C32有色金属冶炼和压延加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000630",
+    "code_name": "铜陵有色",
+    "industry_code": "C32有色金属冶炼和压延加工业",
+    "industry_name": "C32有色金属冶炼和压延加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002842",
+    "code_name": "翔鹭钨业",
+    "industry_code": "C32有色金属冶炼和压延加工业",
+    "industry_name": "C32有色金属冶炼和压延加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000737",
+    "code_name": "北方铜业",
+    "industry_code": "C32有色金属冶炼和压延加工业",
+    "industry_name": "C32有色金属冶炼和压延加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002988",
+    "code_name": "豪美新材",
+    "industry_code": "C32有色金属冶炼和压延加工业",
+    "industry_name": "C32有色金属冶炼和压延加工业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002444",
+    "code_name": "巨星科技",
+    "industry_code": "C33金属制品业",
+    "industry_name": "C33金属制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002722",
+    "code_name": "物产金轮",
+    "industry_code": "C33金属制品业",
+    "industry_name": "C33金属制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000890",
+    "code_name": "法尔胜",
+    "industry_code": "C33金属制品业",
+    "industry_name": "C33金属制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603028",
+    "code_name": "赛福天",
+    "industry_code": "C33金属制品业",
+    "industry_name": "C33金属制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002541",
+    "code_name": "鸿路钢构",
+    "industry_code": "C33金属制品业",
+    "industry_name": "C33金属制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600114",
+    "code_name": "东睦股份",
+    "industry_code": "C33金属制品业",
+    "industry_name": "C33金属制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300185",
+    "code_name": "通裕重工",
+    "industry_code": "C33金属制品业",
+    "industry_name": "C33金属制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603629",
+    "code_name": "利通电子",
+    "industry_code": "C33金属制品业",
+    "industry_name": "C33金属制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601700",
+    "code_name": "风范股份",
+    "industry_code": "C33金属制品业",
+    "industry_name": "C33金属制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603985",
+    "code_name": "恒润股份",
+    "industry_code": "C33金属制品业",
+    "industry_name": "C33金属制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600615",
+    "code_name": "鑫源智造",
+    "industry_code": "C33金属制品业",
+    "industry_name": "C33金属制品业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001239",
+    "code_name": "永达股份",
+    "industry_code": "C33金属制品业",
+    "industry_name": "C33金属制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002403",
+    "code_name": "爱仕达",
+    "industry_code": "C33金属制品业",
+    "industry_name": "C33金属制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301163",
+    "code_name": "宏德股份",
+    "industry_code": "C33金属制品业",
+    "industry_name": "C33金属制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301202",
+    "code_name": "朗威股份",
+    "industry_code": "C33金属制品业",
+    "industry_name": "C33金属制品业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300503",
+    "code_name": "昊志机电",
+    "industry_code": "C34通用设备制造业",
+    "industry_name": "C34通用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601369",
+    "code_name": "陕鼓动力",
+    "industry_code": "C34通用设备制造业",
+    "industry_name": "C34通用设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300943",
+    "code_name": "春晖智控",
+    "industry_code": "C34通用设备制造业",
+    "industry_name": "C34通用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002523",
+    "code_name": "天桥起重",
+    "industry_code": "C34通用设备制造业",
+    "industry_name": "C34通用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000816",
+    "code_name": "智慧农业",
+    "industry_code": "C34通用设备制造业",
+    "industry_name": "C34通用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300904",
+    "code_name": "威力传动",
+    "industry_code": "C34通用设备制造业",
+    "industry_name": "C34通用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603915",
+    "code_name": "国茂股份",
+    "industry_code": "C34通用设备制造业",
+    "industry_name": "C34通用设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601177",
+    "code_name": "杭齿前进",
+    "industry_code": "C34通用设备制造业",
+    "industry_name": "C34通用设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002896",
+    "code_name": "中大力德",
+    "industry_code": "C34通用设备制造业",
+    "industry_name": "C34通用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002884",
+    "code_name": "凌霄泵业",
+    "industry_code": "C34通用设备制造业",
+    "industry_name": "C34通用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301368",
+    "code_name": "丰立智能",
+    "industry_code": "C34通用设备制造业",
+    "industry_name": "C34通用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601727",
+    "code_name": "上海电气",
+    "industry_code": "C34通用设备制造业",
+    "industry_name": "C34通用设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002158",
+    "code_name": "汉钟精机",
+    "industry_code": "C34通用设备制造业",
+    "industry_name": "C34通用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600835",
+    "code_name": "上海机电",
+    "industry_code": "C34通用设备制造业",
+    "industry_name": "C34通用设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301032",
+    "code_name": "新柴股份",
+    "industry_code": "C34通用设备制造业",
+    "industry_name": "C34通用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601106",
+    "code_name": "中国一重",
+    "industry_code": "C35专用设备制造业",
+    "industry_name": "C35专用设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600444",
+    "code_name": "国机通用",
+    "industry_code": "C35专用设备制造业",
+    "industry_name": "C35专用设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300382",
+    "code_name": "斯莱克",
+    "industry_code": "C35专用设备制造业",
+    "industry_name": "C35专用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301097",
+    "code_name": "天益医疗",
+    "industry_code": "C35专用设备制造业",
+    "industry_name": "C35专用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300879",
+    "code_name": "大叶股份",
+    "industry_code": "C35专用设备制造业",
+    "industry_name": "C35专用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300631",
+    "code_name": "久吾高科",
+    "industry_code": "C35专用设备制造业",
+    "industry_name": "C35专用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300823",
+    "code_name": "建科智能",
+    "industry_code": "C35专用设备制造业",
+    "industry_name": "C35专用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300003",
+    "code_name": "乐普医疗",
+    "industry_code": "C35专用设备制造业",
+    "industry_name": "C35专用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600520",
+    "code_name": "三佳科技",
+    "industry_code": "C35专用设备制造业",
+    "industry_name": "C35专用设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002490",
+    "code_name": "山东墨龙",
+    "industry_code": "C35专用设备制造业",
+    "industry_name": "C35专用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603282",
+    "code_name": "亚光股份",
+    "industry_code": "C35专用设备制造业",
+    "industry_name": "C35专用设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301512",
+    "code_name": "智信精密",
+    "industry_code": "C35专用设备制造业",
+    "industry_name": "C35专用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002890",
+    "code_name": "弘宇股份",
+    "industry_code": "C35专用设备制造业",
+    "industry_name": "C35专用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300633",
+    "code_name": "开立医疗",
+    "industry_code": "C35专用设备制造业",
+    "industry_name": "C35专用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "001400",
+    "code_name": "江顺科技",
+    "industry_code": "C35专用设备制造业",
+    "industry_name": "C35专用设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300680",
+    "code_name": "隆盛科技",
+    "industry_code": "C36汽车制造业",
+    "industry_name": "C36汽车制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "605018",
+    "code_name": "长华集团",
+    "industry_code": "C36汽车制造业",
+    "industry_name": "C36汽车制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300863",
+    "code_name": "卡倍亿",
+    "industry_code": "C36汽车制造业",
+    "industry_name": "C36汽车制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603786",
+    "code_name": "科博达",
+    "industry_code": "C36汽车制造业",
+    "industry_name": "C36汽车制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603586",
+    "code_name": "金麒麟",
+    "industry_code": "C36汽车制造业",
+    "industry_name": "C36汽车制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600733",
+    "code_name": "北汽蓝谷",
+    "industry_code": "C36汽车制造业",
+    "industry_name": "C36汽车制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600418",
+    "code_name": "江淮汽车",
+    "industry_code": "C36汽车制造业",
+    "industry_name": "C36汽车制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600741",
+    "code_name": "华域汽车",
+    "industry_code": "C36汽车制造业",
+    "industry_name": "C36汽车制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002594",
+    "code_name": "比亚迪",
+    "industry_code": "C36汽车制造业",
+    "industry_name": "C36汽车制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002553",
+    "code_name": "南方精工",
+    "industry_code": "C36汽车制造业",
+    "industry_name": "C36汽车制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002965",
+    "code_name": "祥鑫科技",
+    "industry_code": "C36汽车制造业",
+    "industry_name": "C36汽车制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300733",
+    "code_name": "西菱动力",
+    "industry_code": "C36汽车制造业",
+    "industry_name": "C36汽车制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600933",
+    "code_name": "爱柯迪",
+    "industry_code": "C36汽车制造业",
+    "industry_name": "C36汽车制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300969",
+    "code_name": "恒帅股份",
+    "industry_code": "C36汽车制造业",
+    "industry_name": "C36汽车制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002284",
+    "code_name": "亚太股份",
+    "industry_code": "C36汽车制造业",
+    "industry_name": "C36汽车制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300719",
+    "code_name": "安达维尔",
+    "industry_code": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "industry_name": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300994",
+    "code_name": "久祺股份",
+    "industry_code": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "industry_name": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600038",
+    "code_name": "中直股份",
+    "industry_code": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "industry_name": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301016",
+    "code_name": "雷尔伟",
+    "industry_code": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "industry_name": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600391",
+    "code_name": "航发科技",
+    "industry_code": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "industry_name": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300600",
+    "code_name": "国瑞科技",
+    "industry_code": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "industry_name": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601766",
+    "code_name": "中国中车",
+    "industry_code": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "industry_name": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600862",
+    "code_name": "中航高科",
+    "industry_code": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "industry_name": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603766",
+    "code_name": "隆鑫通用",
+    "industry_code": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "industry_name": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301322",
+    "code_name": "绿通科技",
+    "industry_code": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "industry_name": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000697",
+    "code_name": "炼石航空",
+    "industry_code": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "industry_name": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600685",
+    "code_name": "中船防务",
+    "industry_code": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "industry_name": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300589",
+    "code_name": "江龙船艇",
+    "industry_code": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "industry_name": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600879",
+    "code_name": "航天电子",
+    "industry_code": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "industry_name": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000913",
+    "code_name": "钱江摩托",
+    "industry_code": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "industry_name": "C37铁路、船舶、航空航天和其他运输设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603070",
+    "code_name": "万控智造",
+    "industry_code": "C38电气机械和器材制造业",
+    "industry_name": "C38电气机械和器材制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002513",
+    "code_name": "蓝丰生化",
+    "industry_code": "C38电气机械和器材制造业",
+    "industry_name": "C38电气机械和器材制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301031",
+    "code_name": "中熔电气",
+    "industry_code": "C38电气机械和器材制造业",
+    "industry_name": "C38电气机械和器材制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603045",
+    "code_name": "福达合金",
+    "industry_code": "C38电气机械和器材制造业",
+    "industry_name": "C38电气机械和器材制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002860",
+    "code_name": "星帅尔",
+    "industry_code": "C38电气机械和器材制造业",
+    "industry_name": "C38电气机械和器材制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600268",
+    "code_name": "国电南自",
+    "industry_code": "C38电气机械和器材制造业",
+    "industry_name": "C38电气机械和器材制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603075",
+    "code_name": "热威股份",
+    "industry_code": "C38电气机械和器材制造业",
+    "industry_name": "C38电气机械和器材制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002705",
+    "code_name": "新宝股份",
+    "industry_code": "C38电气机械和器材制造业",
+    "industry_name": "C38电气机械和器材制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603685",
+    "code_name": "晨丰科技",
+    "industry_code": "C38电气机械和器材制造业",
+    "industry_name": "C38电气机械和器材制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300018",
+    "code_name": "中元股份",
+    "industry_code": "C38电气机械和器材制造业",
+    "industry_name": "C38电气机械和器材制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300444",
+    "code_name": "双杰电气",
+    "industry_code": "C38电气机械和器材制造业",
+    "industry_name": "C38电气机械和器材制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601126",
+    "code_name": "四方股份",
+    "industry_code": "C38电气机械和器材制造业",
+    "industry_name": "C38电气机械和器材制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002028",
+    "code_name": "思源电气",
+    "industry_code": "C38电气机械和器材制造业",
+    "industry_name": "C38电气机械和器材制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301439",
+    "code_name": "泓淋电力",
+    "industry_code": "C38电气机械和器材制造业",
+    "industry_name": "C38电气机械和器材制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603312",
+    "code_name": "西典新能",
+    "industry_code": "C38电气机械和器材制造业",
+    "industry_name": "C38电气机械和器材制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301626",
+    "code_name": "苏州天脉",
+    "industry_code": "C39计算机、通信和其他电子设备制造业",
+    "industry_name": "C39计算机、通信和其他电子设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600888",
+    "code_name": "新疆众和",
+    "industry_code": "C39计算机、通信和其他电子设备制造业",
+    "industry_name": "C39计算机、通信和其他电子设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001388",
+    "code_name": "信通电子",
+    "industry_code": "C39计算机、通信和其他电子设备制造业",
+    "industry_name": "C39计算机、通信和其他电子设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603516",
+    "code_name": "淳中科技",
+    "industry_code": "C39计算机、通信和其他电子设备制造业",
+    "industry_name": "C39计算机、通信和其他电子设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603712",
+    "code_name": "七一二",
+    "industry_code": "C39计算机、通信和其他电子设备制造业",
+    "industry_name": "C39计算机、通信和其他电子设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000725",
+    "code_name": "京东方A",
+    "industry_code": "C39计算机、通信和其他电子设备制造业",
+    "industry_name": "C39计算机、通信和其他电子设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300227",
+    "code_name": "光韵达",
+    "industry_code": "C39计算机、通信和其他电子设备制造业",
+    "industry_name": "C39计算机、通信和其他电子设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002475",
+    "code_name": "立讯精密",
+    "industry_code": "C39计算机、通信和其他电子设备制造业",
+    "industry_name": "C39计算机、通信和其他电子设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300115",
+    "code_name": "长盈精密",
+    "industry_code": "C39计算机、通信和其他电子设备制造业",
+    "industry_name": "C39计算机、通信和其他电子设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600237",
+    "code_name": "铜峰电子",
+    "industry_code": "C39计算机、通信和其他电子设备制造业",
+    "industry_name": "C39计算机、通信和其他电子设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300570",
+    "code_name": "太辰光",
+    "industry_code": "C39计算机、通信和其他电子设备制造业",
+    "industry_name": "C39计算机、通信和其他电子设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300563",
+    "code_name": "神宇股份",
+    "industry_code": "C39计算机、通信和其他电子设备制造业",
+    "industry_name": "C39计算机、通信和其他电子设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300279",
+    "code_name": "和晶科技",
+    "industry_code": "C39计算机、通信和其他电子设备制造业",
+    "industry_name": "C39计算机、通信和其他电子设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301589",
+    "code_name": "诺瓦星云",
+    "industry_code": "C39计算机、通信和其他电子设备制造业",
+    "industry_name": "C39计算机、通信和其他电子设备制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603890",
+    "code_name": "春秋电子",
+    "industry_code": "C39计算机、通信和其他电子设备制造业",
+    "industry_name": "C39计算机、通信和其他电子设备制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600071",
+    "code_name": "凤凰光学",
+    "industry_code": "C40仪器仪表制造业",
+    "industry_name": "C40仪器仪表制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603297",
+    "code_name": "永新光学",
+    "industry_code": "C40仪器仪表制造业",
+    "industry_name": "C40仪器仪表制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300371",
+    "code_name": "汇中股份",
+    "industry_code": "C40仪器仪表制造业",
+    "industry_name": "C40仪器仪表制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002546",
+    "code_name": "新联电子",
+    "industry_code": "C40仪器仪表制造业",
+    "industry_name": "C40仪器仪表制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002980",
+    "code_name": "华盛昌",
+    "industry_code": "C40仪器仪表制造业",
+    "industry_name": "C40仪器仪表制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301006",
+    "code_name": "迈拓股份",
+    "industry_code": "C40仪器仪表制造业",
+    "industry_name": "C40仪器仪表制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300466",
+    "code_name": "赛摩智能",
+    "industry_code": "C40仪器仪表制造业",
+    "industry_name": "C40仪器仪表制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300259",
+    "code_name": "新天科技",
+    "industry_code": "C40仪器仪表制造业",
+    "industry_name": "C40仪器仪表制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300720",
+    "code_name": "海川智能",
+    "industry_code": "C40仪器仪表制造业",
+    "industry_name": "C40仪器仪表制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002338",
+    "code_name": "奥普光电",
+    "industry_code": "C40仪器仪表制造业",
+    "industry_name": "C40仪器仪表制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301510",
+    "code_name": "固高科技",
+    "industry_code": "C40仪器仪表制造业",
+    "industry_name": "C40仪器仪表制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603100",
+    "code_name": "川仪股份",
+    "industry_code": "C40仪器仪表制造业",
+    "industry_name": "C40仪器仪表制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300417",
+    "code_name": "南华仪器",
+    "industry_code": "C40仪器仪表制造业",
+    "industry_name": "C40仪器仪表制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300354",
+    "code_name": "东华测试",
+    "industry_code": "C40仪器仪表制造业",
+    "industry_name": "C40仪器仪表制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603556",
+    "code_name": "海兴电力",
+    "industry_code": "C40仪器仪表制造业",
+    "industry_name": "C40仪器仪表制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301335",
+    "code_name": "天元宠物",
+    "industry_code": "C41其他制造业",
+    "industry_name": "C41其他制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300962",
+    "code_name": "中金辐照",
+    "industry_code": "C41其他制造业",
+    "industry_name": "C41其他制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603038",
+    "code_name": "华立股份",
+    "industry_code": "C41其他制造业",
+    "industry_name": "C41其他制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300922",
+    "code_name": "天秦装备",
+    "industry_code": "C41其他制造业",
+    "industry_name": "C41其他制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002098",
+    "code_name": "浔兴股份",
+    "industry_code": "C41其他制造业",
+    "industry_name": "C41其他制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "605318",
+    "code_name": "法狮龙",
+    "industry_code": "C41其他制造业",
+    "industry_name": "C41其他制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603059",
+    "code_name": "倍加洁",
+    "industry_code": "C41其他制造业",
+    "industry_name": "C41其他制造业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301357",
+    "code_name": "北方长龙",
+    "industry_code": "C41其他制造业",
+    "industry_name": "C41其他制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "001222",
+    "code_name": "源飞宠物",
+    "industry_code": "C41其他制造业",
+    "industry_name": "C41其他制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300722",
+    "code_name": "新余国科",
+    "industry_code": "C41其他制造业",
+    "industry_name": "C41其他制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "001206",
+    "code_name": "依依股份",
+    "industry_code": "C41其他制造业",
+    "industry_name": "C41其他制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002718",
+    "code_name": "友邦吊顶",
+    "industry_code": "C41其他制造业",
+    "industry_name": "C41其他制造业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600217",
+    "code_name": "中再资环",
+    "industry_code": "C42废弃资源综合利用业",
+    "industry_name": "C42废弃资源综合利用业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601388",
+    "code_name": "怡球资源",
+    "industry_code": "C42废弃资源综合利用业",
+    "industry_name": "C42废弃资源综合利用业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001269",
+    "code_name": "欧晶科技",
+    "industry_code": "C42废弃资源综合利用业",
+    "industry_name": "C42废弃资源综合利用业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301265",
+    "code_name": "华新科技",
+    "industry_code": "C42废弃资源综合利用业",
+    "industry_name": "C42废弃资源综合利用业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300779",
+    "code_name": "惠城环保",
+    "industry_code": "C42废弃资源综合利用业",
+    "industry_name": "C42废弃资源综合利用业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301068",
+    "code_name": "大地海洋",
+    "industry_code": "C42废弃资源综合利用业",
+    "industry_name": "C42废弃资源综合利用业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002672",
+    "code_name": "东江环保",
+    "industry_code": "C42废弃资源综合利用业",
+    "industry_name": "C42废弃资源综合利用业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301026",
+    "code_name": "浩通科技",
+    "industry_code": "C42废弃资源综合利用业",
+    "industry_name": "C42废弃资源综合利用业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603334",
+    "code_name": "丰倍生物",
+    "industry_code": "C42废弃资源综合利用业",
+    "industry_name": "C42废弃资源综合利用业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002996",
+    "code_name": "顺博合金",
+    "industry_code": "C42废弃资源综合利用业",
+    "industry_name": "C42废弃资源综合利用业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301500",
+    "code_name": "飞南资源",
+    "industry_code": "C42废弃资源综合利用业",
+    "industry_name": "C42废弃资源综合利用业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000573",
+    "code_name": "粤宏远A",
+    "industry_code": "C42废弃资源综合利用业",
+    "industry_name": "C42废弃资源综合利用业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002645",
+    "code_name": "华宏科技",
+    "industry_code": "C42废弃资源综合利用业",
+    "industry_name": "C42废弃资源综合利用业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300103",
+    "code_name": "达刚控股",
+    "industry_code": "C42废弃资源综合利用业",
+    "industry_name": "C42废弃资源综合利用业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300930",
+    "code_name": "屹通新材",
+    "industry_code": "C42废弃资源综合利用业",
+    "industry_name": "C42废弃资源综合利用业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "001277",
+    "code_name": "速达股份",
+    "industry_code": "C43金属制品、机械和设备修理业",
+    "industry_name": "C43金属制品、机械和设备修理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002023",
+    "code_name": "海特高新",
+    "industry_code": "C43金属制品、机械和设备修理业",
+    "industry_name": "C43金属制品、机械和设备修理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300424",
+    "code_name": "航新科技",
+    "industry_code": "C43金属制品、机械和设备修理业",
+    "industry_name": "C43金属制品、机械和设备修理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600982",
+    "code_name": "宁波能源",
+    "industry_code": "D44电力、热力生产和供应业",
+    "industry_name": "D44电力、热力生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600642",
+    "code_name": "申能股份",
+    "industry_code": "D44电力、热力生产和供应业",
+    "industry_name": "D44电力、热力生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000155",
+    "code_name": "川能动力",
+    "industry_code": "D44电力、热力生产和供应业",
+    "industry_name": "D44电力、热力生产和供应业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000958",
+    "code_name": "电投产融",
+    "industry_code": "D44电力、热力生产和供应业",
+    "industry_name": "D44电力、热力生产和供应业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600011",
+    "code_name": "华能国际",
+    "industry_code": "D44电力、热力生产和供应业",
+    "industry_name": "D44电力、热力生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600726",
+    "code_name": "华电能源",
+    "industry_code": "D44电力、热力生产和供应业",
+    "industry_name": "D44电力、热力生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600979",
+    "code_name": "广安爱众",
+    "industry_code": "D44电力、热力生产和供应业",
+    "industry_name": "D44电力、热力生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000791",
+    "code_name": "甘肃能源",
+    "industry_code": "D44电力、热力生产和供应业",
+    "industry_name": "D44电力、热力生产和供应业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600157",
+    "code_name": "永泰能源",
+    "industry_code": "D44电力、热力生产和供应业",
+    "industry_name": "D44电力、热力生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601778",
+    "code_name": "晶科科技",
+    "industry_code": "D44电力、热力生产和供应业",
+    "industry_name": "D44电力、热力生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002039",
+    "code_name": "黔源电力",
+    "industry_code": "D44电力、热力生产和供应业",
+    "industry_name": "D44电力、热力生产和供应业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600900",
+    "code_name": "长江电力",
+    "industry_code": "D44电力、热力生产和供应业",
+    "industry_name": "D44电力、热力生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "003816",
+    "code_name": "中国广核",
+    "industry_code": "D44电力、热力生产和供应业",
+    "industry_name": "D44电力、热力生产和供应业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000601",
+    "code_name": "韶能股份",
+    "industry_code": "D44电力、热力生产和供应业",
+    "industry_name": "D44电力、热力生产和供应业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600167",
+    "code_name": "联美控股",
+    "industry_code": "D44电力、热力生产和供应业",
+    "industry_name": "D44电力、热力生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002911",
+    "code_name": "佛燃能源",
+    "industry_code": "D45燃气生产和供应业",
+    "industry_name": "D45燃气生产和供应业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603706",
+    "code_name": "东方环宇",
+    "industry_code": "D45燃气生产和供应业",
+    "industry_name": "D45燃气生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001331",
+    "code_name": "胜通能源",
+    "industry_code": "D45燃气生产和供应业",
+    "industry_name": "D45燃气生产和供应业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "605169",
+    "code_name": "洪通燃气",
+    "industry_code": "D45燃气生产和供应业",
+    "industry_name": "D45燃气生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601139",
+    "code_name": "深圳燃气",
+    "industry_code": "D45燃气生产和供应业",
+    "industry_name": "D45燃气生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603053",
+    "code_name": "成都燃气",
+    "industry_code": "D45燃气生产和供应业",
+    "industry_name": "D45燃气生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300332",
+    "code_name": "天壕能源",
+    "industry_code": "D45燃气生产和供应业",
+    "industry_name": "D45燃气生产和供应业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002259",
+    "code_name": "升达林业",
+    "industry_code": "D45燃气生产和供应业",
+    "industry_name": "D45燃气生产和供应业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603318",
+    "code_name": "水发燃气",
+    "industry_code": "D45燃气生产和供应业",
+    "industry_name": "D45燃气生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600333",
+    "code_name": "长春燃气",
+    "industry_code": "D45燃气生产和供应业",
+    "industry_name": "D45燃气生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600803",
+    "code_name": "新奥股份",
+    "industry_code": "D45燃气生产和供应业",
+    "industry_name": "D45燃气生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "605090",
+    "code_name": "九丰能源",
+    "industry_code": "D45燃气生产和供应业",
+    "industry_name": "D45燃气生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600903",
+    "code_name": "贵州燃气",
+    "industry_code": "D45燃气生产和供应业",
+    "industry_name": "D45燃气生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603393",
+    "code_name": "新天然气",
+    "industry_code": "D45燃气生产和供应业",
+    "industry_name": "D45燃气生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603223",
+    "code_name": "恒通股份",
+    "industry_code": "D45燃气生产和供应业",
+    "industry_name": "D45燃气生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600008",
+    "code_name": "首创环保",
+    "industry_code": "D46水的生产和供应业",
+    "industry_name": "D46水的生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "003039",
+    "code_name": "顺控发展",
+    "industry_code": "D46水的生产和供应业",
+    "industry_name": "D46水的生产和供应业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000605",
+    "code_name": "渤海股份",
+    "industry_code": "D46水的生产和供应业",
+    "industry_name": "D46水的生产和供应业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600168",
+    "code_name": "武汉控股",
+    "industry_code": "D46水的生产和供应业",
+    "industry_name": "D46水的生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601199",
+    "code_name": "江南水务",
+    "industry_code": "D46水的生产和供应业",
+    "industry_name": "D46水的生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600796",
+    "code_name": "钱江生化",
+    "industry_code": "D46水的生产和供应业",
+    "industry_name": "D46水的生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603759",
+    "code_name": "海天股份",
+    "industry_code": "D46水的生产和供应业",
+    "industry_name": "D46水的生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600461",
+    "code_name": "洪城环境",
+    "industry_code": "D46水的生产和供应业",
+    "industry_name": "D46水的生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300172",
+    "code_name": "中电环保",
+    "industry_code": "D46水的生产和供应业",
+    "industry_name": "D46水的生产和供应业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000685",
+    "code_name": "中山公用",
+    "industry_code": "D46水的生产和供应业",
+    "industry_name": "D46水的生产和供应业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000544",
+    "code_name": "中原环保",
+    "industry_code": "D46水的生产和供应业",
+    "industry_name": "D46水的生产和供应业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600283",
+    "code_name": "钱江水利",
+    "industry_code": "D46水的生产和供应业",
+    "industry_name": "D46水的生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601368",
+    "code_name": "绿城水务",
+    "industry_code": "D46水的生产和供应业",
+    "industry_name": "D46水的生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301127",
+    "code_name": "武汉天源",
+    "industry_code": "D46水的生产和供应业",
+    "industry_name": "D46水的生产和供应业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600769",
+    "code_name": "祥龙电业",
+    "industry_code": "D46水的生产和供应业",
+    "industry_name": "D46水的生产和供应业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600159",
+    "code_name": "大龙地产",
+    "industry_code": "E47房屋建筑业",
+    "industry_name": "E47房屋建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600939",
+    "code_name": "重庆建工",
+    "industry_code": "E47房屋建筑业",
+    "industry_name": "E47房屋建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000628",
+    "code_name": "高新发展",
+    "industry_code": "E47房屋建筑业",
+    "industry_name": "E47房屋建筑业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600039",
+    "code_name": "四川路桥",
+    "industry_code": "E48土木工程建筑业",
+    "industry_name": "E48土木工程建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600463",
+    "code_name": "空港股份",
+    "industry_code": "E48土木工程建筑业",
+    "industry_name": "E48土木工程建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603909",
+    "code_name": "建发合诚",
+    "industry_code": "E48土木工程建筑业",
+    "industry_name": "E48土木工程建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600970",
+    "code_name": "中材国际",
+    "industry_code": "E48土木工程建筑业",
+    "industry_name": "E48土木工程建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "605598",
+    "code_name": "上海港湾",
+    "industry_code": "E48土木工程建筑业",
+    "industry_name": "E48土木工程建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301046",
+    "code_name": "能辉科技",
+    "industry_code": "E48土木工程建筑业",
+    "industry_name": "E48土木工程建筑业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603316",
+    "code_name": "诚邦股份",
+    "industry_code": "E48土木工程建筑业",
+    "industry_name": "E48土木工程建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603955",
+    "code_name": "大千生态",
+    "industry_code": "E48土木工程建筑业",
+    "industry_name": "E48土木工程建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002628",
+    "code_name": "成都路桥",
+    "industry_code": "E48土木工程建筑业",
+    "industry_name": "E48土木工程建筑业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600853",
+    "code_name": "龙建股份",
+    "industry_code": "E48土木工程建筑业",
+    "industry_name": "E48土木工程建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002761",
+    "code_name": "浙江建投",
+    "industry_code": "E48土木工程建筑业",
+    "industry_name": "E48土木工程建筑业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600248",
+    "code_name": "陕建股份",
+    "industry_code": "E48土木工程建筑业",
+    "industry_name": "E48土木工程建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002140",
+    "code_name": "东华科技",
+    "industry_code": "E48土木工程建筑业",
+    "industry_name": "E48土木工程建筑业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603176",
+    "code_name": "汇通集团",
+    "industry_code": "E48土木工程建筑业",
+    "industry_name": "E48土木工程建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600606",
+    "code_name": "绿地控股",
+    "industry_code": "E48土木工程建筑业",
+    "industry_name": "E48土木工程建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603163",
+    "code_name": "圣晖集成",
+    "industry_code": "E49建筑安装业",
+    "industry_name": "E49建筑安装业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301235",
+    "code_name": "华康洁净",
+    "industry_code": "E49建筑安装业",
+    "industry_name": "E49建筑安装业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603929",
+    "code_name": "亚翔集成",
+    "industry_code": "E49建筑安装业",
+    "industry_name": "E49建筑安装业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601133",
+    "code_name": "柏诚股份",
+    "industry_code": "E49建筑安装业",
+    "industry_name": "E49建筑安装业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000032",
+    "code_name": "深桑达A",
+    "industry_code": "E49建筑安装业",
+    "industry_name": "E49建筑安装业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600234",
+    "code_name": "科新发展",
+    "industry_code": "E50建筑装饰、装修和其他建筑业",
+    "industry_name": "E50建筑装饰、装修和其他建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601886",
+    "code_name": "江河集团",
+    "industry_code": "E50建筑装饰、装修和其他建筑业",
+    "industry_name": "E50建筑装饰、装修和其他建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "605178",
+    "code_name": "时空科技",
+    "industry_code": "E50建筑装饰、装修和其他建筑业",
+    "industry_name": "E50建筑装饰、装修和其他建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002989",
+    "code_name": "中天精装",
+    "industry_code": "E50建筑装饰、装修和其他建筑业",
+    "industry_name": "E50建筑装饰、装修和其他建筑业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002963",
+    "code_name": "豪尔赛",
+    "industry_code": "E50建筑装饰、装修和其他建筑业",
+    "industry_name": "E50建筑装饰、装修和其他建筑业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002482",
+    "code_name": "广田集团",
+    "industry_code": "E50建筑装饰、装修和其他建筑业",
+    "industry_name": "E50建筑装饰、装修和其他建筑业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002081",
+    "code_name": "金螳螂",
+    "industry_code": "E50建筑装饰、装修和其他建筑业",
+    "industry_name": "E50建筑装饰、装修和其他建筑业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002163",
+    "code_name": "海南发展",
+    "industry_code": "E50建筑装饰、装修和其他建筑业",
+    "industry_name": "E50建筑装饰、装修和其他建筑业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603030",
+    "code_name": "全筑股份",
+    "industry_code": "E50建筑装饰、装修和其他建筑业",
+    "industry_name": "E50建筑装饰、装修和其他建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300621",
+    "code_name": "维业股份",
+    "industry_code": "E50建筑装饰、装修和其他建筑业",
+    "industry_name": "E50建筑装饰、装修和其他建筑业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603137",
+    "code_name": "恒尚节能",
+    "industry_code": "E50建筑装饰、装修和其他建筑业",
+    "industry_name": "E50建筑装饰、装修和其他建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "605289",
+    "code_name": "罗曼股份",
+    "industry_code": "E50建筑装饰、装修和其他建筑业",
+    "industry_name": "E50建筑装饰、装修和其他建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002375",
+    "code_name": "亚厦股份",
+    "industry_code": "E50建筑装饰、装修和其他建筑业",
+    "industry_name": "E50建筑装饰、装修和其他建筑业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002830",
+    "code_name": "名雕股份",
+    "industry_code": "E50建筑装饰、装修和其他建筑业",
+    "industry_name": "E50建筑装饰、装修和其他建筑业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603098",
+    "code_name": "森特股份",
+    "industry_code": "E50建筑装饰、装修和其他建筑业",
+    "industry_name": "E50建筑装饰、装修和其他建筑业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300755",
+    "code_name": "华致酒行",
+    "industry_code": "F51批发业",
+    "industry_name": "F51批发业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600051",
+    "code_name": "宁波联合",
+    "industry_code": "F51批发业",
+    "industry_name": "F51批发业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300184",
+    "code_name": "力源信息",
+    "industry_code": "F51批发业",
+    "industry_name": "F51批发业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600998",
+    "code_name": "九州通",
+    "industry_code": "F51批发业",
+    "industry_name": "F51批发业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600689",
+    "code_name": "上海三毛",
+    "industry_code": "F51批发业",
+    "industry_name": "F51批发业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002091",
+    "code_name": "江苏国泰",
+    "industry_code": "F51批发业",
+    "industry_name": "F51批发业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600538",
+    "code_name": "国发股份",
+    "industry_code": "F51批发业",
+    "industry_name": "F51批发业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600822",
+    "code_name": "上海物贸",
+    "industry_code": "F51批发业",
+    "industry_name": "F51批发业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600272",
+    "code_name": "开开实业",
+    "industry_code": "F51批发业",
+    "industry_name": "F51批发业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002867",
+    "code_name": "周大生",
+    "industry_code": "F51批发业",
+    "industry_name": "F51批发业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002462",
+    "code_name": "嘉事堂",
+    "industry_code": "F51批发业",
+    "industry_name": "F51批发业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002758",
+    "code_name": "浙农股份",
+    "industry_code": "F51批发业",
+    "industry_name": "F51批发业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "001316",
+    "code_name": "润贝航科",
+    "industry_code": "F51批发业",
+    "industry_name": "F51批发业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300538",
+    "code_name": "同益股份",
+    "industry_code": "F51批发业",
+    "industry_name": "F51批发业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002575",
+    "code_name": "群兴玩具",
+    "industry_code": "F51批发业",
+    "industry_name": "F51批发业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300945",
+    "code_name": "曼卡龙",
+    "industry_code": "F52零售业",
+    "industry_name": "F52零售业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600280",
+    "code_name": "中央商场",
+    "industry_code": "F52零售业",
+    "industry_name": "F52零售业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601113",
+    "code_name": "华鼎股份",
+    "industry_code": "F52零售业",
+    "industry_name": "F52零售业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600859",
+    "code_name": "王府井",
+    "industry_code": "F52零售业",
+    "industry_name": "F52零售业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600778",
+    "code_name": "友好集团",
+    "industry_code": "F52零售业",
+    "industry_name": "F52零售业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002780",
+    "code_name": "三夫户外",
+    "industry_code": "F52零售业",
+    "industry_name": "F52零售业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600729",
+    "code_name": "重庆百货",
+    "industry_code": "F52零售业",
+    "industry_name": "F52零售业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600833",
+    "code_name": "第一医药",
+    "industry_code": "F52零售业",
+    "industry_name": "F52零售业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600653",
+    "code_name": "申华控股",
+    "industry_code": "F52零售业",
+    "industry_name": "F52零售业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002803",
+    "code_name": "吉宏股份",
+    "industry_code": "F52零售业",
+    "industry_name": "F52零售业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301381",
+    "code_name": "赛维时代",
+    "industry_code": "F52零售业",
+    "industry_name": "F52零售业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002697",
+    "code_name": "红旗连锁",
+    "industry_code": "F52零售业",
+    "industry_name": "F52零售业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000753",
+    "code_name": "漳州发展",
+    "industry_code": "F52零售业",
+    "industry_name": "F52零售业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301078",
+    "code_name": "孩子王",
+    "industry_code": "F52零售业",
+    "industry_name": "F52零售业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301376",
+    "code_name": "致欧科技",
+    "industry_code": "F52零售业",
+    "industry_name": "F52零售业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600125",
+    "code_name": "铁龙物流",
+    "industry_code": "G53铁路运输业",
+    "industry_name": "G53铁路运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600603",
+    "code_name": "广汇物流",
+    "industry_code": "G53铁路运输业",
+    "industry_name": "G53铁路运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000557",
+    "code_name": "西部创业",
+    "industry_code": "G53铁路运输业",
+    "industry_name": "G53铁路运输业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601006",
+    "code_name": "大秦铁路",
+    "industry_code": "G53铁路运输业",
+    "industry_name": "G53铁路运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601816",
+    "code_name": "京沪高铁",
+    "industry_code": "G53铁路运输业",
+    "industry_name": "G53铁路运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601333",
+    "code_name": "广深铁路",
+    "industry_code": "G53铁路运输业",
+    "industry_name": "G53铁路运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001213",
+    "code_name": "中铁特货",
+    "industry_code": "G53铁路运输业",
+    "industry_name": "G53铁路运输业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002357",
+    "code_name": "富临运业",
+    "industry_code": "G54道路运输业",
+    "industry_name": "G54道路运输业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601188",
+    "code_name": "龙江交通",
+    "industry_code": "G54道路运输业",
+    "industry_name": "G54道路运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000886",
+    "code_name": "海南高速",
+    "industry_code": "G54道路运输业",
+    "industry_name": "G54道路运输业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603069",
+    "code_name": "海汽集团",
+    "industry_code": "G54道路运输业",
+    "industry_name": "G54道路运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600377",
+    "code_name": "宁沪高速",
+    "industry_code": "G54道路运输业",
+    "industry_name": "G54道路运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600548",
+    "code_name": "深高速",
+    "industry_code": "G54道路运输业",
+    "industry_name": "G54道路运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002682",
+    "code_name": "龙洲股份",
+    "industry_code": "G54道路运输业",
+    "industry_name": "G54道路运输业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000900",
+    "code_name": "现代投资",
+    "industry_code": "G54道路运输业",
+    "industry_name": "G54道路运输业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600650",
+    "code_name": "锦江在线",
+    "industry_code": "G54道路运输业",
+    "industry_name": "G54道路运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600012",
+    "code_name": "皖通高速",
+    "industry_code": "G54道路运输业",
+    "industry_name": "G54道路运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600106",
+    "code_name": "重庆路桥",
+    "industry_code": "G54道路运输业",
+    "industry_name": "G54道路运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601518",
+    "code_name": "吉林高速",
+    "industry_code": "G54道路运输业",
+    "industry_name": "G54道路运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600269",
+    "code_name": "赣粤高速",
+    "industry_code": "G54道路运输业",
+    "industry_name": "G54道路运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600676",
+    "code_name": "交运股份",
+    "industry_code": "G54道路运输业",
+    "industry_name": "G54道路运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600611",
+    "code_name": "大众交通",
+    "industry_code": "G54道路运输业",
+    "industry_name": "G54道路运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603565",
+    "code_name": "中谷物流",
+    "industry_code": "G55水上运输业",
+    "industry_name": "G55水上运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601083",
+    "code_name": "锦江航运",
+    "industry_code": "G55水上运输业",
+    "industry_name": "G55水上运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603167",
+    "code_name": "渤海轮渡",
+    "industry_code": "G55水上运输业",
+    "industry_name": "G55水上运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601975",
+    "code_name": "招商南油",
+    "industry_code": "G55水上运输业",
+    "industry_name": "G55水上运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601298",
+    "code_name": "青岛港",
+    "industry_code": "G55水上运输业",
+    "industry_name": "G55水上运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000520",
+    "code_name": "凤凰航运",
+    "industry_code": "G55水上运输业",
+    "industry_name": "G55水上运输业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601880",
+    "code_name": "辽港股份",
+    "industry_code": "G55水上运输业",
+    "industry_name": "G55水上运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601022",
+    "code_name": "宁波远洋",
+    "industry_code": "G55水上运输业",
+    "industry_name": "G55水上运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600798",
+    "code_name": "宁波海运",
+    "industry_code": "G55水上运输业",
+    "industry_name": "G55水上运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601326",
+    "code_name": "秦港股份",
+    "industry_code": "G55水上运输业",
+    "industry_name": "G55水上运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601000",
+    "code_name": "唐山港",
+    "industry_code": "G55水上运输业",
+    "industry_name": "G55水上运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002040",
+    "code_name": "南京港",
+    "industry_code": "G55水上运输业",
+    "industry_name": "G55水上运输业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600017",
+    "code_name": "日照港",
+    "industry_code": "G55水上运输业",
+    "industry_name": "G55水上运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600428",
+    "code_name": "中远海特",
+    "industry_code": "G55水上运输业",
+    "industry_name": "G55水上运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601866",
+    "code_name": "中远海发",
+    "industry_code": "G55水上运输业",
+    "industry_name": "G55水上运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603885",
+    "code_name": "吉祥航空",
+    "industry_code": "G56航空运输业",
+    "industry_name": "G56航空运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000099",
+    "code_name": "中信海直",
+    "industry_code": "G56航空运输业",
+    "industry_name": "G56航空运输业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600004",
+    "code_name": "白云机场",
+    "industry_code": "G56航空运输业",
+    "industry_name": "G56航空运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001391",
+    "code_name": "国货航",
+    "industry_code": "G56航空运输业",
+    "industry_name": "G56航空运输业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600897",
+    "code_name": "厦门空港",
+    "industry_code": "G56航空运输业",
+    "industry_name": "G56航空运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601156",
+    "code_name": "东航物流",
+    "industry_code": "G56航空运输业",
+    "industry_name": "G56航空运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600029",
+    "code_name": "南方航空",
+    "industry_code": "G56航空运输业",
+    "industry_name": "G56航空运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600009",
+    "code_name": "上海机场",
+    "industry_code": "G56航空运输业",
+    "industry_name": "G56航空运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002928",
+    "code_name": "华夏航空",
+    "industry_code": "G56航空运输业",
+    "industry_name": "G56航空运输业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600221",
+    "code_name": "海航控股",
+    "industry_code": "G56航空运输业",
+    "industry_name": "G56航空运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601111",
+    "code_name": "中国国航",
+    "industry_code": "G56航空运输业",
+    "industry_name": "G56航空运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000089",
+    "code_name": "深圳机场",
+    "industry_code": "G56航空运输业",
+    "industry_name": "G56航空运输业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600115",
+    "code_name": "中国东航",
+    "industry_code": "G56航空运输业",
+    "industry_name": "G56航空运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601021",
+    "code_name": "春秋航空",
+    "industry_code": "G56航空运输业",
+    "industry_name": "G56航空运输业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300350",
+    "code_name": "华鹏飞",
+    "industry_code": "G58多式联运和运输代理业",
+    "industry_name": "G58多式联运和运输代理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300240",
+    "code_name": "飞力达",
+    "industry_code": "G58多式联运和运输代理业",
+    "industry_name": "G58多式联运和运输代理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600179",
+    "code_name": "安通控股",
+    "industry_code": "G58多式联运和运输代理业",
+    "industry_name": "G58多式联运和运输代理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001317",
+    "code_name": "三羊马",
+    "industry_code": "G58多式联运和运输代理业",
+    "industry_name": "G58多式联运和运输代理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603967",
+    "code_name": "中创物流",
+    "industry_code": "G58多式联运和运输代理业",
+    "industry_name": "G58多式联运和运输代理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603128",
+    "code_name": "华贸物流",
+    "industry_code": "G58多式联运和运输代理业",
+    "industry_name": "G58多式联运和运输代理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601598",
+    "code_name": "中国外运",
+    "industry_code": "G58多式联运和运输代理业",
+    "industry_name": "G58多式联运和运输代理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300873",
+    "code_name": "海晨股份",
+    "industry_code": "G58多式联运和运输代理业",
+    "industry_name": "G58多式联运和运输代理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603871",
+    "code_name": "嘉友国际",
+    "industry_code": "G58多式联运和运输代理业",
+    "industry_name": "G58多式联运和运输代理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001202",
+    "code_name": "炬申股份",
+    "industry_code": "G58多式联运和运输代理业",
+    "industry_name": "G58多式联运和运输代理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603713",
+    "code_name": "密尔克卫",
+    "industry_code": "G58多式联运和运输代理业",
+    "industry_name": "G58多式联运和运输代理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "605050",
+    "code_name": "福然德",
+    "industry_code": "G58多式联运和运输代理业",
+    "industry_name": "G58多式联运和运输代理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600787",
+    "code_name": "中储股份",
+    "industry_code": "G59装卸搬运和仓储业",
+    "industry_name": "G59装卸搬运和仓储业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600794",
+    "code_name": "保税科技",
+    "industry_code": "G59装卸搬运和仓储业",
+    "industry_name": "G59装卸搬运和仓储业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002930",
+    "code_name": "宏川智慧",
+    "industry_code": "G59装卸搬运和仓储业",
+    "industry_name": "G59装卸搬运和仓储业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603066",
+    "code_name": "音飞储存",
+    "industry_code": "G59装卸搬运和仓储业",
+    "industry_name": "G59装卸搬运和仓储业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002492",
+    "code_name": "恒基达鑫",
+    "industry_code": "G59装卸搬运和仓储业",
+    "industry_name": "G59装卸搬运和仓储业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603535",
+    "code_name": "嘉诚国际",
+    "industry_code": "G59装卸搬运和仓储业",
+    "industry_name": "G59装卸搬运和仓储业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300013",
+    "code_name": "新宁物流",
+    "industry_code": "G59装卸搬运和仓储业",
+    "industry_name": "G59装卸搬运和仓储业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002120",
+    "code_name": "韵达股份",
+    "industry_code": "G60邮政业",
+    "industry_name": "G60邮政业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002468",
+    "code_name": "申通快递",
+    "industry_code": "G60邮政业",
+    "industry_name": "G60邮政业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600233",
+    "code_name": "圆通速递",
+    "industry_code": "G60邮政业",
+    "industry_name": "G60邮政业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002352",
+    "code_name": "顺丰控股",
+    "industry_code": "G60邮政业",
+    "industry_name": "G60邮政业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600754",
+    "code_name": "锦江酒店",
+    "industry_code": "H61住宿业",
+    "industry_name": "H61住宿业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301073",
+    "code_name": "君亭酒店",
+    "industry_code": "H61住宿业",
+    "industry_name": "H61住宿业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601007",
+    "code_name": "金陵饭店",
+    "industry_code": "H61住宿业",
+    "industry_name": "H61住宿业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600258",
+    "code_name": "首旅酒店",
+    "industry_code": "H61住宿业",
+    "industry_name": "H61住宿业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000428",
+    "code_name": "华天酒店",
+    "industry_code": "H61住宿业",
+    "industry_name": "H61住宿业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "605108",
+    "code_name": "同庆楼",
+    "industry_code": "H62餐饮业",
+    "industry_name": "H62餐饮业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000721",
+    "code_name": "西安饮食",
+    "industry_code": "H62餐饮业",
+    "industry_name": "H62餐饮业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002186",
+    "code_name": "全聚德",
+    "industry_code": "H62餐饮业",
+    "industry_name": "H62餐饮业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600037",
+    "code_name": "歌华有线",
+    "industry_code": "I63电信、广播电视和卫星传输服务",
+    "industry_name": "I63电信、广播电视和卫星传输服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "300770",
+    "code_name": "新媒股份",
+    "industry_code": "I63电信、广播电视和卫星传输服务",
+    "industry_name": "I63电信、广播电视和卫星传输服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300288",
+    "code_name": "朗玛信息",
+    "industry_code": "I63电信、广播电视和卫星传输服务",
+    "industry_name": "I63电信、广播电视和卫星传输服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600050",
+    "code_name": "中国联通",
+    "industry_code": "I63电信、广播电视和卫星传输服务",
+    "industry_name": "I63电信、广播电视和卫星传输服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "601698",
+    "code_name": "中国卫通",
+    "industry_code": "I63电信、广播电视和卫星传输服务",
+    "industry_name": "I63电信、广播电视和卫星传输服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "600941",
+    "code_name": "中国移动",
+    "industry_code": "I63电信、广播电视和卫星传输服务",
+    "industry_name": "I63电信、广播电视和卫星传输服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "000156",
+    "code_name": "华数传媒",
+    "industry_code": "I63电信、广播电视和卫星传输服务",
+    "industry_name": "I63电信、广播电视和卫星传输服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600831",
+    "code_name": "广电网络",
+    "industry_code": "I63电信、广播电视和卫星传输服务",
+    "industry_name": "I63电信、广播电视和卫星传输服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "301262",
+    "code_name": "海看股份",
+    "industry_code": "I63电信、广播电视和卫星传输服务",
+    "industry_name": "I63电信、广播电视和卫星传输服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300310",
+    "code_name": "宜通世纪",
+    "industry_code": "I63电信、广播电视和卫星传输服务",
+    "industry_name": "I63电信、广播电视和卫星传输服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000917",
+    "code_name": "电广传媒",
+    "industry_code": "I63电信、广播电视和卫星传输服务",
+    "industry_name": "I63电信、广播电视和卫星传输服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600637",
+    "code_name": "东方明珠",
+    "industry_code": "I63电信、广播电视和卫星传输服务",
+    "industry_name": "I63电信、广播电视和卫星传输服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "601728",
+    "code_name": "中国电信",
+    "industry_code": "I63电信、广播电视和卫星传输服务",
+    "industry_name": "I63电信、广播电视和卫星传输服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "301551",
+    "code_name": "无线传媒",
+    "industry_code": "I63电信、广播电视和卫星传输服务",
+    "industry_name": "I63电信、广播电视和卫星传输服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600936",
+    "code_name": "北投科技",
+    "industry_code": "I63电信、广播电视和卫星传输服务",
+    "industry_name": "I63电信、广播电视和卫星传输服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "300002",
+    "code_name": "神州泰岳",
+    "industry_code": "I64互联网和相关服务",
+    "industry_name": "I64互联网和相关服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603000",
+    "code_name": "人民网",
+    "industry_code": "I64互联网和相关服务",
+    "industry_name": "I64互联网和相关服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "300031",
+    "code_name": "宝通科技",
+    "industry_code": "I64互联网和相关服务",
+    "industry_name": "I64互联网和相关服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000681",
+    "code_name": "视觉中国",
+    "industry_code": "I64互联网和相关服务",
+    "industry_name": "I64互联网和相关服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002315",
+    "code_name": "焦点科技",
+    "industry_code": "I64互联网和相关服务",
+    "industry_name": "I64互联网和相关服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300987",
+    "code_name": "川网传媒",
+    "industry_code": "I64互联网和相关服务",
+    "industry_name": "I64互联网和相关服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300467",
+    "code_name": "迅游科技",
+    "industry_code": "I64互联网和相关服务",
+    "industry_name": "I64互联网和相关服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002602",
+    "code_name": "世纪华通",
+    "industry_code": "I64互联网和相关服务",
+    "industry_name": "I64互联网和相关服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300518",
+    "code_name": "新迅达",
+    "industry_code": "I64互联网和相关服务",
+    "industry_name": "I64互联网和相关服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000503",
+    "code_name": "国新健康",
+    "industry_code": "I64互联网和相关服务",
+    "industry_name": "I64互联网和相关服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301299",
+    "code_name": "卓创资讯",
+    "industry_code": "I64互联网和相关服务",
+    "industry_name": "I64互联网和相关服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600986",
+    "code_name": "浙文互联",
+    "industry_code": "I64互联网和相关服务",
+    "industry_name": "I64互联网和相关服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "300043",
+    "code_name": "星辉娱乐",
+    "industry_code": "I64互联网和相关服务",
+    "industry_name": "I64互联网和相关服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300052",
+    "code_name": "中青宝",
+    "industry_code": "I64互联网和相关服务",
+    "industry_name": "I64互联网和相关服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603444",
+    "code_name": "吉比特",
+    "industry_code": "I64互联网和相关服务",
+    "industry_name": "I64互联网和相关服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "600589",
+    "code_name": "大位科技",
+    "industry_code": "I65软件和信息技术服务业",
+    "industry_name": "I65软件和信息技术服务业",
+    "exchange": "SH"
+  },
+  {
+    "code": "003029",
+    "code_name": "吉大正元",
+    "industry_code": "I65软件和信息技术服务业",
+    "industry_name": "I65软件和信息技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300302",
+    "code_name": "同有科技",
+    "industry_code": "I65软件和信息技术服务业",
+    "industry_name": "I65软件和信息技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300523",
+    "code_name": "辰安科技",
+    "industry_code": "I65软件和信息技术服务业",
+    "industry_name": "I65软件和信息技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301592",
+    "code_name": "六九一二",
+    "industry_code": "I65软件和信息技术服务业",
+    "industry_name": "I65软件和信息技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300287",
+    "code_name": "飞利信",
+    "industry_code": "I65软件和信息技术服务业",
+    "industry_name": "I65软件和信息技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002474",
+    "code_name": "榕基软件",
+    "industry_code": "I65软件和信息技术服务业",
+    "industry_name": "I65软件和信息技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300235",
+    "code_name": "方直科技",
+    "industry_code": "I65软件和信息技术服务业",
+    "industry_name": "I65软件和信息技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300789",
+    "code_name": "唐源电气",
+    "industry_code": "I65软件和信息技术服务业",
+    "industry_name": "I65软件和信息技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300925",
+    "code_name": "法本信息",
+    "industry_code": "I65软件和信息技术服务业",
+    "industry_name": "I65软件和信息技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002268",
+    "code_name": "电科网安",
+    "industry_code": "I65软件和信息技术服务业",
+    "industry_name": "I65软件和信息技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600845",
+    "code_name": "宝信软件",
+    "industry_code": "I65软件和信息技术服务业",
+    "industry_name": "I65软件和信息技术服务业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301179",
+    "code_name": "泽宇智能",
+    "industry_code": "I65软件和信息技术服务业",
+    "industry_name": "I65软件和信息技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603602",
+    "code_name": "纵横通信",
+    "industry_code": "I65软件和信息技术服务业",
+    "industry_name": "I65软件和信息技术服务业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603887",
+    "code_name": "城地香江",
+    "industry_code": "I65软件和信息技术服务业",
+    "industry_name": "I65软件和信息技术服务业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002807",
+    "code_name": "江阴银行",
+    "industry_code": "J66货币金融服务",
+    "industry_name": "J66货币金融服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601825",
+    "code_name": "沪农商行",
+    "industry_code": "J66货币金融服务",
+    "industry_name": "J66货币金融服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "601838",
+    "code_name": "成都银行",
+    "industry_code": "J66货币金融服务",
+    "industry_name": "J66货币金融服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "002958",
+    "code_name": "青农商行",
+    "industry_code": "J66货币金融服务",
+    "industry_name": "J66货币金融服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000001",
+    "code_name": "平安银行",
+    "industry_code": "J66货币金融服务",
+    "industry_name": "J66货币金融服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002936",
+    "code_name": "郑州银行",
+    "industry_code": "J66货币金融服务",
+    "industry_name": "J66货币金融服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600318",
+    "code_name": "新力金融",
+    "industry_code": "J66货币金融服务",
+    "industry_name": "J66货币金融服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "601128",
+    "code_name": "常熟银行",
+    "industry_code": "J66货币金融服务",
+    "industry_name": "J66货币金融服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "600926",
+    "code_name": "杭州银行",
+    "industry_code": "J66货币金融服务",
+    "industry_name": "J66货币金融服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "600036",
+    "code_name": "招商银行",
+    "industry_code": "J66货币金融服务",
+    "industry_name": "J66货币金融服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "600908",
+    "code_name": "无锡银行",
+    "industry_code": "J66货币金融服务",
+    "industry_name": "J66货币金融服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "601818",
+    "code_name": "光大银行",
+    "industry_code": "J66货币金融服务",
+    "industry_name": "J66货币金融服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "601997",
+    "code_name": "贵阳银行",
+    "industry_code": "J66货币金融服务",
+    "industry_name": "J66货币金融服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "601398",
+    "code_name": "工商银行",
+    "industry_code": "J66货币金融服务",
+    "industry_name": "J66货币金融服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "601288",
+    "code_name": "农业银行",
+    "industry_code": "J66货币金融服务",
+    "industry_name": "J66货币金融服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "601878",
+    "code_name": "浙商证券",
+    "industry_code": "J67资本市场服务",
+    "industry_name": "J67资本市场服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "600369",
+    "code_name": "西南证券",
+    "industry_code": "J67资本市场服务",
+    "industry_name": "J67资本市场服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "601881",
+    "code_name": "中国银河",
+    "industry_code": "J67资本市场服务",
+    "industry_name": "J67资本市场服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "600958",
+    "code_name": "东方证券",
+    "industry_code": "J67资本市场服务",
+    "industry_name": "J67资本市场服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "601136",
+    "code_name": "首创证券",
+    "industry_code": "J67资本市场服务",
+    "industry_name": "J67资本市场服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "002797",
+    "code_name": "第一创业",
+    "industry_code": "J67资本市场服务",
+    "industry_name": "J67资本市场服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000750",
+    "code_name": "国海证券",
+    "industry_code": "J67资本市场服务",
+    "industry_name": "J67资本市场服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601456",
+    "code_name": "国联民生",
+    "industry_code": "J67资本市场服务",
+    "industry_name": "J67资本市场服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "000783",
+    "code_name": "长江证券",
+    "industry_code": "J67资本市场服务",
+    "industry_name": "J67资本市场服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600927",
+    "code_name": "永安期货",
+    "industry_code": "J67资本市场服务",
+    "industry_name": "J67资本市场服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "002945",
+    "code_name": "华林证券",
+    "industry_code": "J67资本市场服务",
+    "industry_name": "J67资本市场服务",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600109",
+    "code_name": "国金证券",
+    "industry_code": "J67资本市场服务",
+    "industry_name": "J67资本市场服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "601901",
+    "code_name": "方正证券",
+    "industry_code": "J67资本市场服务",
+    "industry_name": "J67资本市场服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "601990",
+    "code_name": "南京证券",
+    "industry_code": "J67资本市场服务",
+    "industry_name": "J67资本市场服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "600864",
+    "code_name": "哈投股份",
+    "industry_code": "J67资本市场服务",
+    "industry_name": "J67资本市场服务",
+    "exchange": "SH"
+  },
+  {
+    "code": "601318",
+    "code_name": "中国平安",
+    "industry_code": "J68保险业",
+    "industry_name": "J68保险业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601319",
+    "code_name": "中国人保",
+    "industry_code": "J68保险业",
+    "industry_name": "J68保险业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002423",
+    "code_name": "中粮资本",
+    "industry_code": "J68保险业",
+    "industry_name": "J68保险业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601336",
+    "code_name": "新华保险",
+    "industry_code": "J68保险业",
+    "industry_name": "J68保险业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601628",
+    "code_name": "中国人寿",
+    "industry_code": "J68保险业",
+    "industry_name": "J68保险业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601601",
+    "code_name": "中国太保",
+    "industry_code": "J68保险业",
+    "industry_name": "J68保险业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000567",
+    "code_name": "海德股份",
+    "industry_code": "J69其他金融业",
+    "industry_name": "J69其他金融业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002647",
+    "code_name": "仁东控股",
+    "industry_code": "J69其他金融业",
+    "industry_name": "J69其他金融业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600120",
+    "code_name": "浙江东方",
+    "industry_code": "J69其他金融业",
+    "industry_name": "J69其他金融业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300033",
+    "code_name": "同花顺",
+    "industry_code": "J69其他金融业",
+    "industry_name": "J69其他金融业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600830",
+    "code_name": "香溢融通",
+    "industry_code": "J69其他金融业",
+    "industry_name": "J69其他金融业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000563",
+    "code_name": "陕国投A",
+    "industry_code": "J69其他金融业",
+    "industry_name": "J69其他金融业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600517",
+    "code_name": "国网英大",
+    "industry_code": "J69其他金融业",
+    "industry_name": "J69其他金融业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600390",
+    "code_name": "五矿资本",
+    "industry_code": "J69其他金融业",
+    "industry_name": "J69其他金融业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300803",
+    "code_name": "指南针",
+    "industry_code": "J69其他金融业",
+    "industry_name": "J69其他金融业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600816",
+    "code_name": "建元信托",
+    "industry_code": "J69其他金融业",
+    "industry_name": "J69其他金融业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000009",
+    "code_name": "中国宝安",
+    "industry_code": "J69其他金融业",
+    "industry_name": "J69其他金融业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000987",
+    "code_name": "越秀资本",
+    "industry_code": "J69其他金融业",
+    "industry_name": "J69其他金融业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600643",
+    "code_name": "爱建集团",
+    "industry_code": "J69其他金融业",
+    "industry_name": "J69其他金融业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601519",
+    "code_name": "大智慧",
+    "industry_code": "J69其他金融业",
+    "industry_name": "J69其他金融业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600684",
+    "code_name": "珠江股份",
+    "industry_code": "K70房地产业",
+    "industry_name": "K70房地产业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600007",
+    "code_name": "中国国贸",
+    "industry_code": "K70房地产业",
+    "industry_name": "K70房地产业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600641",
+    "code_name": "先导基电",
+    "industry_code": "K70房地产业",
+    "industry_name": "K70房地产业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600692",
+    "code_name": "亚通股份",
+    "industry_code": "K70房地产业",
+    "industry_name": "K70房地产业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600605",
+    "code_name": "汇通能源",
+    "industry_code": "K70房地产业",
+    "industry_name": "K70房地产业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600675",
+    "code_name": "中华企业",
+    "industry_code": "K70房地产业",
+    "industry_name": "K70房地产业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600325",
+    "code_name": "华发股份",
+    "industry_code": "K70房地产业",
+    "industry_name": "K70房地产业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002133",
+    "code_name": "广宇集团",
+    "industry_code": "K70房地产业",
+    "industry_name": "K70房地产业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600162",
+    "code_name": "香江控股",
+    "industry_code": "K70房地产业",
+    "industry_name": "K70房地产业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600383",
+    "code_name": "金地集团",
+    "industry_code": "K70房地产业",
+    "industry_name": "K70房地产业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000014",
+    "code_name": "沙河股份",
+    "industry_code": "K70房地产业",
+    "industry_name": "K70房地产业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600716",
+    "code_name": "凤凰股份",
+    "industry_code": "K70房地产业",
+    "industry_name": "K70房地产业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001914",
+    "code_name": "招商积余",
+    "industry_code": "K70房地产业",
+    "industry_name": "K70房地产业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600743",
+    "code_name": "华远控股",
+    "industry_code": "K70房地产业",
+    "industry_name": "K70房地产业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001979",
+    "code_name": "招商蛇口",
+    "industry_code": "K70房地产业",
+    "industry_name": "K70房地产业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600984",
+    "code_name": "建设机械",
+    "industry_code": "L71租赁业",
+    "industry_name": "L71租赁业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603300",
+    "code_name": "海南华铁",
+    "industry_code": "L71租赁业",
+    "industry_name": "L71租赁业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000415",
+    "code_name": "渤海租赁",
+    "industry_code": "L71租赁业",
+    "industry_name": "L71租赁业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "605168",
+    "code_name": "三人行",
+    "industry_code": "L72商务服务业",
+    "industry_name": "L72商务服务业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600052",
+    "code_name": "东望时代",
+    "industry_code": "L72商务服务业",
+    "industry_name": "L72商务服务业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002769",
+    "code_name": "普路通",
+    "industry_code": "L72商务服务业",
+    "industry_name": "L72商务服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600153",
+    "code_name": "建发股份",
+    "industry_code": "L72商务服务业",
+    "industry_name": "L72商务服务业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300061",
+    "code_name": "旗天科技",
+    "industry_code": "L72商务服务业",
+    "industry_name": "L72商务服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603598",
+    "code_name": "引力传媒",
+    "industry_code": "L72商务服务业",
+    "industry_name": "L72商务服务业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600755",
+    "code_name": "厦门国贸",
+    "industry_code": "L72商务服务业",
+    "industry_name": "L72商务服务业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001228",
+    "code_name": "永泰运",
+    "industry_code": "L72商务服务业",
+    "industry_name": "L72商务服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002654",
+    "code_name": "万润科技",
+    "industry_code": "L72商务服务业",
+    "industry_name": "L72商务服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600826",
+    "code_name": "兰生股份",
+    "industry_code": "L72商务服务业",
+    "industry_name": "L72商务服务业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000906",
+    "code_name": "浙商中拓",
+    "industry_code": "L72商务服务业",
+    "industry_name": "L72商务服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600662",
+    "code_name": "外服控股",
+    "industry_code": "L72商务服务业",
+    "industry_name": "L72商务服务业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300662",
+    "code_name": "科锐国际",
+    "industry_code": "L72商务服务业",
+    "industry_name": "L72商务服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600185",
+    "code_name": "珠免集团",
+    "industry_code": "L72商务服务业",
+    "industry_name": "L72商务服务业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301169",
+    "code_name": "零点有数",
+    "industry_code": "L72商务服务业",
+    "industry_name": "L72商务服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301080",
+    "code_name": "百普赛斯",
+    "industry_code": "M73研究和试验发展",
+    "industry_name": "M73研究和试验发展",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301230",
+    "code_name": "泓博医药",
+    "industry_code": "M73研究和试验发展",
+    "industry_name": "M73研究和试验发展",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600721",
+    "code_name": "百花医药",
+    "industry_code": "M73研究和试验发展",
+    "industry_name": "M73研究和试验发展",
+    "exchange": "SH"
+  },
+  {
+    "code": "301333",
+    "code_name": "诺思格",
+    "industry_code": "M73研究和试验发展",
+    "industry_name": "M73研究和试验发展",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300404",
+    "code_name": "博济医药",
+    "industry_code": "M73研究和试验发展",
+    "industry_name": "M73研究和试验发展",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301047",
+    "code_name": "义翘神州",
+    "industry_code": "M73研究和试验发展",
+    "industry_name": "M73研究和试验发展",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603259",
+    "code_name": "药明康德",
+    "industry_code": "M73研究和试验发展",
+    "industry_name": "M73研究和试验发展",
+    "exchange": "SH"
+  },
+  {
+    "code": "603127",
+    "code_name": "昭衍新药",
+    "industry_code": "M73研究和试验发展",
+    "industry_name": "M73研究和试验发展",
+    "exchange": "SH"
+  },
+  {
+    "code": "301520",
+    "code_name": "万邦医药",
+    "industry_code": "M73研究和试验发展",
+    "industry_name": "M73研究和试验发展",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300347",
+    "code_name": "泰格医药",
+    "industry_code": "M73研究和试验发展",
+    "industry_name": "M73研究和试验发展",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300759",
+    "code_name": "康龙化成",
+    "industry_code": "M73研究和试验发展",
+    "industry_name": "M73研究和试验发展",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301096",
+    "code_name": "百诚医药",
+    "industry_code": "M73研究和试验发展",
+    "industry_name": "M73研究和试验发展",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301257",
+    "code_name": "普蕊斯",
+    "industry_code": "M73研究和试验发展",
+    "industry_name": "M73研究和试验发展",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300149",
+    "code_name": "睿智医药",
+    "industry_code": "M73研究和试验发展",
+    "industry_name": "M73研究和试验发展",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300725",
+    "code_name": "药石科技",
+    "industry_code": "M73研究和试验发展",
+    "industry_name": "M73研究和试验发展",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300983",
+    "code_name": "尤安设计",
+    "industry_code": "M74专业技术服务业",
+    "industry_name": "M74专业技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "001396",
+    "code_name": "誉帆科技",
+    "industry_code": "M74专业技术服务业",
+    "industry_name": "M74专业技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603017",
+    "code_name": "中衡设计",
+    "industry_code": "M74专业技术服务业",
+    "industry_name": "M74专业技术服务业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603183",
+    "code_name": "建研院",
+    "industry_code": "M74专业技术服务业",
+    "industry_name": "M74专业技术服务业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300564",
+    "code_name": "筑博设计",
+    "industry_code": "M74专业技术服务业",
+    "industry_name": "M74专业技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300901",
+    "code_name": "中胤时尚",
+    "industry_code": "M74专业技术服务业",
+    "industry_name": "M74专业技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301289",
+    "code_name": "国缆检测",
+    "industry_code": "M74专业技术服务业",
+    "industry_name": "M74专业技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603018",
+    "code_name": "华设集团",
+    "industry_code": "M74专业技术服务业",
+    "industry_name": "M74专业技术服务业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301365",
+    "code_name": "矩阵股份",
+    "industry_code": "M74专业技术服务业",
+    "industry_name": "M74专业技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603458",
+    "code_name": "勘设股份",
+    "industry_code": "M74专业技术服务业",
+    "industry_name": "M74专业技术服务业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300384",
+    "code_name": "三联虹普",
+    "industry_code": "M74专业技术服务业",
+    "industry_name": "M74专业技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301508",
+    "code_name": "中机认检",
+    "industry_code": "M74专业技术服务业",
+    "industry_name": "M74专业技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300989",
+    "code_name": "蕾奥规划",
+    "industry_code": "M74专业技术服务业",
+    "industry_name": "M74专业技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600629",
+    "code_name": "华建集团",
+    "industry_code": "M74专业技术服务业",
+    "industry_name": "M74专业技术服务业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301136",
+    "code_name": "招标股份",
+    "industry_code": "M74专业技术服务业",
+    "industry_name": "M74专业技术服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "003035",
+    "code_name": "南网能源",
+    "industry_code": "M75科技推广和应用服务业",
+    "industry_name": "M75科技推广和应用服务业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300021",
+    "code_name": "大禹节水",
+    "industry_code": "N76水利管理业",
+    "industry_name": "N76水利管理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002266",
+    "code_name": "浙富控股",
+    "industry_code": "N77生态保护和环境治理业",
+    "industry_name": "N77生态保护和环境治理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301203",
+    "code_name": "国泰环保",
+    "industry_code": "N77生态保护和环境治理业",
+    "industry_name": "N77生态保护和环境治理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301148",
+    "code_name": "嘉戎技术",
+    "industry_code": "N77生态保护和环境治理业",
+    "industry_name": "N77生态保护和环境治理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603588",
+    "code_name": "高能环境",
+    "industry_code": "N77生态保护和环境治理业",
+    "industry_name": "N77生态保护和环境治理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300958",
+    "code_name": "建工修复",
+    "industry_code": "N77生态保护和环境治理业",
+    "industry_name": "N77生态保护和环境治理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601200",
+    "code_name": "上海环境",
+    "industry_code": "N77生态保护和环境治理业",
+    "industry_name": "N77生态保护和环境治理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000803",
+    "code_name": "山高环能",
+    "industry_code": "N77生态保护和环境治理业",
+    "industry_name": "N77生态保护和环境治理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301372",
+    "code_name": "科净源",
+    "industry_code": "N77生态保护和环境治理业",
+    "industry_name": "N77生态保护和环境治理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600475",
+    "code_name": "华光环能",
+    "industry_code": "N77生态保护和环境治理业",
+    "industry_name": "N77生态保护和环境治理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300388",
+    "code_name": "节能国祯",
+    "industry_code": "N77生态保护和环境治理业",
+    "industry_name": "N77生态保护和环境治理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603797",
+    "code_name": "联泰环保",
+    "industry_code": "N77生态保护和环境治理业",
+    "industry_name": "N77生态保护和环境治理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603177",
+    "code_name": "德创环保",
+    "industry_code": "N77生态保护和环境治理业",
+    "industry_name": "N77生态保护和环境治理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300140",
+    "code_name": "节能环境",
+    "industry_code": "N77生态保护和环境治理业",
+    "industry_name": "N77生态保护和环境治理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601330",
+    "code_name": "绿色动力",
+    "industry_code": "N77生态保护和环境治理业",
+    "industry_name": "N77生态保护和环境治理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300614",
+    "code_name": "百川畅银",
+    "industry_code": "N77生态保护和环境治理业",
+    "industry_name": "N77生态保护和环境治理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600054",
+    "code_name": "黄山旅游",
+    "industry_code": "N78公共设施管理业",
+    "industry_name": "N78公共设施管理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001230",
+    "code_name": "劲旅环境",
+    "industry_code": "N78公共设施管理业",
+    "industry_name": "N78公共设施管理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603199",
+    "code_name": "九华旅游",
+    "industry_code": "N78公共设施管理业",
+    "industry_name": "N78公共设施管理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600250",
+    "code_name": "南京商旅",
+    "industry_code": "N78公共设施管理业",
+    "industry_name": "N78公共设施管理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002059",
+    "code_name": "云南旅游",
+    "industry_code": "N78公共设施管理业",
+    "industry_name": "N78公共设施管理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600749",
+    "code_name": "西藏旅游",
+    "industry_code": "N78公共设施管理业",
+    "industry_name": "N78公共设施管理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300859",
+    "code_name": "西域旅游",
+    "industry_code": "N78公共设施管理业",
+    "industry_name": "N78公共设施管理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000888",
+    "code_name": "峨眉山A",
+    "industry_code": "N78公共设施管理业",
+    "industry_name": "N78公共设施管理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600593",
+    "code_name": "大连圣亚",
+    "industry_code": "N78公共设施管理业",
+    "industry_name": "N78公共设施管理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600706",
+    "code_name": "曲江文旅",
+    "industry_code": "N78公共设施管理业",
+    "industry_name": "N78公共设施管理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002627",
+    "code_name": "三峡旅游",
+    "industry_code": "N78公共设施管理业",
+    "industry_name": "N78公共设施管理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000978",
+    "code_name": "桂林旅游",
+    "industry_code": "N78公共设施管理业",
+    "industry_name": "N78公共设施管理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002973",
+    "code_name": "侨银股份",
+    "industry_code": "N78公共设施管理业",
+    "industry_name": "N78公共设施管理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002159",
+    "code_name": "三特索道",
+    "industry_code": "N78公共设施管理业",
+    "industry_name": "N78公共设施管理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600576",
+    "code_name": "祥源文旅",
+    "industry_code": "N78公共设施管理业",
+    "industry_name": "N78公共设施管理业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300736",
+    "code_name": "百邦科技",
+    "industry_code": "O81机动车、电子产品和日用产品修理业",
+    "industry_name": "O81机动车、电子产品和日用产品修理业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300359",
+    "code_name": "全通教育",
+    "industry_code": "P83教育",
+    "industry_name": "P83教育",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600661",
+    "code_name": "昂立教育",
+    "industry_code": "P83教育",
+    "industry_name": "P83教育",
+    "exchange": "SH"
+  },
+  {
+    "code": "002659",
+    "code_name": "凯文教育",
+    "industry_code": "P83教育",
+    "industry_name": "P83教育",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600455",
+    "code_name": "博通股份",
+    "industry_code": "P83教育",
+    "industry_name": "P83教育",
+    "exchange": "SH"
+  },
+  {
+    "code": "300492",
+    "code_name": "华图山鼎",
+    "industry_code": "P83教育",
+    "industry_name": "P83教育",
+    "exchange": "SZ"
+  },
+  {
+    "code": "605098",
+    "code_name": "行动教育",
+    "industry_code": "P83教育",
+    "industry_name": "P83教育",
+    "exchange": "SH"
+  },
+  {
+    "code": "002607",
+    "code_name": "中公教育",
+    "industry_code": "P83教育",
+    "industry_name": "P83教育",
+    "exchange": "SZ"
+  },
+  {
+    "code": "000526",
+    "code_name": "学大教育",
+    "industry_code": "P83教育",
+    "industry_name": "P83教育",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300192",
+    "code_name": "科德教育",
+    "industry_code": "P83教育",
+    "industry_name": "P83教育",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600327",
+    "code_name": "大东方",
+    "industry_code": "Q84卫生",
+    "industry_name": "Q84卫生",
+    "exchange": "SH"
+  },
+  {
+    "code": "600763",
+    "code_name": "通策医疗",
+    "industry_code": "Q84卫生",
+    "industry_name": "Q84卫生",
+    "exchange": "SH"
+  },
+  {
+    "code": "002172",
+    "code_name": "澳洋健康",
+    "industry_code": "Q84卫生",
+    "industry_name": "Q84卫生",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301267",
+    "code_name": "华厦眼科",
+    "industry_code": "Q84卫生",
+    "industry_name": "Q84卫生",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300143",
+    "code_name": "盈康生命",
+    "industry_code": "Q84卫生",
+    "industry_name": "Q84卫生",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301239",
+    "code_name": "普瑞眼科",
+    "industry_code": "Q84卫生",
+    "industry_name": "Q84卫生",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002524",
+    "code_name": "光正眼科",
+    "industry_code": "Q84卫生",
+    "industry_name": "Q84卫生",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301103",
+    "code_name": "何氏眼科",
+    "industry_code": "Q84卫生",
+    "industry_name": "Q84卫生",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603882",
+    "code_name": "金域医学",
+    "industry_code": "Q84卫生",
+    "industry_name": "Q84卫生",
+    "exchange": "SH"
+  },
+  {
+    "code": "002622",
+    "code_name": "皓宸医疗",
+    "industry_code": "Q84卫生",
+    "industry_name": "Q84卫生",
+    "exchange": "SZ"
+  },
+  {
+    "code": "301293",
+    "code_name": "三博脑科",
+    "industry_code": "Q84卫生",
+    "industry_name": "Q84卫生",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002044",
+    "code_name": "美年健康",
+    "industry_code": "Q84卫生",
+    "industry_name": "Q84卫生",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002219",
+    "code_name": "新里程",
+    "industry_code": "Q84卫生",
+    "industry_name": "Q84卫生",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300015",
+    "code_name": "爱尔眼科",
+    "industry_code": "Q84卫生",
+    "industry_name": "Q84卫生",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300244",
+    "code_name": "迪安诊断",
+    "industry_code": "Q84卫生",
+    "industry_name": "Q84卫生",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601811",
+    "code_name": "新华文轩",
+    "industry_code": "R86新闻和出版业",
+    "industry_name": "R86新闻和出版业",
+    "exchange": "SH"
+  },
+  {
+    "code": "301025",
+    "code_name": "读客文化",
+    "industry_code": "R86新闻和出版业",
+    "industry_name": "R86新闻和出版业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601801",
+    "code_name": "皖新传媒",
+    "industry_code": "R86新闻和出版业",
+    "industry_name": "R86新闻和出版业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300148",
+    "code_name": "天舟文化",
+    "industry_code": "R86新闻和出版业",
+    "industry_name": "R86新闻和出版业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600229",
+    "code_name": "城市传媒",
+    "industry_code": "R86新闻和出版业",
+    "industry_name": "R86新闻和出版业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601921",
+    "code_name": "浙版传媒",
+    "industry_code": "R86新闻和出版业",
+    "industry_name": "R86新闻和出版业",
+    "exchange": "SH"
+  },
+  {
+    "code": "603230",
+    "code_name": "内蒙新华",
+    "industry_code": "R86新闻和出版业",
+    "industry_name": "R86新闻和出版业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300364",
+    "code_name": "中文在线",
+    "industry_code": "R86新闻和出版业",
+    "industry_name": "R86新闻和出版业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "601900",
+    "code_name": "南方传媒",
+    "industry_code": "R86新闻和出版业",
+    "industry_name": "R86新闻和出版业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601928",
+    "code_name": "凤凰传媒",
+    "industry_code": "R86新闻和出版业",
+    "industry_name": "R86新闻和出版业",
+    "exchange": "SH"
+  },
+  {
+    "code": "601999",
+    "code_name": "出版传媒",
+    "industry_code": "R86新闻和出版业",
+    "industry_name": "R86新闻和出版业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600373",
+    "code_name": "中文传媒",
+    "industry_code": "R86新闻和出版业",
+    "industry_name": "R86新闻和出版业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600825",
+    "code_name": "新华传媒",
+    "industry_code": "R86新闻和出版业",
+    "industry_name": "R86新闻和出版业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600880",
+    "code_name": "博瑞传播",
+    "industry_code": "R86新闻和出版业",
+    "industry_name": "R86新闻和出版业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600551",
+    "code_name": "时代出版",
+    "industry_code": "R86新闻和出版业",
+    "industry_name": "R86新闻和出版业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600088",
+    "code_name": "中视传媒",
+    "industry_code": "R87广播、电视、电影和录音制作业",
+    "industry_name": "R87广播、电视、电影和录音制作业",
+    "exchange": "SH"
+  },
+  {
+    "code": "600715",
+    "code_name": "文投控股",
+    "industry_code": "R87广播、电视、电影和录音制作业",
+    "industry_name": "R87广播、电视、电影和录音制作业",
+    "exchange": "SH"
+  },
+  {
+    "code": "000802",
+    "code_name": "北京文化",
+    "industry_code": "R87广播、电视、电影和录音制作业",
+    "industry_name": "R87广播、电视、电影和录音制作业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300426",
+    "code_name": "华智数媒",
+    "industry_code": "R87广播、电视、电影和录音制作业",
+    "industry_name": "R87广播、电视、电影和录音制作业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300133",
+    "code_name": "华策影视",
+    "industry_code": "R87广播、电视、电影和录音制作业",
+    "industry_name": "R87广播、电视、电影和录音制作业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300291",
+    "code_name": "百纳千成",
+    "industry_code": "R87广播、电视、电影和录音制作业",
+    "industry_name": "R87广播、电视、电影和录音制作业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002343",
+    "code_name": "慈文传媒",
+    "industry_code": "R87广播、电视、电影和录音制作业",
+    "industry_name": "R87广播、电视、电影和录音制作业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300251",
+    "code_name": "光线传媒",
+    "industry_code": "R87广播、电视、电影和录音制作业",
+    "industry_name": "R87广播、电视、电影和录音制作业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600977",
+    "code_name": "中国电影",
+    "industry_code": "R87广播、电视、电影和录音制作业",
+    "industry_name": "R87广播、电视、电影和录音制作业",
+    "exchange": "SH"
+  },
+  {
+    "code": "002739",
+    "code_name": "儒意电影",
+    "industry_code": "R87广播、电视、电影和录音制作业",
+    "industry_name": "R87广播、电视、电影和录音制作业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300528",
+    "code_name": "幸福蓝海",
+    "industry_code": "R87广播、电视、电影和录音制作业",
+    "industry_name": "R87广播、电视、电影和录音制作业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603103",
+    "code_name": "横店影视",
+    "industry_code": "R87广播、电视、电影和录音制作业",
+    "industry_name": "R87广播、电视、电影和录音制作业",
+    "exchange": "SH"
+  },
+  {
+    "code": "001330",
+    "code_name": "博纳影业",
+    "industry_code": "R87广播、电视、电影和录音制作业",
+    "industry_name": "R87广播、电视、电影和录音制作业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002905",
+    "code_name": "金逸影视",
+    "industry_code": "R87广播、电视、电影和录音制作业",
+    "industry_name": "R87广播、电视、电影和录音制作业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "300182",
+    "code_name": "捷成股份",
+    "industry_code": "R87广播、电视、电影和录音制作业",
+    "industry_name": "R87广播、电视、电影和录音制作业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603466",
+    "code_name": "风语筑",
+    "industry_code": "R88文化艺术业",
+    "industry_name": "R88文化艺术业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300860",
+    "code_name": "锋尚文化",
+    "industry_code": "R88文化艺术业",
+    "industry_name": "R88文化艺术业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "603402",
+    "code_name": "陕西旅游",
+    "industry_code": "R88文化艺术业",
+    "industry_name": "R88文化艺术业",
+    "exchange": "SH"
+  },
+  {
+    "code": "300144",
+    "code_name": "宋城演艺",
+    "industry_code": "R88文化艺术业",
+    "industry_name": "R88文化艺术业",
+    "exchange": "SZ"
+  },
+  {
+    "code": "002858",
+    "code_name": "力盛体育",
+    "industry_code": "R89体育",
+    "industry_name": "R89体育",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600158",
+    "code_name": "中体产业",
+    "industry_code": "R89体育",
+    "industry_name": "R89体育",
+    "exchange": "SH"
+  },
+  {
+    "code": "600620",
+    "code_name": "天宸股份",
+    "industry_code": "S91综合",
+    "industry_name": "S91综合",
+    "exchange": "SH"
+  },
+  {
+    "code": "600673",
+    "code_name": "东阳光",
+    "industry_code": "S91综合",
+    "industry_name": "S91综合",
+    "exchange": "SH"
+  },
+  {
+    "code": "000833",
+    "code_name": "粤桂股份",
+    "industry_code": "S91综合",
+    "industry_name": "S91综合",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600805",
+    "code_name": "悦达投资",
+    "industry_code": "S91综合",
+    "industry_name": "S91综合",
+    "exchange": "SH"
+  },
+  {
+    "code": "000532",
+    "code_name": "华金资本",
+    "industry_code": "S91综合",
+    "industry_name": "S91综合",
+    "exchange": "SZ"
+  },
+  {
+    "code": "600834",
+    "code_name": "申通地铁",
+    "industry_code": "S91综合",
+    "industry_name": "S91综合",
+    "exchange": "SH"
+  }
+]

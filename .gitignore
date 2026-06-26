@@ -1,0 +1,42 @@
+# Secrets & runtime config
+.env
+config/llm_config.json
+data/ifind_token.json
+data/ifind_usage.json
+data/ifind_quota_exceeded.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv_akshare/
+*.egg-info/
+.pytest_cache/
+
+# Large data (regenerate locally)
+data/kline/
+data/minute_kline/
+data/news/
+data/ml_models/
+data/fundamentals/
+data/factor_cache/
+
+# Runtime state & logs
+logs/
+state/
+account/
+
+# Backtest artifacts (keep benchmark summary only)
+reports/backtest_v2/nav_*.json
+reports/backtest_v2/trades_*.json
+reports/backtest_v2/report_*.html
+reports/backtest_v2/summary_2*.json
+!reports/backtest_v2/summary_benchmark.json
+!reports/backtest_v2/composite_pool.json
+
+# IDE / editor
+.cursor/
+*.bak.*
+.DS_Store
+# vendored ashare (track as submodule if needed)

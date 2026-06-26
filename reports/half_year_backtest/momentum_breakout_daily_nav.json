@@ -1,0 +1,806 @@
+[
+  {
+    "date": "2025-11-03",
+    "cash": 2104.21,
+    "position_value": 97886.0,
+    "total_value": 99990.21
+  },
+  {
+    "date": "2025-11-04",
+    "cash": 2104.21,
+    "position_value": 97566.0,
+    "total_value": 99670.21
+  },
+  {
+    "date": "2025-11-05",
+    "cash": 2104.21,
+    "position_value": 97971.0,
+    "total_value": 100075.21
+  },
+  {
+    "date": "2025-11-06",
+    "cash": 2104.21,
+    "position_value": 97678.0,
+    "total_value": 99782.21
+  },
+  {
+    "date": "2025-11-07",
+    "cash": 2104.21,
+    "position_value": 100159.0,
+    "total_value": 102263.21
+  },
+  {
+    "date": "2025-11-10",
+    "cash": 2104.21,
+    "position_value": 100603.0,
+    "total_value": 102707.21
+  },
+  {
+    "date": "2025-11-11",
+    "cash": 20397.49,
+    "position_value": 84215.0,
+    "total_value": 104612.49
+  },
+  {
+    "date": "2025-11-12",
+    "cash": 20397.49,
+    "position_value": 83387.0,
+    "total_value": 103784.49
+  },
+  {
+    "date": "2025-11-13",
+    "cash": 20397.49,
+    "position_value": 85958.0,
+    "total_value": 106355.49
+  },
+  {
+    "date": "2025-11-14",
+    "cash": 20397.49,
+    "position_value": 85769.0,
+    "total_value": 106166.49
+  },
+  {
+    "date": "2025-11-17",
+    "cash": 34911.89,
+    "position_value": 72788.0,
+    "total_value": 107699.89
+  },
+  {
+    "date": "2025-11-18",
+    "cash": 34358.91,
+    "position_value": 72303.0,
+    "total_value": 106661.91
+  },
+  {
+    "date": "2025-11-19",
+    "cash": 34358.91,
+    "position_value": 70514.0,
+    "total_value": 104872.91
+  },
+  {
+    "date": "2025-11-20",
+    "cash": 30623.07,
+    "position_value": 74163.0,
+    "total_value": 104786.07
+  },
+  {
+    "date": "2025-11-21",
+    "cash": 38010.09,
+    "position_value": 65252.0,
+    "total_value": 103262.09
+  },
+  {
+    "date": "2025-11-24",
+    "cash": 38010.09,
+    "position_value": 66767.0,
+    "total_value": 104777.09
+  },
+  {
+    "date": "2025-11-25",
+    "cash": 38010.09,
+    "position_value": 67446.0,
+    "total_value": 105456.09
+  },
+  {
+    "date": "2025-11-26",
+    "cash": 38010.09,
+    "position_value": 65523.0,
+    "total_value": 103533.09
+  },
+  {
+    "date": "2025-11-27",
+    "cash": 38010.09,
+    "position_value": 65607.0,
+    "total_value": 103617.09
+  },
+  {
+    "date": "2025-11-28",
+    "cash": 38010.09,
+    "position_value": 67297.0,
+    "total_value": 105307.09
+  },
+  {
+    "date": "2025-12-01",
+    "cash": 46752.74,
+    "position_value": 57900.0,
+    "total_value": 104652.74
+  },
+  {
+    "date": "2025-12-02",
+    "cash": 46752.74,
+    "position_value": 58014.0,
+    "total_value": 104766.74
+  },
+  {
+    "date": "2025-12-03",
+    "cash": 46752.74,
+    "position_value": 57867.0,
+    "total_value": 104619.74
+  },
+  {
+    "date": "2025-12-04",
+    "cash": 46752.74,
+    "position_value": 56753.0,
+    "total_value": 103505.74
+  },
+  {
+    "date": "2025-12-05",
+    "cash": 46752.74,
+    "position_value": 57750.0,
+    "total_value": 104502.74
+  },
+  {
+    "date": "2025-12-08",
+    "cash": 48030.3,
+    "position_value": 57679.0,
+    "total_value": 105709.3
+  },
+  {
+    "date": "2025-12-09",
+    "cash": 48030.3,
+    "position_value": 57147.0,
+    "total_value": 105177.3
+  },
+  {
+    "date": "2025-12-10",
+    "cash": 48030.3,
+    "position_value": 56691.0,
+    "total_value": 104721.3
+  },
+  {
+    "date": "2025-12-11",
+    "cash": 48030.3,
+    "position_value": 55349.0,
+    "total_value": 103379.3
+  },
+  {
+    "date": "2025-12-12",
+    "cash": 47723.75,
+    "position_value": 55514.0,
+    "total_value": 103237.75
+  },
+  {
+    "date": "2025-12-15",
+    "cash": 43522.02,
+    "position_value": 58766.0,
+    "total_value": 102288.02
+  },
+  {
+    "date": "2025-12-16",
+    "cash": 45932.7,
+    "position_value": 55205.0,
+    "total_value": 101137.7
+  },
+  {
+    "date": "2025-12-17",
+    "cash": 34012.86,
+    "position_value": 66923.0,
+    "total_value": 100935.86
+  },
+  {
+    "date": "2025-12-18",
+    "cash": 34012.86,
+    "position_value": 66884.0,
+    "total_value": 100896.86
+  },
+  {
+    "date": "2025-12-19",
+    "cash": 34012.86,
+    "position_value": 67488.0,
+    "total_value": 101500.86
+  },
+  {
+    "date": "2025-12-22",
+    "cash": 34012.86,
+    "position_value": 67799.0,
+    "total_value": 101811.86
+  },
+  {
+    "date": "2025-12-23",
+    "cash": 27096.35,
+    "position_value": 73970.0,
+    "total_value": 101066.35
+  },
+  {
+    "date": "2025-12-24",
+    "cash": 30985.14,
+    "position_value": 69929.0,
+    "total_value": 100914.14
+  },
+  {
+    "date": "2025-12-25",
+    "cash": 30985.14,
+    "position_value": 70111.0,
+    "total_value": 101096.14
+  },
+  {
+    "date": "2025-12-26",
+    "cash": 30985.14,
+    "position_value": 69970.0,
+    "total_value": 100955.14
+  },
+  {
+    "date": "2025-12-29",
+    "cash": 36956.79,
+    "position_value": 63864.0,
+    "total_value": 100820.79
+  },
+  {
+    "date": "2025-12-30",
+    "cash": 36956.79,
+    "position_value": 62682.0,
+    "total_value": 99638.79
+  },
+  {
+    "date": "2025-12-31",
+    "cash": 34834.52,
+    "position_value": 64772.0,
+    "total_value": 99606.52
+  },
+  {
+    "date": "2026-01-05",
+    "cash": 34834.52,
+    "position_value": 65954.0,
+    "total_value": 100788.52
+  },
+  {
+    "date": "2026-01-06",
+    "cash": 34834.52,
+    "position_value": 66982.0,
+    "total_value": 101816.52
+  },
+  {
+    "date": "2026-01-07",
+    "cash": 34834.52,
+    "position_value": 66885.0,
+    "total_value": 101719.52
+  },
+  {
+    "date": "2026-01-08",
+    "cash": 34834.52,
+    "position_value": 66391.0,
+    "total_value": 101225.52
+  },
+  {
+    "date": "2026-01-09",
+    "cash": 34834.52,
+    "position_value": 67325.0,
+    "total_value": 102159.52
+  },
+  {
+    "date": "2026-01-12",
+    "cash": 42453.82,
+    "position_value": 60158.0,
+    "total_value": 102611.82
+  },
+  {
+    "date": "2026-01-13",
+    "cash": 45214.61,
+    "position_value": 55468.0,
+    "total_value": 100682.61
+  },
+  {
+    "date": "2026-01-14",
+    "cash": 45214.61,
+    "position_value": 55447.0,
+    "total_value": 100661.61
+  },
+  {
+    "date": "2026-01-15",
+    "cash": 44723.71,
+    "position_value": 54726.0,
+    "total_value": 99449.71
+  },
+  {
+    "date": "2026-01-16",
+    "cash": 44723.71,
+    "position_value": 55014.0,
+    "total_value": 99737.71
+  },
+  {
+    "date": "2026-01-19",
+    "cash": 44723.71,
+    "position_value": 54242.0,
+    "total_value": 98965.71
+  },
+  {
+    "date": "2026-01-20",
+    "cash": 44045.14,
+    "position_value": 54830.0,
+    "total_value": 98875.14
+  },
+  {
+    "date": "2026-01-21",
+    "cash": 43404.58,
+    "position_value": 55625.0,
+    "total_value": 99029.58
+  },
+  {
+    "date": "2026-01-22",
+    "cash": 41715.39,
+    "position_value": 57098.0,
+    "total_value": 98813.39
+  },
+  {
+    "date": "2026-01-23",
+    "cash": 41715.39,
+    "position_value": 57551.0,
+    "total_value": 99266.39
+  },
+  {
+    "date": "2026-01-26",
+    "cash": 44250.47,
+    "position_value": 54110.0,
+    "total_value": 98360.47
+  },
+  {
+    "date": "2026-01-27",
+    "cash": 40993.08,
+    "position_value": 56612.0,
+    "total_value": 97605.08
+  },
+  {
+    "date": "2026-01-28",
+    "cash": 41300.14,
+    "position_value": 57519.0,
+    "total_value": 98819.14
+  },
+  {
+    "date": "2026-01-29",
+    "cash": 45182.72,
+    "position_value": 56520.0,
+    "total_value": 101702.72
+  },
+  {
+    "date": "2026-01-30",
+    "cash": 32465.36,
+    "position_value": 69303.0,
+    "total_value": 101768.36
+  },
+  {
+    "date": "2026-02-02",
+    "cash": 32465.36,
+    "position_value": 65534.0,
+    "total_value": 97999.36
+  },
+  {
+    "date": "2026-02-03",
+    "cash": 37007.16,
+    "position_value": 60578.0,
+    "total_value": 97585.16
+  },
+  {
+    "date": "2026-02-04",
+    "cash": 38899.23,
+    "position_value": 57920.0,
+    "total_value": 96819.23
+  },
+  {
+    "date": "2026-02-05",
+    "cash": 38899.23,
+    "position_value": 56822.0,
+    "total_value": 95721.23
+  },
+  {
+    "date": "2026-02-06",
+    "cash": 40178.36,
+    "position_value": 55232.0,
+    "total_value": 95410.36
+  },
+  {
+    "date": "2026-02-09",
+    "cash": 40178.36,
+    "position_value": 55015.0,
+    "total_value": 95193.36
+  },
+  {
+    "date": "2026-02-10",
+    "cash": 41526.17,
+    "position_value": 52874.0,
+    "total_value": 94400.17
+  },
+  {
+    "date": "2026-02-11",
+    "cash": 41526.17,
+    "position_value": 52997.0,
+    "total_value": 94523.17
+  },
+  {
+    "date": "2026-02-12",
+    "cash": 41526.17,
+    "position_value": 52299.0,
+    "total_value": 93825.17
+  },
+  {
+    "date": "2026-02-13",
+    "cash": 43586.46,
+    "position_value": 49702.0,
+    "total_value": 93288.46
+  },
+  {
+    "date": "2026-02-24",
+    "cash": 41320.03,
+    "position_value": 52914.0,
+    "total_value": 94234.03
+  },
+  {
+    "date": "2026-02-25",
+    "cash": 41320.03,
+    "position_value": 53299.0,
+    "total_value": 94619.03
+  },
+  {
+    "date": "2026-02-26",
+    "cash": 40052.42,
+    "position_value": 54493.0,
+    "total_value": 94545.42
+  },
+  {
+    "date": "2026-02-27",
+    "cash": 40052.42,
+    "position_value": 54624.0,
+    "total_value": 94676.42
+  },
+  {
+    "date": "2026-03-02",
+    "cash": 37146.28,
+    "position_value": 55733.0,
+    "total_value": 92879.28
+  },
+  {
+    "date": "2026-03-03",
+    "cash": 37146.28,
+    "position_value": 55770.0,
+    "total_value": 92916.28
+  },
+  {
+    "date": "2026-03-04",
+    "cash": 37146.28,
+    "position_value": 54611.0,
+    "total_value": 91757.28
+  },
+  {
+    "date": "2026-03-05",
+    "cash": 37146.28,
+    "position_value": 54772.0,
+    "total_value": 91918.28
+  },
+  {
+    "date": "2026-03-06",
+    "cash": 37146.28,
+    "position_value": 55391.0,
+    "total_value": 92537.28
+  },
+  {
+    "date": "2026-03-09",
+    "cash": 38122.42,
+    "position_value": 53260.0,
+    "total_value": 91382.42
+  },
+  {
+    "date": "2026-03-10",
+    "cash": 39847.07,
+    "position_value": 51099.0,
+    "total_value": 90946.07
+  },
+  {
+    "date": "2026-03-11",
+    "cash": 39847.07,
+    "position_value": 51436.0,
+    "total_value": 91283.07
+  },
+  {
+    "date": "2026-03-12",
+    "cash": 39847.07,
+    "position_value": 52190.0,
+    "total_value": 92037.07
+  },
+  {
+    "date": "2026-03-13",
+    "cash": 39847.07,
+    "position_value": 52403.0,
+    "total_value": 92250.07
+  },
+  {
+    "date": "2026-03-16",
+    "cash": 39847.07,
+    "position_value": 52526.0,
+    "total_value": 92373.07
+  },
+  {
+    "date": "2026-03-17",
+    "cash": 40271.38,
+    "position_value": 50823.0,
+    "total_value": 91094.38
+  },
+  {
+    "date": "2026-03-18",
+    "cash": 40271.38,
+    "position_value": 51254.0,
+    "total_value": 91525.38
+  },
+  {
+    "date": "2026-03-19",
+    "cash": 40271.38,
+    "position_value": 50177.0,
+    "total_value": 90448.38
+  },
+  {
+    "date": "2026-03-20",
+    "cash": 40484.5,
+    "position_value": 49307.0,
+    "total_value": 89791.5
+  },
+  {
+    "date": "2026-03-23",
+    "cash": 46431.79,
+    "position_value": 42042.0,
+    "total_value": 88473.79
+  },
+  {
+    "date": "2026-03-24",
+    "cash": 46431.79,
+    "position_value": 42253.0,
+    "total_value": 88684.79
+  },
+  {
+    "date": "2026-03-25",
+    "cash": 57063.94,
+    "position_value": 31720.0,
+    "total_value": 88783.94
+  },
+  {
+    "date": "2026-03-26",
+    "cash": 29239.54,
+    "position_value": 58754.0,
+    "total_value": 87993.54
+  },
+  {
+    "date": "2026-03-27",
+    "cash": 29239.54,
+    "position_value": 59124.0,
+    "total_value": 88363.54
+  },
+  {
+    "date": "2026-03-30",
+    "cash": 33231.24,
+    "position_value": 55181.0,
+    "total_value": 88412.24
+  },
+  {
+    "date": "2026-03-31",
+    "cash": 33231.24,
+    "position_value": 57011.0,
+    "total_value": 90242.24
+  },
+  {
+    "date": "2026-04-01",
+    "cash": 33231.24,
+    "position_value": 56013.0,
+    "total_value": 89244.24
+  },
+  {
+    "date": "2026-04-02",
+    "cash": 38323.04,
+    "position_value": 51029.0,
+    "total_value": 89352.04
+  },
+  {
+    "date": "2026-04-03",
+    "cash": 37793.79,
+    "position_value": 51158.0,
+    "total_value": 88951.79
+  },
+  {
+    "date": "2026-04-07",
+    "cash": 45942.02,
+    "position_value": 42302.0,
+    "total_value": 88244.02
+  },
+  {
+    "date": "2026-04-08",
+    "cash": 45316.02,
+    "position_value": 42992.0,
+    "total_value": 88308.02
+  },
+  {
+    "date": "2026-04-09",
+    "cash": 35976.98,
+    "position_value": 51497.0,
+    "total_value": 87473.98
+  },
+  {
+    "date": "2026-04-10",
+    "cash": 35976.98,
+    "position_value": 50720.0,
+    "total_value": 86696.98
+  },
+  {
+    "date": "2026-04-13",
+    "cash": 34501.03,
+    "position_value": 51306.0,
+    "total_value": 85807.03
+  },
+  {
+    "date": "2026-04-14",
+    "cash": 34501.03,
+    "position_value": 50493.0,
+    "total_value": 84994.03
+  },
+  {
+    "date": "2026-04-15",
+    "cash": 34501.03,
+    "position_value": 49894.0,
+    "total_value": 84395.03
+  },
+  {
+    "date": "2026-04-16",
+    "cash": 36909.06,
+    "position_value": 47848.0,
+    "total_value": 84757.06
+  },
+  {
+    "date": "2026-04-17",
+    "cash": 38325.31,
+    "position_value": 45853.0,
+    "total_value": 84178.31
+  },
+  {
+    "date": "2026-04-20",
+    "cash": 39516.12,
+    "position_value": 44387.0,
+    "total_value": 83903.12
+  },
+  {
+    "date": "2026-04-21",
+    "cash": 39516.12,
+    "position_value": 44545.0,
+    "total_value": 84061.12
+  },
+  {
+    "date": "2026-04-22",
+    "cash": 39516.12,
+    "position_value": 45215.0,
+    "total_value": 84731.12
+  },
+  {
+    "date": "2026-04-23",
+    "cash": 39516.12,
+    "position_value": 44983.0,
+    "total_value": 84499.12
+  },
+  {
+    "date": "2026-04-24",
+    "cash": 39516.12,
+    "position_value": 44209.0,
+    "total_value": 83725.12
+  },
+  {
+    "date": "2026-04-27",
+    "cash": 39085.66,
+    "position_value": 42723.0,
+    "total_value": 81808.66
+  },
+  {
+    "date": "2026-04-28",
+    "cash": 26545.69,
+    "position_value": 55576.0,
+    "total_value": 82121.69
+  },
+  {
+    "date": "2026-04-29",
+    "cash": 26545.69,
+    "position_value": 56371.0,
+    "total_value": 82916.69
+  },
+  {
+    "date": "2026-04-30",
+    "cash": 26545.69,
+    "position_value": 56215.0,
+    "total_value": 82760.69
+  },
+  {
+    "date": "2026-05-06",
+    "cash": 26545.69,
+    "position_value": 57477.0,
+    "total_value": 84022.69
+  },
+  {
+    "date": "2026-05-07",
+    "cash": 26545.69,
+    "position_value": 58124.0,
+    "total_value": 84669.69
+  },
+  {
+    "date": "2026-05-08",
+    "cash": 26545.69,
+    "position_value": 58733.0,
+    "total_value": 85278.69
+  },
+  {
+    "date": "2026-05-11",
+    "cash": 26545.69,
+    "position_value": 60297.0,
+    "total_value": 86842.69
+  },
+  {
+    "date": "2026-05-12",
+    "cash": 41003.67,
+    "position_value": 45121.0,
+    "total_value": 86124.67
+  },
+  {
+    "date": "2026-05-13",
+    "cash": 33122.88,
+    "position_value": 52784.0,
+    "total_value": 85906.88
+  },
+  {
+    "date": "2026-05-14",
+    "cash": 33122.88,
+    "position_value": 51880.0,
+    "total_value": 85002.88
+  },
+  {
+    "date": "2026-05-15",
+    "cash": 40443.22,
+    "position_value": 43849.0,
+    "total_value": 84292.22
+  },
+  {
+    "date": "2026-05-18",
+    "cash": 49473.28,
+    "position_value": 34922.0,
+    "total_value": 84395.28
+  },
+  {
+    "date": "2026-05-19",
+    "cash": 31536.48,
+    "position_value": 52857.0,
+    "total_value": 84393.48
+  },
+  {
+    "date": "2026-05-20",
+    "cash": 31536.48,
+    "position_value": 52651.0,
+    "total_value": 84187.48
+  },
+  {
+    "date": "2026-05-21",
+    "cash": 31536.48,
+    "position_value": 52160.0,
+    "total_value": 83696.48
+  },
+  {
+    "date": "2026-05-22",
+    "cash": 31536.48,
+    "position_value": 52856.0,
+    "total_value": 84392.48
+  },
+  {
+    "date": "2026-05-25",
+    "cash": 38828.72,
+    "position_value": 44398.0,
+    "total_value": 83226.72
+  }
+]

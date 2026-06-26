@@ -1,0 +1,110 @@
+account:
+  commission_rate: 0.0001
+  initial_cash: 100000
+  min_commission: 0
+  stamp_tax: 0.001
+analysis:
+  bollinger_period: 20
+  bollinger_std: 2
+  lookback_days: 120
+  macd_fast: 12
+  macd_signal: 9
+  macd_slow: 26
+  rsi_overbought: 70
+  rsi_oversold: 30
+  volume_spike_threshold: 2.0
+backtest:
+  end_date: null
+  initial_cash: 100000
+  lookback_days: 120
+  report_dir: reports
+  start_date: '2024-01-01'
+data:
+  cache_dir: data
+  daily_update_time: '08:30'
+  source: akshare
+  provider: ifind
+  kline_backend: baostock
+  ifind:
+    base_url: https://quantapi.51ifind.com/api/v1
+    token_cache: data/ifind_token.json
+    realtime_indicators: open,high,low,latest,preClose,changeRatio,volume,amount
+    history_indicators: open,high,low,close,volume,amount,changeRatio
+    edb_north_indicators: ''
+    stock_universe_search: 全部A股
+  minute_cache_ttl_intraday: 300
+  minute_cache_dir: data/minute_kline
+  stock_pool_rebuild_source: ifind
+market:
+  exclude_prefixes:
+  - '8'
+  - '4'
+  - '920'
+  exclude_st: true
+  include_prefixes:
+  - '600'
+  - '601'
+  - '603'
+  - '605'
+  - '000'
+  - '001'
+  - '002'
+  - '003'
+  - '300'
+  - '301'
+  - '302'
+  - '688'
+  - '689'
+  min_listing_days: 60
+report:
+  report_dir: reports
+  report_time: '09:00'
+  top_n: 5
+strategies:
+  closing_strategy:
+    description: '尾盘策略：尾盘抢筹 + 强势收盘 + 次日惯性上冲'
+    enabled: true
+    weight: 0.0621
+  dragon_return:
+    description: '龙回头：强势股回调 + 缩量企稳 + 支撑位反弹'
+    enabled: true
+    weight: 0.0837
+  grid_trading:
+    description: '低吸网格：布林带下轨 + 均线支撑 + 低波动收缩'
+    enabled: true
+    weight: 0.0621
+  mean_reversion:
+    description: '均值回归：超卖反弹 + 布林带下轨 + 底部放量'
+    enabled: true
+    weight: 0.0621
+  momentum_breakout:
+    description: '动量突破：N日新高突破 + 放量 + 强势动量'
+    enabled: true
+    weight: 0.2118
+  multi_factor:
+    description: '多因子综合：技术+量能+估值+波动率+动量'
+    enabled: true
+    weight: 0.0621
+  oversold_bounce:
+    description: '超跌反弹：RSI超卖 + 布林带下轨 + 底部放量 + 反弹确认'
+    enabled: true
+    weight: 0.0621
+  sector_rotation:
+    description: '板块轮动：热点板块 + 动量领先 + 放量突破'
+    enabled: true
+    weight: 0.0621
+  trend_following:
+    description: '趋势跟踪：均线多头 + MACD金叉 + 放量突破'
+    enabled: true
+    weight: 0.0621
+  volume_price:
+    description: '量价共振：放量突破 + 量价齐升 + MACD配合'
+    enabled: true
+    weight: 0.2696
+strategy:
+  max_holding_days: 20
+  max_holdings: 5
+  position_size_pct: 0.2
+  stop_loss: -0.07
+  take_profit: 0.15
+  trailing_stop: 0.05

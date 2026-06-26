@@ -1,0 +1,20 @@
+{"time": "2026-05-20T08:31:02.137213", "level": "ERROR", "message": "早盘选股失败: No module named 'baostock'"}
+{"time": "2026-05-21T09:31:00.068157", "level": "INFO", "message": "🚀 trend_hunter 单日涨幅 29.5% (阈值 +10%)"}
+{"time": "2026-05-21T09:31:00.068348", "level": "INFO", "message": "🚀 value_guard 单日涨幅 31.6% (阈值 +10%)"}
+{"time": "2026-05-21T09:31:00.068664", "level": "INFO", "message": "🚀 momentum_scalper 单日涨幅 27.3% (阈值 +10%)"}
+{"time": "2026-05-21T09:31:00.068834", "level": "INFO", "message": "🚀 sector_alpha 单日涨幅 31.2% (阈值 +10%)"}
+{"time": "2026-05-21T09:31:00.068974", "level": "INFO", "message": "🚀 dragon_king 单日涨幅 35.7% (阈值 +10%)"}
+{"time": "2026-05-21T09:31:00.069101", "level": "INFO", "message": "🚀 grid_master 单日涨幅 35.0% (阈值 +10%)"}
+{"time": "2026-05-21T09:31:00.069229", "level": "INFO", "message": "🚀 dividend_king 单日涨幅 31.2% (阈值 +10%)"}
+{"time": "2026-05-21T09:31:00.069349", "level": "INFO", "message": "🚀 tech_surge 单日涨幅 33.5% (阈值 +10%)"}
+{"time": "2026-05-21T09:31:00.069469", "level": "INFO", "message": "🚀 close_sniper 单日涨幅 31.3% (阈值 +10%)"}
+{"time": "2026-05-21T10:01:07.953976", "level": "INFO", "message": "🚀 trend_hunter 单日涨幅 37.5% (阈值 +10%)"}
+{"time": "2026-05-21T10:01:07.954261", "level": "INFO", "message": "🚀 value_guard 单日涨幅 37.3% (阈值 +10%)"}
+{"time": "2026-05-21T10:01:07.954612", "level": "INFO", "message": "🚀 momentum_scalper 单日涨幅 43.8% (阈值 +10%)"}
+{"time": "2026-05-21T10:01:07.954841", "level": "INFO", "message": "🚀 sector_alpha 单日涨幅 36.0% (阈值 +10%)"}
+{"time": "2026-05-21T10:01:07.955049", "level": "INFO", "message": "🚀 dragon_king 单日涨幅 44.0% (阈值 +10%)"}
+{"time": "2026-05-21T10:01:07.955257", "level": "INFO", "message": "🚀 grid_master 单日涨幅 48.9% (阈值 +10%)"}
+{"time": "2026-05-21T10:01:07.955622", "level": "INFO", "message": "🚀 dividend_king 单日涨幅 39.6% (阈值 +10%)"}
+{"time": "2026-05-21T10:01:07.955826", "level": "INFO", "message": "🚀 tech_surge 单日涨幅 38.3% (阈值 +10%)"}
+{"time": "2026-05-21T10:01:07.956040", "level": "INFO", "message": "🚀 close_sniper 单日涨幅 42.0% (阈值 +10%)"}
+{"time": "2026-05-21T10:30:30.284900", "level": "CRITICAL", "message": "🔴 总资金回撤 -9.6% (阈值 -8%)"}

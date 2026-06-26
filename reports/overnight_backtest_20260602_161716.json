@@ -1,0 +1,2713 @@
+{
+  "strategy": "overnight_1430_open",
+  "start": "2025-06-01",
+  "end": "2026-05-29",
+  "max_positions": 5,
+  "min_score": 50,
+  "initial_capital": 100000,
+  "stats": {
+    "total_trades": 1138,
+    "wins": 451,
+    "losses": 687,
+    "win_rate": 39.6,
+    "avg_profit": -49.92,
+    "avg_win_pct": 2.11,
+    "avg_loss_pct": -2.07,
+    "total_profit": -56810.75,
+    "final_value": 9089.31,
+    "total_return_pct": -90.91,
+    "sharpe": 1.433,
+    "max_drawdown": -97.64
+  },
+  "trades": [
+    {
+      "buy_date": "2025-06-09",
+      "sell_date": "2025-06-11",
+      "code": "002772",
+      "buy_price": 7.98409465,
+      "sell_price": 8.11303034,
+      "shares": 2500,
+      "profit": 298.03,
+      "profit_pct": 1.49
+    },
+    {
+      "buy_date": "2025-06-09",
+      "sell_date": "2025-06-11",
+      "code": "300498",
+      "buy_price": 17.19107308,
+      "sell_price": 17.1123954,
+      "shares": 1100,
+      "profit": -109.14,
+      "profit_pct": -0.58
+    },
+    {
+      "buy_date": "2025-06-09",
+      "sell_date": "2025-06-11",
+      "code": "603717",
+      "buy_price": 7.28,
+      "sell_price": 7.16,
+      "shares": 2700,
+      "profit": -347.23,
+      "profit_pct": -1.77
+    },
+    {
+      "buy_date": "2025-06-09",
+      "sell_date": "2025-06-11",
+      "code": "002714",
+      "buy_price": 41.52950988,
+      "sell_price": 41.19013728,
+      "shares": 400,
+      "profit": -155.53,
+      "profit_pct": -0.94
+    },
+    {
+      "buy_date": "2025-06-09",
+      "sell_date": "2025-06-11",
+      "code": "000798",
+      "buy_price": 7.63,
+      "sell_price": 7.54,
+      "shares": 2600,
+      "profit": -257.55,
+      "profit_pct": -1.3
+    },
+    {
+      "buy_date": "2025-06-10",
+      "sell_date": "2025-06-12",
+      "code": "600684",
+      "buy_price": 4.21,
+      "sell_price": 4.27,
+      "shares": 4700,
+      "profit": 257.95,
+      "profit_pct": 1.3
+    },
+    {
+      "buy_date": "2025-06-10",
+      "sell_date": "2025-06-12",
+      "code": "002772",
+      "buy_price": 8.11303034,
+      "sell_price": 8.11303034,
+      "shares": 2400,
+      "profit": -23.37,
+      "profit_pct": -0.12
+    },
+    {
+      "buy_date": "2025-06-10",
+      "sell_date": "2025-06-12",
+      "code": "600540",
+      "buy_price": 5.04,
+      "sell_price": 4.92,
+      "shares": 3900,
+      "profit": -491.07,
+      "profit_pct": -2.5
+    },
+    {
+      "buy_date": "2025-06-10",
+      "sell_date": "2025-06-12",
+      "code": "002679",
+      "buy_price": 9.360003,
+      "sell_price": 9.46953495,
+      "shares": 2100,
+      "profit": 206.18,
+      "profit_pct": 1.05
+    },
+    {
+      "buy_date": "2025-06-10",
+      "sell_date": "2025-06-12",
+      "code": "600354",
+      "buy_price": 6.4,
+      "sell_price": 6.36,
+      "shares": 3100,
+      "profit": -147.67,
+      "profit_pct": -0.74
+    },
+    {
+      "buy_date": "2025-06-11",
+      "sell_date": "2025-06-13",
+      "code": "603208",
+      "buy_price": 16.6121256,
+      "sell_price": 16.71,
+      "shares": 1100,
+      "profit": 85.62,
+      "profit_pct": 0.47
+    },
+    {
+      "buy_date": "2025-06-11",
+      "sell_date": "2025-06-13",
+      "code": "600975",
+      "buy_price": 6.28,
+      "sell_price": 6.23,
+      "shares": 3100,
+      "profit": -178.19,
+      "profit_pct": -0.92
+    },
+    {
+      "buy_date": "2025-06-11",
+      "sell_date": "2025-06-13",
+      "code": "300761",
+      "buy_price": 19.72583518,
+      "sell_price": 19.55664285,
+      "shares": 1000,
+      "profit": -192.68,
+      "profit_pct": -0.98
+    },
+    {
+      "buy_date": "2025-06-11",
+      "sell_date": "2025-06-13",
+      "code": "002234",
+      "buy_price": 8.53,
+      "sell_price": 8.4,
+      "shares": 2300,
+      "profit": -322.21,
+      "profit_pct": -1.64
+    },
+    {
+      "buy_date": "2025-06-11",
+      "sell_date": "2025-06-13",
+      "code": "002124",
+      "buy_price": 3.06,
+      "sell_price": 3.01,
+      "shares": 6400,
+      "profit": -343.15,
+      "profit_pct": -1.75
+    },
+    {
+      "buy_date": "2025-06-12",
+      "sell_date": "2025-06-16",
+      "code": "300511",
+      "buy_price": 6.9,
+      "sell_price": 6.62,
+      "shares": 2800,
+      "profit": -806.32,
+      "profit_pct": -4.17
+    },
+    {
+      "buy_date": "2025-06-12",
+      "sell_date": "2025-06-16",
+      "code": "600028",
+      "buy_price": 5.659701,
+      "sell_price": 5.717355,
+      "shares": 3400,
+      "profit": 172.72,
+      "profit_pct": 0.9
+    },
+    {
+      "buy_date": "2025-06-12",
+      "sell_date": "2025-06-16",
+      "code": "600938",
+      "buy_price": 25.57980705,
+      "sell_price": 26.3895961,
+      "shares": 700,
+      "profit": 544.74,
+      "profit_pct": 3.04
+    },
+    {
+      "buy_date": "2025-06-12",
+      "sell_date": "2025-06-16",
+      "code": "603619",
+      "buy_price": 18.19954584,
+      "sell_price": 20.481804,
+      "shares": 1000,
+      "profit": 2257.91,
+      "profit_pct": 12.41
+    },
+    {
+      "buy_date": "2025-06-12",
+      "sell_date": "2025-06-16",
+      "code": "600338",
+      "buy_price": 10.48931208,
+      "sell_price": 10.37973712,
+      "shares": 1800,
+      "profit": -219.67,
+      "profit_pct": -1.16
+    },
+    {
+      "buy_date": "2025-06-13",
+      "sell_date": "2025-06-17",
+      "code": "002321",
+      "buy_price": 2.4,
+      "sell_price": 2.38,
+      "shares": 8300,
+      "profit": -189.72,
+      "profit_pct": -0.95
+    },
+    {
+      "buy_date": "2025-06-13",
+      "sell_date": "2025-06-17",
+      "code": "600188",
+      "buy_price": 12.27400482,
+      "sell_price": 12.15107565,
+      "shares": 1600,
+      "profit": -220.04,
+      "profit_pct": -1.12
+    },
+    {
+      "buy_date": "2025-06-13",
+      "sell_date": "2025-06-17",
+      "code": "600256",
+      "buy_price": 5.51498323,
+      "sell_price": 5.46999968,
+      "shares": 3600,
+      "profit": -185.59,
+      "profit_pct": -0.93
+    },
+    {
+      "buy_date": "2025-06-13",
+      "sell_date": "2025-06-17",
+      "code": "600028",
+      "buy_price": 5.698137,
+      "sell_price": 5.678919,
+      "shares": 3500,
+      "profit": -91.12,
+      "profit_pct": -0.46
+    },
+    {
+      "buy_date": "2025-06-13",
+      "sell_date": "2025-06-17",
+      "code": "600938",
+      "buy_price": 26.34196145,
+      "sell_price": 25.67507635,
+      "shares": 700,
+      "profit": -488.43,
+      "profit_pct": -2.65
+    },
+    {
+      "buy_date": "2025-06-16",
+      "sell_date": "2025-06-18",
+      "code": "000663",
+      "buy_price": 6.82,
+      "sell_price": 7.1,
+      "shares": 2900,
+      "profit": 787.37,
+      "profit_pct": 3.98
+    },
+    {
+      "buy_date": "2025-06-16",
+      "sell_date": "2025-06-18",
+      "code": "600121",
+      "buy_price": 3.97,
+      "sell_price": 3.94,
+      "shares": 4900,
+      "profit": -170.18,
+      "profit_pct": -0.87
+    },
+    {
+      "buy_date": "2025-06-16",
+      "sell_date": "2025-06-18",
+      "code": "601857",
+      "buy_price": 8.54506092,
+      "sell_price": 8.7155832,
+      "shares": 2300,
+      "profit": 368.19,
+      "profit_pct": 1.87
+    },
+    {
+      "buy_date": "2025-06-16",
+      "sell_date": "2025-06-18",
+      "code": "300577",
+      "buy_price": 22.12241356,
+      "sell_price": 20.99047678,
+      "shares": 800,
+      "profit": -925.79,
+      "profit_pct": -5.23
+    },
+    {
+      "buy_date": "2025-06-16",
+      "sell_date": "2025-06-18",
+      "code": "001238",
+      "buy_price": 38.37,
+      "sell_price": 39.1,
+      "shares": 500,
+      "profit": 341.58,
+      "profit_pct": 1.78
+    },
+    {
+      "buy_date": "2025-06-17",
+      "sell_date": "2025-06-19",
+      "code": "600830",
+      "buy_price": 10.33,
+      "sell_price": 9.98,
+      "shares": 1900,
+      "profit": -687.82,
+      "profit_pct": -3.5
+    },
+    {
+      "buy_date": "2025-06-17",
+      "sell_date": "2025-06-19",
+      "code": "000663",
+      "buy_price": 6.86,
+      "sell_price": 6.57,
+      "shares": 2800,
+      "profit": -834.16,
+      "profit_pct": -4.34
+    },
+    {
+      "buy_date": "2025-06-17",
+      "sell_date": "2025-06-19",
+      "code": "603727",
+      "buy_price": 15.36304602,
+      "sell_price": 15.00714534,
+      "shares": 1200,
+      "profit": -448.73,
+      "profit_pct": -2.43
+    },
+    {
+      "buy_date": "2025-06-17",
+      "sell_date": "2025-06-19",
+      "code": "002570",
+      "buy_price": 6.53,
+      "sell_price": 6.1,
+      "shares": 3000,
+      "profit": -1312.09,
+      "profit_pct": -6.7
+    },
+    {
+      "buy_date": "2025-06-17",
+      "sell_date": "2025-06-19",
+      "code": "001238",
+      "buy_price": 38.96,
+      "sell_price": 37.9,
+      "shares": 500,
+      "profit": -552.79,
+      "profit_pct": -2.84
+    },
+    {
+      "buy_date": "2025-06-18",
+      "sell_date": "2025-06-20",
+      "code": "600199",
+      "buy_price": 10.53,
+      "sell_price": 10.41,
+      "shares": 1800,
+      "profit": -238.51,
+      "profit_pct": -1.26
+    },
+    {
+      "buy_date": "2025-06-18",
+      "sell_date": "2025-06-20",
+      "code": "002521",
+      "buy_price": 9.12474818,
+      "sell_price": 8.86743424,
+      "shares": 2000,
+      "profit": -535.96,
+      "profit_pct": -2.94
+    },
+    {
+      "buy_date": "2025-06-18",
+      "sell_date": "2025-06-20",
+      "code": "300554",
+      "buy_price": 20.6,
+      "sell_price": 20.54,
+      "shares": 900,
+      "profit": -76.19,
+      "profit_pct": -0.41
+    },
+    {
+      "buy_date": "2025-06-18",
+      "sell_date": "2025-06-20",
+      "code": "603256",
+      "buy_price": 12.22,
+      "sell_price": 12.5,
+      "shares": 1500,
+      "profit": 397.54,
+      "profit_pct": 2.17
+    },
+    {
+      "buy_date": "2025-06-18",
+      "sell_date": "2025-06-20",
+      "code": "301512",
+      "buy_price": 40.83,
+      "sell_price": 39.16,
+      "shares": 400,
+      "profit": -686.86,
+      "profit_pct": -4.21
+    },
+    {
+      "buy_date": "2025-06-19",
+      "sell_date": "2025-06-23",
+      "code": "600359",
+      "buy_price": 7.18,
+      "sell_price": 6.95,
+      "shares": 2600,
+      "profit": -619.74,
+      "profit_pct": -3.32
+    },
+    {
+      "buy_date": "2025-06-19",
+      "sell_date": "2025-06-23",
+      "code": "601857",
+      "buy_price": 8.7629505,
+      "sell_price": 8.75347704,
+      "shares": 2100,
+      "profit": -41.96,
+      "profit_pct": -0.23
+    },
+    {
+      "buy_date": "2025-06-19",
+      "sell_date": "2025-06-23",
+      "code": "600506",
+      "buy_price": 15.3775622,
+      "sell_price": 15.3929244,
+      "shares": 1200,
+      "profit": -3.73,
+      "profit_pct": -0.02
+    },
+    {
+      "buy_date": "2025-06-19",
+      "sell_date": "2025-06-23",
+      "code": "600688",
+      "buy_price": 2.94993171,
+      "sell_price": 2.92013442,
+      "shares": 6400,
+      "profit": -213.15,
+      "profit_pct": -1.13
+    },
+    {
+      "buy_date": "2025-06-19",
+      "sell_date": "2025-06-23",
+      "code": "000059",
+      "buy_price": 5.59,
+      "sell_price": 5.13,
+      "shares": 3300,
+      "profit": -1538.47,
+      "profit_pct": -8.34
+    },
+    {
+      "buy_date": "2025-06-20",
+      "sell_date": "2025-06-24",
+      "code": "600809",
+      "buy_price": 179.68149784,
+      "sell_price": 174.02971937,
+      "shares": 100,
+      "profit": -586.12,
+      "profit_pct": -3.26
+    },
+    {
+      "buy_date": "2025-06-20",
+      "sell_date": "2025-06-24",
+      "code": "603198",
+      "buy_price": 39.82000136,
+      "sell_price": 38.54,
+      "shares": 400,
+      "profit": -530.55,
+      "profit_pct": -3.33
+    },
+    {
+      "buy_date": "2025-06-20",
+      "sell_date": "2025-06-24",
+      "code": "300554",
+      "buy_price": 21.27,
+      "sell_price": 21.43,
+      "shares": 800,
+      "profit": 107.44,
+      "profit_pct": 0.63
+    },
+    {
+      "buy_date": "2025-06-20",
+      "sell_date": "2025-06-24",
+      "code": "002338",
+      "buy_price": 44.32,
+      "sell_price": 45.68,
+      "shares": 400,
+      "profit": 522.13,
+      "profit_pct": 2.95
+    },
+    {
+      "buy_date": "2025-06-20",
+      "sell_date": "2025-06-24",
+      "code": "601778",
+      "buy_price": 2.78208546,
+      "sell_price": 2.76228414,
+      "shares": 6600,
+      "profit": -152.58,
+      "profit_pct": -0.83
+    },
+    {
+      "buy_date": "2025-06-23",
+      "sell_date": "2025-06-25",
+      "code": "603120",
+      "buy_price": 41.0660296,
+      "sell_price": 41.432337,
+      "shares": 400,
+      "profit": 126.65,
+      "profit_pct": 0.77
+    },
+    {
+      "buy_date": "2025-06-23",
+      "sell_date": "2025-06-25",
+      "code": "601225",
+      "buy_price": 19.64491881,
+      "sell_price": 19.561682,
+      "shares": 900,
+      "profit": -96.05,
+      "profit_pct": -0.54
+    },
+    {
+      "buy_date": "2025-06-23",
+      "sell_date": "2025-06-25",
+      "code": "603863",
+      "buy_price": 14.41,
+      "sell_price": 14.51,
+      "shares": 1200,
+      "profit": 99.12,
+      "profit_pct": 0.57
+    },
+    {
+      "buy_date": "2025-06-23",
+      "sell_date": "2025-06-25",
+      "code": "603051",
+      "buy_price": 18.7377582,
+      "sell_price": 19.66760184,
+      "shares": 900,
+      "profit": 815.7,
+      "profit_pct": 4.84
+    },
+    {
+      "buy_date": "2025-06-23",
+      "sell_date": "2025-06-25",
+      "code": "003037",
+      "buy_price": 7.02330265,
+      "sell_price": 7.0928403,
+      "shares": 2600,
+      "profit": 158.69,
+      "profit_pct": 0.87
+    },
+    {
+      "buy_date": "2025-06-24",
+      "sell_date": "2025-06-26",
+      "code": "600251",
+      "buy_price": 7.40931,
+      "sell_price": 7.39943092,
+      "shares": 2400,
+      "profit": -45.02,
+      "profit_pct": -0.25
+    },
+    {
+      "buy_date": "2025-06-24",
+      "sell_date": "2025-06-26",
+      "code": "300616",
+      "buy_price": 13.03,
+      "sell_price": 13.16,
+      "shares": 1400,
+      "profit": 159.91,
+      "profit_pct": 0.88
+    },
+    {
+      "buy_date": "2025-06-24",
+      "sell_date": "2025-06-26",
+      "code": "603058",
+      "buy_price": 8.09,
+      "sell_price": 8.1,
+      "shares": 2200,
+      "profit": 0.62,
+      "profit_pct": 0.0
+    },
+    {
+      "buy_date": "2025-06-24",
+      "sell_date": "2025-06-26",
+      "code": "002836",
+      "buy_price": 9.23,
+      "sell_price": 9.3,
+      "shares": 2000,
+      "profit": 117.69,
+      "profit_pct": 0.64
+    },
+    {
+      "buy_date": "2025-06-24",
+      "sell_date": "2025-06-26",
+      "code": "002191",
+      "buy_price": 4.03,
+      "sell_price": 4.02,
+      "shares": 4500,
+      "profit": -66.71,
+      "profit_pct": -0.37
+    },
+    {
+      "buy_date": "2025-06-25",
+      "sell_date": "2025-06-27",
+      "code": "600830",
+      "buy_price": 10.27,
+      "sell_price": 10.2,
+      "shares": 1800,
+      "profit": -148.04,
+      "profit_pct": -0.8
+    },
+    {
+      "buy_date": "2025-06-25",
+      "sell_date": "2025-06-27",
+      "code": "600097",
+      "buy_price": 10.33,
+      "sell_price": 10.32,
+      "shares": 1700,
+      "profit": -38.05,
+      "profit_pct": -0.22
+    },
+    {
+      "buy_date": "2025-06-25",
+      "sell_date": "2025-06-27",
+      "code": "000592",
+      "buy_price": 3.1,
+      "sell_price": 3.06,
+      "shares": 5900,
+      "profit": -257.69,
+      "profit_pct": -1.41
+    },
+    {
+      "buy_date": "2025-06-25",
+      "sell_date": "2025-06-27",
+      "code": "002228",
+      "buy_price": 3.2657065,
+      "sell_price": 3.2657065,
+      "shares": 5600,
+      "profit": -21.95,
+      "profit_pct": -0.12
+    },
+    {
+      "buy_date": "2025-06-25",
+      "sell_date": "2025-06-27",
+      "code": "600433",
+      "buy_price": 3.1,
+      "sell_price": 3.09,
+      "shares": 5900,
+      "profit": -80.88,
+      "profit_pct": -0.44
+    },
+    {
+      "buy_date": "2025-06-26",
+      "sell_date": "2025-06-30",
+      "code": "000735",
+      "buy_price": 6.07078605,
+      "sell_price": 6.01097535,
+      "shares": 3000,
+      "profit": -201.09,
+      "profit_pct": -1.1
+    },
+    {
+      "buy_date": "2025-06-26",
+      "sell_date": "2025-06-30",
+      "code": "601168",
+      "buy_price": 15.85008315,
+      "sell_price": 16.6390917,
+      "shares": 1100,
+      "profit": 846.03,
+      "profit_pct": 4.85
+    },
+    {
+      "buy_date": "2025-06-26",
+      "sell_date": "2025-06-30",
+      "code": "603816",
+      "buy_price": 24.05130624,
+      "sell_price": 24.15554752,
+      "shares": 700,
+      "profit": 52.69,
+      "profit_pct": 0.31
+    },
+    {
+      "buy_date": "2025-06-26",
+      "sell_date": "2025-06-30",
+      "code": "603863",
+      "buy_price": 14.65,
+      "sell_price": 14.65,
+      "shares": 1200,
+      "profit": -21.1,
+      "profit_pct": -0.12
+    },
+    {
+      "buy_date": "2025-06-26",
+      "sell_date": "2025-06-30",
+      "code": "001255",
+      "buy_price": 31.28,
+      "sell_price": 31.0,
+      "shares": 500,
+      "profit": -158.61,
+      "profit_pct": -1.01
+    },
+    {
+      "buy_date": "2025-06-27",
+      "sell_date": "2025-07-01",
+      "code": "000688",
+      "buy_price": 12.98865581,
+      "sell_price": 13.23786256,
+      "shares": 1400,
+      "profit": 326.68,
+      "profit_pct": 1.8
+    },
+    {
+      "buy_date": "2025-06-27",
+      "sell_date": "2025-07-01",
+      "code": "601958",
+      "buy_price": 10.74877179,
+      "sell_price": 10.61307945,
+      "shares": 1700,
+      "profit": -252.35,
+      "profit_pct": -1.38
+    },
+    {
+      "buy_date": "2025-06-27",
+      "sell_date": "2025-07-01",
+      "code": "600711",
+      "buy_price": 6.12557835,
+      "sell_price": 6.2749827,
+      "shares": 3000,
+      "profit": 425.67,
+      "profit_pct": 2.32
+    },
+    {
+      "buy_date": "2025-06-27",
+      "sell_date": "2025-07-01",
+      "code": "605086",
+      "buy_price": 26.0500784,
+      "sell_price": 26.5284272,
+      "shares": 700,
+      "profit": 312.59,
+      "profit_pct": 1.71
+    },
+    {
+      "buy_date": "2025-06-27",
+      "sell_date": "2025-07-01",
+      "code": "002629",
+      "buy_price": 6.06,
+      "sell_price": 6.23,
+      "shares": 3000,
+      "profit": 487.62,
+      "profit_pct": 2.68
+    },
+    {
+      "buy_date": "2025-06-30",
+      "sell_date": "2025-07-02",
+      "code": "000735",
+      "buy_price": 6.15053365,
+      "sell_price": 6.11065985,
+      "shares": 3000,
+      "profit": -141.63,
+      "profit_pct": -0.77
+    },
+    {
+      "buy_date": "2025-06-30",
+      "sell_date": "2025-07-02",
+      "code": "605086",
+      "buy_price": 26.5284272,
+      "sell_price": 26.3889088,
+      "shares": 700,
+      "profit": -119.84,
+      "profit_pct": -0.65
+    },
+    {
+      "buy_date": "2025-06-30",
+      "sell_date": "2025-07-02",
+      "code": "001238",
+      "buy_price": 39.2,
+      "sell_price": 39.9,
+      "shares": 400,
+      "profit": 260.88,
+      "profit_pct": 1.66
+    },
+    {
+      "buy_date": "2025-06-30",
+      "sell_date": "2025-07-02",
+      "code": "601011",
+      "buy_price": 2.69,
+      "sell_price": 2.67,
+      "shares": 6900,
+      "profit": -160.12,
+      "profit_pct": -0.86
+    },
+    {
+      "buy_date": "2025-06-30",
+      "sell_date": "2025-07-02",
+      "code": "301163",
+      "buy_price": 25.0,
+      "sell_price": 26.09,
+      "shares": 700,
+      "profit": 741.16,
+      "profit_pct": 4.24
+    },
+    {
+      "buy_date": "2025-07-01",
+      "sell_date": "2025-07-03",
+      "code": "300371",
+      "buy_price": 11.62,
+      "sell_price": 11.64,
+      "shares": 1600,
+      "profit": 9.65,
+      "profit_pct": 0.05
+    },
+    {
+      "buy_date": "2025-07-01",
+      "sell_date": "2025-07-03",
+      "code": "605050",
+      "buy_price": 13.48140486,
+      "sell_price": 13.29592572,
+      "shares": 1400,
+      "profit": -282.03,
+      "profit_pct": -1.49
+    },
+    {
+      "buy_date": "2025-07-01",
+      "sell_date": "2025-07-03",
+      "code": "000663",
+      "buy_price": 7.01,
+      "sell_price": 6.95,
+      "shares": 2600,
+      "profit": -177.7,
+      "profit_pct": -0.97
+    },
+    {
+      "buy_date": "2025-07-01",
+      "sell_date": "2025-07-03",
+      "code": "600493",
+      "buy_price": 6.48,
+      "sell_price": 6.47,
+      "shares": 2900,
+      "profit": -51.52,
+      "profit_pct": -0.27
+    },
+    {
+      "buy_date": "2025-07-01",
+      "sell_date": "2025-07-03",
+      "code": "001238",
+      "buy_price": 39.95,
+      "sell_price": 39.59,
+      "shares": 400,
+      "profit": -163.02,
+      "profit_pct": -1.02
+    },
+    {
+      "buy_date": "2025-07-02",
+      "sell_date": "2025-07-04",
+      "code": "601121",
+      "buy_price": 6.44,
+      "sell_price": 6.32,
+      "shares": 2900,
+      "profit": -370.03,
+      "profit_pct": -1.98
+    },
+    {
+      "buy_date": "2025-07-02",
+      "sell_date": "2025-07-04",
+      "code": "600540",
+      "buy_price": 5.12,
+      "sell_price": 5.16,
+      "shares": 3600,
+      "profit": 121.72,
+      "profit_pct": 0.66
+    },
+    {
+      "buy_date": "2025-07-02",
+      "sell_date": "2025-07-04",
+      "code": "003037",
+      "buy_price": 7.3113872,
+      "sell_price": 7.3709909,
+      "shares": 2500,
+      "profit": 126.91,
+      "profit_pct": 0.69
+    },
+    {
+      "buy_date": "2025-07-02",
+      "sell_date": "2025-07-04",
+      "code": "300904",
+      "buy_price": 54.86,
+      "sell_price": 53.54,
+      "shares": 300,
+      "profit": -415.31,
+      "profit_pct": -2.52
+    },
+    {
+      "buy_date": "2025-07-02",
+      "sell_date": "2025-07-04",
+      "code": "002192",
+      "buy_price": 31.1311991,
+      "sell_price": 31.827424,
+      "shares": 600,
+      "profit": 394.86,
+      "profit_pct": 2.11
+    },
+    {
+      "buy_date": "2025-07-03",
+      "sell_date": "2025-07-07",
+      "code": "300631",
+      "buy_price": 24.5971236,
+      "sell_price": 24.0015516,
+      "shares": 700,
+      "profit": -437.1,
+      "profit_pct": -2.54
+    },
+    {
+      "buy_date": "2025-07-03",
+      "sell_date": "2025-07-07",
+      "code": "603890",
+      "buy_price": 11.81,
+      "sell_price": 11.65,
+      "shares": 1500,
+      "profit": -260.99,
+      "profit_pct": -1.47
+    },
+    {
+      "buy_date": "2025-07-03",
+      "sell_date": "2025-07-07",
+      "code": "002682",
+      "buy_price": 4.99,
+      "sell_price": 4.85,
+      "shares": 3700,
+      "profit": -539.59,
+      "profit_pct": -2.92
+    },
+    {
+      "buy_date": "2025-07-03",
+      "sell_date": "2025-07-07",
+      "code": "603712",
+      "buy_price": 21.66,
+      "sell_price": 21.21,
+      "shares": 800,
+      "profit": -380.4,
+      "profit_pct": -2.2
+    },
+    {
+      "buy_date": "2025-07-03",
+      "sell_date": "2025-07-07",
+      "code": "300779",
+      "buy_price": 185.74373488,
+      "sell_price": 194.89899,
+      "shares": 100,
+      "profit": 892.23,
+      "profit_pct": 4.8
+    },
+    {
+      "buy_date": "2025-07-04",
+      "sell_date": "2025-07-08",
+      "code": "603608",
+      "buy_price": 5.5,
+      "sell_price": 5.5,
+      "shares": 3300,
+      "profit": -21.78,
+      "profit_pct": -0.12
+    },
+    {
+      "buy_date": "2025-07-04",
+      "sell_date": "2025-07-08",
+      "code": "600272",
+      "buy_price": 14.11,
+      "sell_price": 14.08,
+      "shares": 1300,
+      "profit": -60.97,
+      "profit_pct": -0.33
+    },
+    {
+      "buy_date": "2025-07-04",
+      "sell_date": "2025-07-08",
+      "code": "300189",
+      "buy_price": 4.7,
+      "sell_price": 4.72,
+      "shares": 3900,
+      "profit": 55.92,
+      "profit_pct": 0.31
+    },
+    {
+      "buy_date": "2025-07-04",
+      "sell_date": "2025-07-08",
+      "code": "002631",
+      "buy_price": 4.97,
+      "sell_price": 4.94,
+      "shares": 3700,
+      "profit": -132.94,
+      "profit_pct": -0.72
+    },
+    {
+      "buy_date": "2025-07-04",
+      "sell_date": "2025-07-08",
+      "code": "603629",
+      "buy_price": 23.80356012,
+      "sell_price": 23.48458444,
+      "shares": 700,
+      "profit": -243.03,
+      "profit_pct": -1.46
+    }
+  ],
+  "portfolio_values": [
+    {
+      "date": "2025-06-03",
+      "cash": 100000,
+      "pos_value": 0,
+      "total": 100000,
+      "positions": 0
+    },
+    {
+      "date": "2025-06-04",
+      "cash": 100000,
+      "pos_value": 0,
+      "total": 100000,
+      "positions": 0
+    },
+    {
+      "date": "2025-06-05",
+      "cash": 100000,
+      "pos_value": 0,
+      "total": 100000,
+      "positions": 0
+    },
+    {
+      "date": "2025-06-06",
+      "cash": 100000,
+      "pos_value": 0,
+      "total": 100000,
+      "positions": 0
+    },
+    {
+      "date": "2025-06-09",
+      "cash": 5014.28,
+      "pos_value": 103483.0,
+      "total": 108497.28,
+      "positions": 5
+    },
+    {
+      "date": "2025-06-10",
+      "cash": 1008.46,
+      "pos_value": 103964.0,
+      "total": 104972.46,
+      "positions": 5
+    },
+    {
+      "date": "2025-06-11",
+      "cash": 2550.75,
+      "pos_value": 83502.0,
+      "total": 86052.75,
+      "positions": 5
+    },
+    {
+      "date": "2025-06-12",
+      "cash": 4721.46,
+      "pos_value": 115850.0,
+      "total": 120571.46,
+      "positions": 5
+    },
+    {
+      "date": "2025-06-13",
+      "cash": 2424.36,
+      "pos_value": 114421.0,
+      "total": 116845.36,
+      "positions": 5
+    },
+    {
+      "date": "2025-06-16",
+      "cash": 3277.3,
+      "pos_value": 97303.0,
+      "total": 100580.3,
+      "positions": 5
+    },
+    {
+      "date": "2025-06-17",
+      "cash": 3105.32,
+      "pos_value": 85974.0,
+      "total": 89079.32,
+      "positions": 5
+    },
+    {
+      "date": "2025-06-18",
+      "cash": 5205.48,
+      "pos_value": 379740.01,
+      "total": 384945.48,
+      "positions": 5
+    },
+    {
+      "date": "2025-06-19",
+      "cash": 1620.92,
+      "pos_value": 93564.0,
+      "total": 95184.92,
+      "positions": 5
+    },
+    {
+      "date": "2025-06-20",
+      "cash": 5052.38,
+      "pos_value": 110848.0,
+      "total": 115900.38,
+      "positions": 5
+    },
+    {
+      "date": "2025-06-23",
+      "cash": 4891.25,
+      "pos_value": 99519.0,
+      "total": 104410.25,
+      "positions": 5
+    },
+    {
+      "date": "2025-06-24",
+      "cash": 2101.04,
+      "pos_value": 105962.0,
+      "total": 108063.04,
+      "positions": 5
+    },
+    {
+      "date": "2025-06-25",
+      "cash": 1769.86,
+      "pos_value": 124228.0,
+      "total": 125997.86,
+      "positions": 5
+    },
+    {
+      "date": "2025-06-26",
+      "cash": 6435.36,
+      "pos_value": 105338.0,
+      "total": 111773.36,
+      "positions": 5
+    },
+    {
+      "date": "2025-06-27",
+      "cash": 1407.26,
+      "pos_value": 174141.0,
+      "total": 175548.26,
+      "positions": 5
+    },
+    {
+      "date": "2025-06-30",
+      "cash": 5194.05,
+      "pos_value": 92528.0,
+      "total": 97722.05,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-01",
+      "cash": 4072.86,
+      "pos_value": 83854.0,
+      "total": 87926.86,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-02",
+      "cash": 3349.02,
+      "pos_value": 117098.0,
+      "total": 120447.02,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-03",
+      "cash": 4432.12,
+      "pos_value": 93284.0,
+      "total": 97716.12,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-04",
+      "cash": 3130.08,
+      "pos_value": 291242.0,
+      "total": 294372.08,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-07",
+      "cash": 2646.51,
+      "pos_value": 171881.0,
+      "total": 174527.51,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-08",
+      "cash": 3558.79,
+      "pos_value": 125498.0,
+      "total": 129056.79,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-09",
+      "cash": 2903.97,
+      "pos_value": 85710.0,
+      "total": 88613.97,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-10",
+      "cash": 8886.69,
+      "pos_value": 76943.0,
+      "total": 85829.69,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-11",
+      "cash": 3412.62,
+      "pos_value": 87301.0,
+      "total": 90713.62,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-14",
+      "cash": 8712.09,
+      "pos_value": 127800.0,
+      "total": 136512.09,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-15",
+      "cash": 6314.48,
+      "pos_value": 123669.0,
+      "total": 129983.48,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-16",
+      "cash": 2187.15,
+      "pos_value": 85675.0,
+      "total": 87862.15,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-17",
+      "cash": 5893.32,
+      "pos_value": 97577.0,
+      "total": 103470.32,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-18",
+      "cash": 5811.98,
+      "pos_value": 99660.0,
+      "total": 105471.98,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-21",
+      "cash": 6289.02,
+      "pos_value": 90912.0,
+      "total": 97201.02,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-22",
+      "cash": 2743.19,
+      "pos_value": 99986.0,
+      "total": 102729.19,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-23",
+      "cash": 23595.06,
+      "pos_value": 82311.0,
+      "total": 105906.06,
+      "positions": 4
+    },
+    {
+      "date": "2025-07-24",
+      "cash": 1628.95,
+      "pos_value": 84602.0,
+      "total": 86230.95,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-25",
+      "cash": 4269.62,
+      "pos_value": 79296.0,
+      "total": 83565.62,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-28",
+      "cash": 5390.58,
+      "pos_value": 90228.0,
+      "total": 95618.58,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-29",
+      "cash": 2091.42,
+      "pos_value": 128680.0,
+      "total": 130771.42,
+      "positions": 5
+    },
+    {
+      "date": "2025-07-30",
+      "cash": 25009.75,
+      "pos_value": 61336.0,
+      "total": 86345.75,
+      "positions": 4
+    },
+    {
+      "date": "2025-07-31",
+      "cash": 5201.0,
+      "pos_value": 114312.0,
+      "total": 119513.01,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-01",
+      "cash": 21063.5,
+      "pos_value": 62932.0,
+      "total": 83995.5,
+      "positions": 4
+    },
+    {
+      "date": "2025-08-04",
+      "cash": 3741.24,
+      "pos_value": 90834.0,
+      "total": 94575.24,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-05",
+      "cash": 5624.77,
+      "pos_value": 109088.0,
+      "total": 114712.77,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-06",
+      "cash": 8385.96,
+      "pos_value": 115778.0,
+      "total": 124163.96,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-07",
+      "cash": 9501.94,
+      "pos_value": 91208.0,
+      "total": 100709.94,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-08",
+      "cash": 5252.38,
+      "pos_value": 90819.0,
+      "total": 96071.38,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-11",
+      "cash": 26435.37,
+      "pos_value": 63336.0,
+      "total": 89771.37,
+      "positions": 4
+    },
+    {
+      "date": "2025-08-12",
+      "cash": 1482.97,
+      "pos_value": 85024.0,
+      "total": 86506.97,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-13",
+      "cash": 2704.91,
+      "pos_value": 116015.0,
+      "total": 118719.91,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-14",
+      "cash": 7250.5,
+      "pos_value": 114986.0,
+      "total": 122236.5,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-15",
+      "cash": 3064.91,
+      "pos_value": 102499.01,
+      "total": 105563.92,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-18",
+      "cash": 6712.56,
+      "pos_value": 73581.0,
+      "total": 80293.56,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-19",
+      "cash": 24131.71,
+      "pos_value": 84050.0,
+      "total": 108181.71,
+      "positions": 4
+    },
+    {
+      "date": "2025-08-20",
+      "cash": 5877.74,
+      "pos_value": 109598.0,
+      "total": 115475.74,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-21",
+      "cash": 4075.39,
+      "pos_value": 84363.0,
+      "total": 88438.39,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-22",
+      "cash": 5708.89,
+      "pos_value": 85938.0,
+      "total": 91646.89,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-25",
+      "cash": 5641.83,
+      "pos_value": 124182.0,
+      "total": 129823.83,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-26",
+      "cash": 3536.25,
+      "pos_value": 151036.0,
+      "total": 154572.25,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-27",
+      "cash": 1692.76,
+      "pos_value": 85594.0,
+      "total": 87286.76,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-28",
+      "cash": 4015.32,
+      "pos_value": 79690.01,
+      "total": 83705.32,
+      "positions": 5
+    },
+    {
+      "date": "2025-08-29",
+      "cash": 2933.1,
+      "pos_value": 96398.0,
+      "total": 99331.1,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-01",
+      "cash": 3969.17,
+      "pos_value": 107562.0,
+      "total": 111531.17,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-02",
+      "cash": 1656.86,
+      "pos_value": 113885.0,
+      "total": 115541.86,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-03",
+      "cash": 22503.06,
+      "pos_value": 71119.0,
+      "total": 93622.06,
+      "positions": 4
+    },
+    {
+      "date": "2025-09-04",
+      "cash": 3521.33,
+      "pos_value": 92298.0,
+      "total": 95819.33,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-05",
+      "cash": 1197.81,
+      "pos_value": 86050.0,
+      "total": 87247.81,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-08",
+      "cash": 8007.46,
+      "pos_value": 90297.0,
+      "total": 98304.46,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-09",
+      "cash": 4752.02,
+      "pos_value": 89503.0,
+      "total": 94255.02,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-10",
+      "cash": 20926.09,
+      "pos_value": 68774.0,
+      "total": 89700.09,
+      "positions": 4
+    },
+    {
+      "date": "2025-09-11",
+      "cash": 5427.35,
+      "pos_value": 88438.0,
+      "total": 93865.35,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-12",
+      "cash": 2229.56,
+      "pos_value": 78593.0,
+      "total": 80822.56,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-15",
+      "cash": 3097.34,
+      "pos_value": 87138.0,
+      "total": 90235.34,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-16",
+      "cash": 2891.87,
+      "pos_value": 84873.0,
+      "total": 87764.87,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-17",
+      "cash": 13916.7,
+      "pos_value": 87410.0,
+      "total": 101326.7,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-18",
+      "cash": 4026.79,
+      "pos_value": 72199.0,
+      "total": 76225.79,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-19",
+      "cash": 3588.46,
+      "pos_value": 84056.0,
+      "total": 87644.46,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-22",
+      "cash": 3794.39,
+      "pos_value": 76452.0,
+      "total": 80246.39,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-23",
+      "cash": 5427.07,
+      "pos_value": 90091.0,
+      "total": 95518.07,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-24",
+      "cash": 7634.08,
+      "pos_value": 106806.0,
+      "total": 114440.08,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-25",
+      "cash": 7037.17,
+      "pos_value": 64144.0,
+      "total": 71181.17,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-26",
+      "cash": 3677.26,
+      "pos_value": 112198.0,
+      "total": 115875.26,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-29",
+      "cash": 3014.2,
+      "pos_value": 93516.0,
+      "total": 96530.2,
+      "positions": 5
+    },
+    {
+      "date": "2025-09-30",
+      "cash": 1453.94,
+      "pos_value": 79360.0,
+      "total": 80813.94,
+      "positions": 5
+    },
+    {
+      "date": "2025-10-09",
+      "cash": 2863.1,
+      "pos_value": 77891.0,
+      "total": 80754.1,
+      "positions": 5
+    },
+    {
+      "date": "2025-10-10",
+      "cash": 2907.76,
+      "pos_value": 76876.0,
+      "total": 79783.76,
+      "positions": 5
+    },
+    {
+      "date": "2025-10-13",
+      "cash": 4174.91,
+      "pos_value": 79544.0,
+      "total": 83718.91,
+      "positions": 5
+    },
+    {
+      "date": "2025-10-14",
+      "cash": 1217.97,
+      "pos_value": 78290.0,
+      "total": 79507.97,
+      "positions": 5
+    },
+    {
+      "date": "2025-10-15",
+      "cash": 3020.92,
+      "pos_value": 70590.0,
+      "total": 73610.92,
+      "positions": 5
+    },
+    {
+      "date": "2025-10-16",
+      "cash": 2852.27,
+      "pos_value": 82415.0,
+      "total": 85267.27,
+      "positions": 5
+    },
+    {
+      "date": "2025-10-17",
+      "cash": 3799.06,
+      "pos_value": 75475.0,
+      "total": 79274.06,
+      "positions": 5
+    },
+    {
+      "date": "2025-10-20",
+      "cash": 971.1,
+      "pos_value": 130310.0,
+      "total": 131281.1,
+      "positions": 5
+    },
+    {
+      "date": "2025-10-21",
+      "cash": 2609.64,
+      "pos_value": 88984.0,
+      "total": 91593.64,
+      "positions": 5
+    },
+    {
+      "date": "2025-10-22",
+      "cash": 3249.3,
+      "pos_value": 86531.0,
+      "total": 89780.3,
+      "positions": 5
+    },
+    {
+      "date": "2025-10-23",
+      "cash": 4693.3,
+      "pos_value": 66994.0,
+      "total": 71687.3,
+      "positions": 5
+    },
+    {
+      "date": "2025-10-24",
+      "cash": 9058.9,
+      "pos_value": 85812.0,
+      "total": 94870.9,
+      "positions": 5
+    },
+    {
+      "date": "2025-10-27",
+      "cash": 2565.43,
+      "pos_value": 62512.0,
+      "total": 65077.43,
+      "positions": 5
+    },
+    {
+      "date": "2025-10-28",
+      "cash": 5380.28,
+      "pos_value": 94181.0,
+      "total": 99561.28,
+      "positions": 5
+    },
+    {
+      "date": "2025-10-29",
+      "cash": 1768.53,
+      "pos_value": 75331.0,
+      "total": 77099.53,
+      "positions": 5
+    },
+    {
+      "date": "2025-10-30",
+      "cash": 6140.41,
+      "pos_value": 66527.0,
+      "total": 72667.41,
+      "positions": 5
+    },
+    {
+      "date": "2025-10-31",
+      "cash": 750.86,
+      "pos_value": 80079.0,
+      "total": 80829.86,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-03",
+      "cash": 4267.02,
+      "pos_value": 91411.0,
+      "total": 95678.02,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-04",
+      "cash": 2038.4,
+      "pos_value": 109686.0,
+      "total": 111724.4,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-05",
+      "cash": 3205.02,
+      "pos_value": 77939.0,
+      "total": 81144.02,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-06",
+      "cash": 3718.75,
+      "pos_value": 94044.0,
+      "total": 97762.75,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-07",
+      "cash": 2010.65,
+      "pos_value": 79731.0,
+      "total": 81741.65,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-10",
+      "cash": 3822.33,
+      "pos_value": 113866.0,
+      "total": 117688.33,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-11",
+      "cash": 4853.32,
+      "pos_value": 67062.0,
+      "total": 71915.32,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-12",
+      "cash": 2307.51,
+      "pos_value": 69072.0,
+      "total": 71379.51,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-13",
+      "cash": 3619.62,
+      "pos_value": 90210.0,
+      "total": 93829.62,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-14",
+      "cash": 1265.81,
+      "pos_value": 76894.0,
+      "total": 78159.81,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-17",
+      "cash": 4865.66,
+      "pos_value": 64588.0,
+      "total": 69453.66,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-18",
+      "cash": 3390.76,
+      "pos_value": 92577.0,
+      "total": 95967.76,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-19",
+      "cash": 6572.27,
+      "pos_value": 59994.0,
+      "total": 66566.27,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-20",
+      "cash": 3259.94,
+      "pos_value": 81937.0,
+      "total": 85196.94,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-21",
+      "cash": 8378.78,
+      "pos_value": 62627.0,
+      "total": 71005.78,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-24",
+      "cash": 4338.75,
+      "pos_value": 73835.0,
+      "total": 78173.75,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-25",
+      "cash": 7131.27,
+      "pos_value": 62827.0,
+      "total": 69958.27,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-26",
+      "cash": 2913.89,
+      "pos_value": 70078.0,
+      "total": 72991.89,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-27",
+      "cash": 5119.98,
+      "pos_value": 84513.0,
+      "total": 89632.98,
+      "positions": 5
+    },
+    {
+      "date": "2025-11-28",
+      "cash": 8503.06,
+      "pos_value": 55048.0,
+      "total": 63551.06,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-01",
+      "cash": 9796.15,
+      "pos_value": 56245.0,
+      "total": 66041.15,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-02",
+      "cash": 15789.27,
+      "pos_value": 64510.0,
+      "total": 80299.27,
+      "positions": 4
+    },
+    {
+      "date": "2025-12-03",
+      "cash": 5557.58,
+      "pos_value": 60698.0,
+      "total": 66255.58,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-04",
+      "cash": 11222.91,
+      "pos_value": 113966.0,
+      "total": 125188.91,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-05",
+      "cash": 10292.41,
+      "pos_value": 65315.0,
+      "total": 75607.41,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-08",
+      "cash": 5548.62,
+      "pos_value": 51799.0,
+      "total": 57347.62,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-09",
+      "cash": 16605.57,
+      "pos_value": 77313.0,
+      "total": 93918.57,
+      "positions": 4
+    },
+    {
+      "date": "2025-12-10",
+      "cash": 3475.29,
+      "pos_value": 65779.0,
+      "total": 69254.29,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-11",
+      "cash": 7132.13,
+      "pos_value": 61638.0,
+      "total": 68770.13,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-12",
+      "cash": 8035.53,
+      "pos_value": 53197.0,
+      "total": 61232.53,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-15",
+      "cash": 4947.94,
+      "pos_value": 68485.0,
+      "total": 73432.94,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-16",
+      "cash": 5210.13,
+      "pos_value": 58509.0,
+      "total": 63719.13,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-17",
+      "cash": 19547.92,
+      "pos_value": 48239.0,
+      "total": 67786.92,
+      "positions": 4
+    },
+    {
+      "date": "2025-12-18",
+      "cash": 4950.5,
+      "pos_value": 65217.0,
+      "total": 70167.5,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-19",
+      "cash": 4073.03,
+      "pos_value": 46368.0,
+      "total": 50441.03,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-22",
+      "cash": 12439.47,
+      "pos_value": 57423.0,
+      "total": 69862.47,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-23",
+      "cash": 2497.75,
+      "pos_value": 76669.0,
+      "total": 79166.75,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-24",
+      "cash": 3865.07,
+      "pos_value": 63430.0,
+      "total": 67295.07,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-25",
+      "cash": 9397.9,
+      "pos_value": 132090.0,
+      "total": 141487.9,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-26",
+      "cash": 5416.21,
+      "pos_value": 63959.0,
+      "total": 69375.21,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-29",
+      "cash": 9049.79,
+      "pos_value": 52619.0,
+      "total": 61668.79,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-30",
+      "cash": 5654.47,
+      "pos_value": 47868.0,
+      "total": 53522.47,
+      "positions": 5
+    },
+    {
+      "date": "2025-12-31",
+      "cash": 3913.81,
+      "pos_value": 58286.0,
+      "total": 62199.81,
+      "positions": 5
+    },
+    {
+      "date": "2026-01-05",
+      "cash": 4402.19,
+      "pos_value": 151976.0,
+      "total": 156378.19,
+      "positions": 5
+    },
+    {
+      "date": "2026-01-06",
+      "cash": 2952.08,
+      "pos_value": 57575.0,
+      "total": 60527.08,
+      "positions": 5
+    },
+    {
+      "date": "2026-01-07",
+      "cash": 5053.85,
+      "pos_value": 54518.0,
+      "total": 59571.85,
+      "positions": 5
+    },
+    {
+      "date": "2026-01-08",
+      "cash": 5304.93,
+      "pos_value": 53475.0,
+      "total": 58779.93,
+      "positions": 5
+    },
+    {
+      "date": "2026-01-09",
+      "cash": 8282.1,
+      "pos_value": 54429.0,
+      "total": 62711.1,
+      "positions": 5
+    },
+    {
+      "date": "2026-01-12",
+      "cash": 4719.27,
+      "pos_value": 48058.0,
+      "total": 52777.27,
+      "positions": 5
+    },
+    {
+      "date": "2026-01-13",
+      "cash": 13985.4,
+      "pos_value": 48008.0,
+      "total": 61993.4,
+      "positions": 4
+    },
+    {
+      "date": "2026-01-14",
+      "cash": 2546.47,
+      "pos_value": 67539.0,
+      "total": 70085.47,
+      "positions": 5
+    },
+    {
+      "date": "2026-01-15",
+      "cash": 5807.15,
+      "pos_value": 47577.0,
+      "total": 53384.15,
+      "positions": 5
+    },
+    {
+      "date": "2026-01-16",
+      "cash": 8768.18,
+      "pos_value": 49342.0,
+      "total": 58110.18,
+      "positions": 5
+    },
+    {
+      "date": "2026-01-19",
+      "cash": 8566.52,
+      "pos_value": 48631.0,
+      "total": 57197.52,
+      "positions": 5
+    },
+    {
+      "date": "2026-01-20",
+      "cash": 3237.34,
+      "pos_value": 51945.0,
+      "total": 55182.34,
+      "positions": 5
+    },
+    {
+      "date": "2026-01-21",
+      "cash": 4016.55,
+      "pos_value": 85091.0,
+      "total": 89107.55,
+      "positions": 5
+    },
+    {
+      "date": "2026-01-22",
+      "cash": 3913.9,
+      "pos_value": 45434.0,
+      "total": 49347.9,
+      "positions": 5
+    },
+    {
+      "date": "2026-01-23",
+      "cash": 17938.7,
+      "pos_value": 38164.0,
+      "total": 56102.7,
+      "positions": 4
+    },
+    {
+      "date": "2026-01-26",
+      "cash": 3713.16,
+      "pos_value": 50278.0,
+      "total": 53991.16,
+      "positions": 5
+    },
+    {
+      "date": "2026-01-27",
+      "cash": 5391.04,
+      "pos_value": 46551.0,
+      "total": 51942.04,
+      "positions": 5
+    },
+    {
+      "date": "2026-01-28",
+      "cash": 2765.41,
+      "pos_value": 47558.0,
+      "total": 50323.41,
+      "positions": 5
+    },
+    {
+      "date": "2026-01-29",
+      "cash": 13690.43,
+      "pos_value": 35151.0,
+      "total": 48841.43,
+      "positions": 4
+    },
+    {
+      "date": "2026-01-30",
+      "cash": 7832.69,
+      "pos_value": 38812.0,
+      "total": 46644.69,
+      "positions": 5
+    },
+    {
+      "date": "2026-02-02",
+      "cash": 4812.78,
+      "pos_value": 40604.0,
+      "total": 45416.78,
+      "positions": 5
+    },
+    {
+      "date": "2026-02-03",
+      "cash": 3783.48,
+      "pos_value": 48189.0,
+      "total": 51972.48,
+      "positions": 5
+    },
+    {
+      "date": "2026-02-04",
+      "cash": 2009.11,
+      "pos_value": 48029.0,
+      "total": 50038.11,
+      "positions": 5
+    },
+    {
+      "date": "2026-02-05",
+      "cash": 6398.38,
+      "pos_value": 44520.0,
+      "total": 50918.38,
+      "positions": 5
+    },
+    {
+      "date": "2026-02-06",
+      "cash": 5211.33,
+      "pos_value": 52499.0,
+      "total": 57710.33,
+      "positions": 5
+    },
+    {
+      "date": "2026-02-09",
+      "cash": 1983.84,
+      "pos_value": 53599.0,
+      "total": 55582.84,
+      "positions": 5
+    },
+    {
+      "date": "2026-02-10",
+      "cash": 1201.87,
+      "pos_value": 44268.0,
+      "total": 45469.87,
+      "positions": 5
+    },
+    {
+      "date": "2026-02-11",
+      "cash": 2308.4,
+      "pos_value": 49864.0,
+      "total": 52172.4,
+      "positions": 5
+    },
+    {
+      "date": "2026-02-12",
+      "cash": 7792.87,
+      "pos_value": 43877.0,
+      "total": 51669.87,
+      "positions": 5
+    },
+    {
+      "date": "2026-02-13",
+      "cash": 6505.32,
+      "pos_value": 54046.0,
+      "total": 60551.32,
+      "positions": 5
+    },
+    {
+      "date": "2026-02-24",
+      "cash": 3483.81,
+      "pos_value": 45707.0,
+      "total": 49190.81,
+      "positions": 5
+    },
+    {
+      "date": "2026-02-25",
+      "cash": 2872.98,
+      "pos_value": 46345.0,
+      "total": 49217.98,
+      "positions": 5
+    },
+    {
+      "date": "2026-02-26",
+      "cash": 5166.88,
+      "pos_value": 47906.0,
+      "total": 53072.88,
+      "positions": 5
+    },
+    {
+      "date": "2026-02-27",
+      "cash": 4182.56,
+      "pos_value": 42478.0,
+      "total": 46660.56,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-02",
+      "cash": 4155.11,
+      "pos_value": 50894.0,
+      "total": 55049.11,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-03",
+      "cash": 1027.45,
+      "pos_value": 81089.0,
+      "total": 82116.45,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-04",
+      "cash": 2417.64,
+      "pos_value": 45064.0,
+      "total": 47481.64,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-05",
+      "cash": 6257.31,
+      "pos_value": 47845.0,
+      "total": 54102.31,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-06",
+      "cash": 3575.73,
+      "pos_value": 48735.0,
+      "total": 52310.73,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-09",
+      "cash": 1382.32,
+      "pos_value": 48798.0,
+      "total": 50180.32,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-10",
+      "cash": 17066.26,
+      "pos_value": 33608.0,
+      "total": 50674.26,
+      "positions": 4
+    },
+    {
+      "date": "2026-03-11",
+      "cash": 3178.15,
+      "pos_value": 55638.0,
+      "total": 58816.15,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-12",
+      "cash": 9915.13,
+      "pos_value": 39447.0,
+      "total": 49362.13,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-13",
+      "cash": 6963.4,
+      "pos_value": 41154.0,
+      "total": 48117.4,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-16",
+      "cash": 8386.33,
+      "pos_value": 38461.0,
+      "total": 46847.33,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-17",
+      "cash": 2916.28,
+      "pos_value": 40775.0,
+      "total": 43691.28,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-18",
+      "cash": 6288.83,
+      "pos_value": 39464.0,
+      "total": 45752.83,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-19",
+      "cash": 5571.36,
+      "pos_value": 35304.0,
+      "total": 40875.36,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-20",
+      "cash": 2596.28,
+      "pos_value": 48699.0,
+      "total": 51295.28,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-23",
+      "cash": 5031.11,
+      "pos_value": 42396.0,
+      "total": 47427.11,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-24",
+      "cash": 1900.76,
+      "pos_value": 46052.0,
+      "total": 47952.76,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-25",
+      "cash": 2653.6,
+      "pos_value": 42712.0,
+      "total": 45365.6,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-26",
+      "cash": 1740.15,
+      "pos_value": 43263.0,
+      "total": 45003.15,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-27",
+      "cash": 2041.48,
+      "pos_value": 43058.0,
+      "total": 45099.48,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-30",
+      "cash": 1678.58,
+      "pos_value": 43200.0,
+      "total": 44878.58,
+      "positions": 5
+    },
+    {
+      "date": "2026-03-31",
+      "cash": 3436.31,
+      "pos_value": 42024.0,
+      "total": 45460.31,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-01",
+      "cash": 4355.66,
+      "pos_value": 38912.0,
+      "total": 43267.66,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-02",
+      "cash": 2837.58,
+      "pos_value": 40623.0,
+      "total": 43460.58,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-03",
+      "cash": 4246.96,
+      "pos_value": 39003.0,
+      "total": 43249.96,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-07",
+      "cash": 7539.34,
+      "pos_value": 41919.0,
+      "total": 49458.34,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-08",
+      "cash": 6021.4,
+      "pos_value": 39794.0,
+      "total": 45815.4,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-09",
+      "cash": 5643.36,
+      "pos_value": 41011.0,
+      "total": 46654.36,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-10",
+      "cash": 5856.48,
+      "pos_value": 44762.0,
+      "total": 50618.48,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-13",
+      "cash": 4687.46,
+      "pos_value": 40336.0,
+      "total": 45023.46,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-14",
+      "cash": 3717.72,
+      "pos_value": 39357.0,
+      "total": 43074.72,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-15",
+      "cash": 12567.47,
+      "pos_value": 29928.0,
+      "total": 42495.47,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-16",
+      "cash": 4324.81,
+      "pos_value": 37208.0,
+      "total": 41532.81,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-17",
+      "cash": 5820.68,
+      "pos_value": 38082.0,
+      "total": 43902.68,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-20",
+      "cash": 13506.8,
+      "pos_value": 29840.0,
+      "total": 43346.8,
+      "positions": 4
+    },
+    {
+      "date": "2026-04-21",
+      "cash": 3461.63,
+      "pos_value": 38861.0,
+      "total": 42322.63,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-22",
+      "cash": 2151.83,
+      "pos_value": 45957.0,
+      "total": 48108.83,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-23",
+      "cash": 4430.62,
+      "pos_value": 35975.0,
+      "total": 40405.62,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-24",
+      "cash": 1405.91,
+      "pos_value": 36964.0,
+      "total": 38369.91,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-27",
+      "cash": 1487.14,
+      "pos_value": 41441.0,
+      "total": 42928.14,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-28",
+      "cash": 3153.99,
+      "pos_value": 35691.0,
+      "total": 38844.99,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-29",
+      "cash": 2077.23,
+      "pos_value": 39097.0,
+      "total": 41174.23,
+      "positions": 5
+    },
+    {
+      "date": "2026-04-30",
+      "cash": 7418.55,
+      "pos_value": 36652.0,
+      "total": 44070.55,
+      "positions": 5
+    },
+    {
+      "date": "2026-05-06",
+      "cash": 3139.71,
+      "pos_value": 37647.0,
+      "total": 40786.71,
+      "positions": 5
+    },
+    {
+      "date": "2026-05-07",
+      "cash": 8394.7,
+      "pos_value": 34587.0,
+      "total": 42981.7,
+      "positions": 5
+    },
+    {
+      "date": "2026-05-08",
+      "cash": 12982.17,
+      "pos_value": 28804.0,
+      "total": 41786.17,
+      "positions": 4
+    },
+    {
+      "date": "2026-05-11",
+      "cash": 19320.85,
+      "pos_value": 22057.0,
+      "total": 41377.85,
+      "positions": 3
+    },
+    {
+      "date": "2026-05-12",
+      "cash": 1341.21,
+      "pos_value": 37402.0,
+      "total": 38743.21,
+      "positions": 5
+    },
+    {
+      "date": "2026-05-13",
+      "cash": 3332.15,
+      "pos_value": 34639.0,
+      "total": 37971.15,
+      "positions": 5
+    },
+    {
+      "date": "2026-05-14",
+      "cash": 2784.08,
+      "pos_value": 15216.0,
+      "total": 18000.08,
+      "positions": 5
+    },
+    {
+      "date": "2026-05-15",
+      "cash": 8663.37,
+      "pos_value": 2525.0,
+      "total": 11188.37,
+      "positions": 2
+    },
+    {
+      "date": "2026-05-18",
+      "cash": 9307.39,
+      "pos_value": 1647.0,
+      "total": 10954.39,
+      "positions": 1
+    },
+    {
+      "date": "2026-05-19",
+      "cash": 5921.65,
+      "pos_value": 4840.0,
+      "total": 10761.65,
+      "positions": 3
+    },
+    {
+      "date": "2026-05-20",
+      "cash": 6272.21,
+      "pos_value": 4857.0,
+      "total": 11129.21,
+      "positions": 3
+    },
+    {
+      "date": "2026-05-21",
+      "cash": 3950.18,
+      "pos_value": 6897.0,
+      "total": 10847.18,
+      "positions": 4
+    },
+    {
+      "date": "2026-05-22",
+      "cash": 7455.76,
+      "pos_value": 3081.0,
+      "total": 10536.76,
+      "positions": 2
+    },
+    {
+      "date": "2026-05-25",
+      "cash": 4507.41,
+      "pos_value": 6275.0,
+      "total": 10782.41,
+      "positions": 4
+    },
+    {
+      "date": "2026-05-26",
+      "cash": 3701.76,
+      "pos_value": 6702.0,
+      "total": 10403.76,
+      "positions": 4
+    },
+    {
+      "date": "2026-05-27",
+      "cash": 4201.37,
+      "pos_value": 6538.0,
+      "total": 10739.37,
+      "positions": 4
+    },
+    {
+      "date": "2026-05-28",
+      "cash": 4776.72,
+      "pos_value": 6045.0,
+      "total": 10821.72,
+      "positions": 3
+    },
+    {
+      "date": "2026-05-29",
+      "cash": 623.31,
+      "pos_value": 8466.0,
+      "total": 9089.31,
+      "positions": 4
+    }
+  ]
+}

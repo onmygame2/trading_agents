@@ -1,0 +1,295 @@
+{
+  "timestamp": "2026-06-02 10:37:37",
+  "date": "2026-06-02",
+  "total_pool": 975,
+  "total_scored": 598,
+  "top_picks": [
+    {
+      "code": "603075",
+      "price": 28.17,
+      "strategies": {
+        "breakout_setup": {
+          "code": "603075",
+          "price": 28.17,
+          "strategy_score": 130,
+          "breakout": "True",
+          "change_pct": 6.5,
+          "vol_ratio": 2.19,
+          "macd_golden": true,
+          "reason": "突破60日新高! + MACD金叉! + 温和放量(2.2x) + 标准突破(6.5%) + 突破高位 + 强趋势",
+          "confidence": 85,
+          "stop_loss": 26.76,
+          "take_profit": 31.55
+        }
+      },
+      "final_score": 130.0,
+      "coverage": 1,
+      "reason": "突破60日新高! + MACD金叉! + 温和放量(2.2x) + 标准突破(6.5%) + 突破高位 + 强趋势",
+      "stop_loss": 26.76,
+      "take_profit": 31.55,
+      "confidence": 75,
+      "total_score": 0
+    },
+    {
+      "code": "600237",
+      "price": 10.6,
+      "strategies": {
+        "small_cap_volatil": {
+          "code": "600237",
+          "price": 10.6,
+          "strategy_score": 103,
+          "market_cap": 3.36,
+          "vol_ratio": 2.24,
+          "change_pct": -2.93,
+          "industry": "C39计算机、通信和其他电子设备制造业",
+          "reason": "极小盘(3亿) + 放量(2.2x) + 热门板块(C39计算机、通信和其他电子设备制造业) + 多次涨停(5次) + RSI偏强",
+          "confidence": 87,
+          "stop_loss": 10.07,
+          "take_profit": 11.66
+        }
+      },
+      "final_score": 123.6,
+      "coverage": 1,
+      "reason": "极小盘(3亿) + 放量(2.2x) + 热门板块(C39计算机、通信和其他电子设备制造业) + 多次涨停(5次) + RSI偏强",
+      "stop_loss": 10.07,
+      "take_profit": 11.66,
+      "confidence": 76,
+      "total_score": 0
+    },
+    {
+      "code": "300291",
+      "price": 6.98,
+      "strategies": {
+        "breakout_setup": {
+          "code": "300291",
+          "price": 6.98,
+          "strategy_score": 123,
+          "breakout": "False",
+          "change_pct": 5.28,
+          "vol_ratio": 1.95,
+          "macd_golden": true,
+          "reason": "突破60日新高! + MACD金叉! + 放量(1.9x) + 标准突破(5.3%) + 突破高位 + 强趋势",
+          "confidence": 85,
+          "stop_loss": 6.63,
+          "take_profit": 7.82
+        }
+      },
+      "final_score": 123.0,
+      "coverage": 1,
+      "reason": "突破60日新高! + MACD金叉! + 放量(1.9x) + 标准突破(5.3%) + 突破高位 + 强趋势",
+      "stop_loss": 6.63,
+      "take_profit": 7.82,
+      "confidence": 75,
+      "total_score": 0
+    },
+    {
+      "code": "600779",
+      "price": 35.8,
+      "strategies": {
+        "breakout_setup": {
+          "code": "600779",
+          "price": 35.8,
+          "strategy_score": 126,
+          "breakout": "False",
+          "change_pct": 2.9,
+          "vol_ratio": 2.38,
+          "macd_golden": true,
+          "reason": "突破60日新高! + MACD金叉! + 温和放量(2.4x) + 温和突破(2.9%) + 突破高位 + 强趋势",
+          "confidence": 85,
+          "stop_loss": 34.01,
+          "take_profit": 40.1
+        },
+        "small_cap_volatil": {
+          "code": "600779",
+          "price": 35.8,
+          "strategy_score": 98,
+          "market_cap": 3.03,
+          "vol_ratio": 2.38,
+          "change_pct": 2.9,
+          "industry": "C15酒、饮料和精制茶制造业",
+          "reason": "极小盘(3亿) + 放量(2.4x) + 多次涨停(3次) + 温和上涨(2.9%) + RSI偏强",
+          "confidence": 83,
+          "stop_loss": 34.01,
+          "take_profit": 39.38
+        }
+      },
+      "final_score": 121.8,
+      "coverage": 2,
+      "reason": "突破60日新高! + MACD金叉! + 温和放量(2.4x) + 温和突破(2.9%) + 突破高位 + 强趋势 | 极小盘(3亿) + 放量(2.4x) + 多次涨停(3次) + 温和上涨(2.9%) + RSI偏强",
+      "stop_loss": 34.01,
+      "take_profit": 40.1,
+      "confidence": 78,
+      "total_score": 0
+    },
+    {
+      "code": "601566",
+      "price": 12.06,
+      "strategies": {
+        "small_cap_volatil": {
+          "code": "601566",
+          "price": 12.06,
+          "strategy_score": 101,
+          "market_cap": 1.71,
+          "vol_ratio": 2.25,
+          "change_pct": 10.04,
+          "industry": "C18纺织服装、服饰业",
+          "reason": "极小盘(2亿) + 放量(2.2x) + 多次涨停(7次) + RSI适中",
+          "confidence": 85,
+          "stop_loss": 11.46,
+          "take_profit": 13.27
+        }
+      },
+      "final_score": 121.2,
+      "coverage": 1,
+      "reason": "极小盘(2亿) + 放量(2.2x) + 多次涨停(7次) + RSI适中",
+      "stop_loss": 11.46,
+      "take_profit": 13.27,
+      "confidence": 75,
+      "total_score": 0
+    },
+    {
+      "code": "600611",
+      "price": 4.73,
+      "strategies": {
+        "small_cap_volatil": {
+          "code": "600611",
+          "price": 4.73,
+          "strategy_score": 100,
+          "market_cap": 1.12,
+          "vol_ratio": 3.16,
+          "change_pct": -2.27,
+          "industry": "G54道路运输业",
+          "reason": "极小盘(1亿) + 大量(3.2x) + 涨停基因(2次) + RSI适中",
+          "confidence": 85,
+          "stop_loss": 4.49,
+          "take_profit": 5.2
+        }
+      },
+      "final_score": 120.0,
+      "coverage": 1,
+      "reason": "极小盘(1亿) + 大量(3.2x) + 涨停基因(2次) + RSI适中",
+      "stop_loss": 4.49,
+      "take_profit": 5.2,
+      "confidence": 75,
+      "total_score": 0
+    },
+    {
+      "code": "603890",
+      "price": 24.81,
+      "strategies": {
+        "sector_leader": {
+          "code": "603890",
+          "price": 24.81,
+          "strategy_score": 119,
+          "industry": "C39计算机、通信和其他电子设备制造业",
+          "sector_rank": 2,
+          "change_pct": 10.02,
+          "reason": "超热门板块TOP3(C39计算机、通信和其他电子设备制造业) + 板块领涨(10.0%) + 温和放量(1.3x) + 均线多头排列 + MACD多头 + 动量强劲(5d:19.9%) + 高位警惕",
+          "confidence": 85,
+          "stop_loss": 23.57,
+          "take_profit": 27.29
+        }
+      },
+      "final_score": 119.0,
+      "coverage": 1,
+      "reason": "超热门板块TOP3(C39计算机、通信和其他电子设备制造业) + 板块领涨(10.0%) + 温和放量(1.3x) + 均线多头排列 + MACD多头 + 动量强劲(5d:19.9%) + 高位警惕",
+      "stop_loss": 23.57,
+      "take_profit": 27.29,
+      "confidence": 75,
+      "total_score": 0
+    },
+    {
+      "code": "600199",
+      "price": 8.55,
+      "strategies": {
+        "breakout_setup": {
+          "code": "600199",
+          "price": 8.55,
+          "strategy_score": 118,
+          "breakout": "False",
+          "change_pct": 1.91,
+          "vol_ratio": 2.07,
+          "macd_golden": true,
+          "reason": "突破60日新高! + MACD金叉! + 温和放量(2.1x) + 温和突破(1.9%) + 强趋势",
+          "confidence": 85,
+          "stop_loss": 8.12,
+          "take_profit": 9.58
+        },
+        "small_cap_volatil": {
+          "code": "600199",
+          "price": 8.55,
+          "strategy_score": 96,
+          "market_cap": 2.78,
+          "vol_ratio": 2.07,
+          "change_pct": 1.91,
+          "industry": "C15酒、饮料和精制茶制造业",
+          "reason": "极小盘(3亿) + 放量(2.1x) + 小幅上涨(1.9%) + RSI适中",
+          "confidence": 81,
+          "stop_loss": 8.12,
+          "take_profit": 9.41
+        }
+      },
+      "final_score": 116.6,
+      "coverage": 2,
+      "reason": "突破60日新高! + MACD金叉! + 温和放量(2.1x) + 温和突破(1.9%) + 强趋势 | 极小盘(3亿) + 放量(2.1x) + 小幅上涨(1.9%) + RSI适中",
+      "stop_loss": 8.12,
+      "take_profit": 9.58,
+      "confidence": 78,
+      "total_score": 0
+    },
+    {
+      "code": "600758",
+      "price": 4.69,
+      "strategies": {
+        "sector_leader": {
+          "code": "600758",
+          "price": 4.69,
+          "strategy_score": 112,
+          "industry": "B06煤炭开采和洗选业",
+          "sector_rank": 0,
+          "change_pct": 2.63,
+          "reason": "超热门板块TOP1(B06煤炭开采和洗选业) + 跟随上涨(2.6%) + 温和放量(1.4x) + 均线多头排列 + MACD多头",
+          "confidence": 85,
+          "stop_loss": 4.46,
+          "take_profit": 5.16
+        }
+      },
+      "final_score": 112.0,
+      "coverage": 1,
+      "reason": "超热门板块TOP1(B06煤炭开采和洗选业) + 跟随上涨(2.6%) + 温和放量(1.4x) + 均线多头排列 + MACD多头",
+      "stop_loss": 4.46,
+      "take_profit": 5.16,
+      "confidence": 75,
+      "total_score": 0
+    },
+    {
+      "code": "600888",
+      "price": 11.58,
+      "strategies": {
+        "small_cap_volatil": {
+          "code": "600888",
+          "price": 11.58,
+          "strategy_score": 93,
+          "market_cap": 1.42,
+          "vol_ratio": 2.49,
+          "change_pct": -3.9,
+          "industry": "C39计算机、通信和其他电子设备制造业",
+          "reason": "极小盘(1亿) + 放量(2.5x) + 热门板块(C39计算机、通信和其他电子设备制造业) + RSI偏强",
+          "confidence": 79,
+          "stop_loss": 11.0,
+          "take_profit": 12.74
+        }
+      },
+      "final_score": 111.6,
+      "coverage": 1,
+      "reason": "极小盘(1亿) + 放量(2.5x) + 热门板块(C39计算机、通信和其他电子设备制造业) + RSI偏强",
+      "stop_loss": 11.0,
+      "take_profit": 12.74,
+      "confidence": 70,
+      "total_score": 0
+    }
+  ],
+  "buy_actions": [],
+  "stop_actions": [],
+  "account_value": 100379.61
+}

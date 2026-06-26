@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-05-29 14:49:19",
+  "indices": {
+    "创业板指": {
+      "close": 4012.24,
+      "change_pct": -2.74,
+      "trend": "up"
+    },
+    "沪深300": {
+      "close": 4879.75,
+      "change_pct": -0.7,
+      "trend": "down"
+    },
+    "上证50": {
+      "close": 2911.01,
+      "change_pct": -0.11,
+      "trend": "down"
+    }
+  },
+  "sentiment": {},
+  "north_flow": [
+    {
+      "date": "2026-05-29",
+      "north_net_buy": 0.0,
+      "related_index": "上证指数",
+      "index_change": -1.01
+    },
+    {
+      "date": "2026-05-29",
+      "north_net_buy": 0.0,
+      "related_index": "深证成指",
+      "index_change": -2.27
+    }
+  ],
+  "sectors": {
+    "top_gainers": [],
+    "top_losers": [],
+    "hot_sectors": []
+  },
+  "concepts": [],
+  "market_regime": {
+    "regime": "neutral",
+    "score": 50,
+    "confidence": 0.0,
+    "reasons": [],
+    "suggestion": "市场中性，均衡配置，注意个股选择"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "date": "2026-05-29",
+  "buy_signals": [
+    {
+      "date": "2026-05-29",
+      "stock_code": "600023",
+      "stock_name": "",
+      "action": "buy",
+      "price": 6.47,
+      "shares": 3000,
+      "reason": "均线多头排列, MACD金叉, 站上20日均线, 站上5日均线, 放量(1.7x), RSI适中(60)",
+      "strategy": "trend_following",
+      "confidence": 0.95,
+      "buy_price": 6.47,
+      "stop_loss": 6.02,
+      "take_profit": 7.44,
+      "invalid_price": 5.82,
+      "stop_loss_reason": "硬止损-7%",
+      "take_profit_reason": "硬止盈+15%",
+      "invalid_price_reason": "跌破ATR(0.30)x2.8失效",
+      "atr": 0.3,
+      "risk_reward_ratio": 2.14,
+      "weighted_confidence": 0.95,
+      "original_strategies": [
+        "trend_following"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "stock_code": "002951",
+      "stock_name": "",
+      "action": "buy",
+      "price": 17.64,
+      "shares": 1100,
+      "reason": "均线多头排列, MACD金叉, 站上20日均线, 站上5日均线, 放量(2.1x), RSI适中(56)",
+      "strategy": "trend_following",
+      "confidence": 0.95,
+      "buy_price": 17.64,
+      "stop_loss": 16.41,
+      "take_profit": 20.29,
+      "invalid_price": 15.88,
+      "stop_loss_reason": "硬止损-7%",
+      "take_profit_reason": "硬止盈+15%",
+      "invalid_price_reason": "跌破ATR(1.02)x2.8失效",
+      "atr": 1.02,
+      "risk_reward_ratio": 2.14,
+      "weighted_confidence": 0.95,
+      "original_strategies": [
+        "trend_following"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "stock_code": "600027",
+      "stock_name": "",
+      "action": "buy",
+      "price": 5.56,
+      "shares": 3500,
+      "reason": "均线多头排列, MACD金叉, 站上20日均线, 站上5日均线, 放量(1.9x), RSI适中(63) | 突破15日新高, 突破60日新高, 超20日均量(2.1x), 5日动量8.4%, MACD金叉, 均线多头排列, 波动率适中",
+      "strategy": "trend_following",
+      "confidence": 0.95,
+      "buy_price": 5.56,
+      "stop_loss": 5.21,
+      "take_profit": 6.32,
+      "invalid_price": 5.03,
+      "stop_loss_reason": "ATR(0.19)x1.9止损",
+      "take_profit_reason": "ATR(0.19)x4.0止盈",
+      "invalid_price_reason": "跌破ATR(0.19)x2.8失效",
+      "atr": 0.19,
+      "risk_reward_ratio": 2.15,
+      "weighted_confidence": 0.95,
+      "original_strategies": [
+        "trend_following",
+        "momentum_breakout"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "stock_code": "000601",
+      "stock_name": "",
+      "action": "buy",
+      "price": 8.46,
+      "shares": 2300,
+      "reason": "均线多头排列, MACD金叉, 站上20日均线, 站上5日均线, RSI适中(61)",
+      "strategy": "trend_following",
+      "confidence": 0.93,
+      "buy_price": 8.46,
+      "stop_loss": 7.87,
+      "take_profit": 9.73,
+      "invalid_price": 7.61,
+      "stop_loss_reason": "硬止损-7%",
+      "take_profit_reason": "硬止盈+15%",
+      "invalid_price_reason": "跌破ATR(0.71)x2.8失效",
+      "atr": 0.71,
+      "risk_reward_ratio": 2.14,
+      "weighted_confidence": 0.93,
+      "original_strategies": [
+        "trend_following"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "stock_code": "002243",
+      "stock_name": "",
+      "action": "buy",
+      "price": 9.06,
+      "shares": 2200,
+      "reason": "均线多头排列, MACD多头, 站上20日均线, 站上5日均线, 放量(1.7x), RSI适中(54)",
+      "strategy": "trend_following",
+      "confidence": 0.87,
+      "buy_price": 9.06,
+      "stop_loss": 8.43,
+      "take_profit": 10.42,
+      "invalid_price": 8.15,
+      "stop_loss_reason": "硬止损-7%",
+      "take_profit_reason": "硬止盈+15%",
+      "invalid_price_reason": "跌破ATR(0.50)x2.8失效",
+      "atr": 0.5,
+      "risk_reward_ratio": 2.14,
+      "weighted_confidence": 0.87,
+      "original_strategies": [
+        "trend_following"
+      ]
+    }
+  ],
+  "sell_signals": [],
+  "account": {
+    "initial_cash": 100000,
+    "cash": 100000,
+    "positions": {},
+    "trades": [],
+    "daily_values": [],
+    "created_date": "2026-06-02"
+  },
+  "report": "=== AI量化选股报告 2026-05-29 ===\n\n[账户]\n  总资产: 100,000 (盈亏 +0 / +0.0%)\n  现金: 100,000 | 持仓: 0 只\n\n[买入信号] (5只)\n  1. 600023 \n     买入价: 6.47\n     止损: 6.02 (硬止损-7%)\n     止盈: 7.44 (硬止盈+15%)\n     失效: 5.82\n     风险收益比: 2.14\n     策略: trend_following | 置信度: 95%\n     原因: 均线多头排列, MACD金叉, 站上20日均线, 站上5日均线, 放量(1.7x), RSI适中(60)\n\n  2. 002951 \n     买入价: 17.64\n     止损: 16.41 (硬止损-7%)\n     止盈: 20.29 (硬止盈+15%)\n     失效: 15.88\n     风险收益比: 2.14\n     策略: trend_following | 置信度: 95%\n     原因: 均线多头排列, MACD金叉, 站上20日均线, 站上5日均线, 放量(2.1x), RSI适中(56)\n\n  3. 600027 \n     买入价: 5.56\n     止损: 5.21 (ATR(0.19)x1.9止损)\n     止盈: 6.32 (ATR(0.19)x4.0止盈)\n     失效: 5.03\n     风险收益比: 2.15\n     策略: trend_following, momentum_breakout | 置信度: 95%\n     原因: 均线多头排列, MACD金叉, 站上20日均线, 站上5日均线, 放量(1.9x), RSI适中(63) | 突破15日新高, 突破60日新高, 超20日均量(2.1x), 5日动量8.4%, MACD金叉, 均线多头排列, 波动率适中\n\n  4. 000601 \n     买入价: 8.46\n     止损: 7.87 (硬止损-7%)\n     止盈: 9.73 (硬止盈+15%)\n     失效: 7.61\n     风险收益比: 2.14\n     策略: trend_following | 置信度: 93%\n     原因: 均线多头排列, MACD金叉, 站上20日均线, 站上5日均线, RSI适中(61)\n\n  5. 002243 \n     买入价: 9.06\n     止损: 8.43 (硬止损-7%)\n     止盈: 10.42 (硬止盈+15%)\n     失效: 8.15\n     风险收益比: 2.14\n     策略: trend_following | 置信度: 87%\n     原因: 均线多头排列, MACD多头, 站上20日均线, 站上5日均线, 放量(1.7x), RSI适中(54)\n\n=== 免责声明: 以上为AI辅助分析，仅供参考 ===",
+  "market_overview": {},
+  "summary": {
+    "total_stocks": 1038,
+    "buy_count": 5,
+    "sell_count": 0,
+    "positions": 0,
+    "cash": 100000,
+    "total_value": 100000,
+    "pnl_pct": 0.0
+  }
+}
