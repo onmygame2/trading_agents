@@ -5,8 +5,8 @@ param(
 
 $Root = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
 $Candidates = @(
-    Join-Path $Root "venv_akshare\Scripts\python.exe",
-    Join-Path $Root ".venv\Scripts\python.exe",
+    (Join-Path $Root "venv_akshare\Scripts\python.exe")
+    (Join-Path $Root ".venv\Scripts\python.exe")
     "python"
 )
 
@@ -24,5 +24,6 @@ if (-not $Python) {
 }
 
 Set-Location $Root
+$env:PYTHONPATH = if ($env:PYTHONPATH) { "$Root;$env:PYTHONPATH" } else { $Root }
 & $Python @ArgsToRun
 exit $LASTEXITCODE

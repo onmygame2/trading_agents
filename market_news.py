@@ -308,12 +308,15 @@ class MarketNews:
 
         # Source 1: EastMoney search API (search by stock code)
         try:
+            token = os.environ.get('EASTMONEY_SEARCH_TOKEN', '').strip()
+            if not token:
+                raise RuntimeError('EASTMONEY_SEARCH_TOKEN not configured')
             keyword = stock_name or stock_code
             em_url = (
                 f"https://search-api-web.eastmoney.com/search/jsonp"
                 f"?type=14&pageindex=1&pagesize={max_items}"
                 f"&keyword={urllib.parse.quote(keyword)}"
-                f"&sort=0&token=687e3552-306b-467b-9a6f-169273596097"
+                f"&sort=0&token={urllib.parse.quote(token)}"
             )
             req = urllib.request.Request(em_url, headers={
                 'User-Agent': SINA_HEADERS['User-Agent'],

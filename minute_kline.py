@@ -13,10 +13,6 @@ import urllib.parse
 from datetime import datetime, timedelta
 from typing import Dict, Optional, List
 
-# 使用 venv_akshare 的 akshare
-import sys
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'venv_akshare', 'lib', 'python3.11', 'site-packages'))
-
 import akshare as ak
 import pandas as pd
 
