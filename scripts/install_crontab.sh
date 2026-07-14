@@ -15,23 +15,25 @@ if [[ ! -x "$ROOT/venv_akshare/bin/python" ]]; then
 fi
 
 CRON_FILE=$(mktemp)
-crontab -l 2>/dev/null | grep -v "workingFolder/quant" | grep -v "daily_runner_v2" | grep -v "update_kline.py" | grep -v "optimize_weekly" | grep -v "run_with_venv" > "$CRON_FILE" || true
+crontab -l 2>/dev/null | grep -v "workingFolder/quant" | grep -v "daily_runner_v2" | grep -v "update_kline.py" | grep -v "optimize_weekly" | grep -v "core/market_state.py" | grep -v "main.py agent review" | grep -v "run_with_venv" > "$CRON_FILE" || true
 
 cat >> "$CRON_FILE" <<EOF
 # A股量化 v2 自动任务 ($ROOT)
-30 8 * * 1-5 $RUNNER update_kline.py >> $LOG_DIR/kline_update.log 2>&1
+30 8 * * 1-5 $RUNNER update_kline.py --snapshot >> $LOG_DIR/kline_update.log 2>&1
 # 盘中每30分钟: 先卖后买 (9:30-11:30 / 13:00-15:00)
 30 9 * * 1-5 $RUNNER daily_runner_v2.py >> $LOG_DIR/intraday.log 2>&1
 0,30 10-11 * * 1-5 $RUNNER daily_runner_v2.py >> $LOG_DIR/intraday.log 2>&1
 0,30 13-14 * * 1-5 $RUNNER daily_runner_v2.py >> $LOG_DIR/intraday.log 2>&1
 0 15 * * 1-5 $RUNNER daily_runner_v2.py >> $LOG_DIR/intraday.log 2>&1
+10 15 * * 1-5 $RUNNER core/market_state.py >> $LOG_DIR/market_state.log 2>&1
+15 15 * * 1-5 $RUNNER main.py agent review >> $LOG_DIR/agent_review.log 2>&1
 0 20 * * 5 $RUNNER optimize_weekly.py >> $LOG_DIR/weekly_opt.log 2>&1
 EOF
 
 crontab "$CRON_FILE"
 rm "$CRON_FILE"
 echo "Crontab 已安装 (Python: $ROOT/venv_akshare/bin/python):"
-crontab -l | grep -E "quant|run_with_venv|daily_runner|update_kline"
+crontab -l | grep -E "quant|run_with_venv|daily_runner|update_kline|market_state|agent review"
 echo ""
 echo "盘中日志: $LOG_DIR/intraday.log"
 echo "Dashboard: http://localhost:5890"

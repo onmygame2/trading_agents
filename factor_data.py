@@ -36,9 +36,9 @@ AKSHARE_TIMEOUT = 10
 AKSHARE_RETRIES = 2
 
 
-# 本地代理配置
-PROXY_URL = os.environ.get('HTTP_PROXY', 'http://127.0.0.1:1935')
-PROXIES = {'http': PROXY_URL, 'https': PROXY_URL}
+# 可选代理；默认直连，避免开源用户被绑定到开发机端口。
+PROXY_URL = os.environ.get('TRADING_AGENTS_PROXY', '').strip()
+PROXIES = {'http': PROXY_URL, 'https': PROXY_URL} if PROXY_URL else {}
 
 
 def _akshare_with_retry(fn, *args, **kwargs):
@@ -49,7 +49,8 @@ def _akshare_with_retry(fn, *args, **kwargs):
         try:
             session = req_lib.Session()
             session.trust_env = False
-            session.proxies = PROXIES
+            if PROXIES:
+                session.proxies = PROXIES
             session.headers.update({"User-Agent": "Mozilla/5.0"})
             # Monkey-patch the session for this call
             orig_session = req_lib.session
@@ -58,11 +59,13 @@ def _akshare_with_retry(fn, *args, **kwargs):
             old_post = req_lib.post
             def proxied_get(url, **kw):
                 kw.setdefault('timeout', AKSHARE_TIMEOUT)
-                kw.setdefault('proxies', PROXIES)
+                if PROXIES:
+                    kw.setdefault('proxies', PROXIES)
                 return session.get(url, **kw)
             def proxied_post(url, **kw):
                 kw.setdefault('timeout', AKSHARE_TIMEOUT)
-                kw.setdefault('proxies', PROXIES)
+                if PROXIES:
+                    kw.setdefault('proxies', PROXIES)
                 return session.post(url, **kw)
             req_lib.get = proxied_get
             req_lib.post = proxied_post
@@ -122,7 +125,7 @@ def get_stock_pool() -> List[str]:
     """获取股票池（含科创板，排除北交所/ST）"""
     pool_file = os.path.join(DATA_DIR, 'stock_pool.json')
     if os.path.exists(pool_file):
-        with open(pool_file, 'r') as f:
+        with open(pool_file, 'r', encoding='utf-8') as f:
             pool = json.load(f)
         if isinstance(pool, list):
             return [s['code'] if isinstance(s, dict) else s for s in pool]
@@ -395,7 +398,7 @@ class PriceVolumeFactors:
             'limit_up_count_180d': limit_up_count_180d,
         }
 
-        # 盘中 overlay 实时字段 (iFind/新浪 Provider)
+        # 盘中 overlay 实时字段 (新浪 Provider)
         result = PriceVolumeFactors._overlay_realtime(code, result)
 
         cache_set(cache_key, result)
@@ -426,22 +429,6 @@ class PriceVolumeFactors:
             result['today_volume'] = float(rt.get('volume') or 0)
             result['price_source'] = get_provider_name()
 
-            # iFind 日内增强 (尾盘策略，仅 iFind 可用时)
-            if get_provider_name() == 'ifind':
-                try:
-                    from ifind_fetcher import IFindFetcher
-                    from market_data import get_data_config
-                    ifind = IFindFetcher(config=get_data_config().get('ifind', {}))
-                    if ifind.available:
-                        intraday = ifind.get_intraday_metrics(code)
-                        if intraday.get('today_high'):
-                            result['today_high'] = round(intraday['today_high'], 2)
-                        if intraday.get('today_low'):
-                            result['today_low'] = round(intraday['today_low'], 2)
-                        if intraday.get('afternoon_vol_ratio') is not None:
-                            result['afternoon_vol_ratio'] = intraday['afternoon_vol_ratio']
-                except Exception:
-                    pass
         except Exception as e:
             logger.debug(f'实时 overlay 失败 {code}: {e}')
         return result
@@ -549,7 +536,7 @@ class SectorFactors:
         """加载本地行业映射 (code -> industry_name)"""
         ind_file = os.path.join(DATA_DIR, 'stock_industry.json')
         if os.path.exists(ind_file):
-            with open(ind_file, 'r') as f:
+            with open(ind_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
             if isinstance(data, dict):
                 return {code: info.get('industryName', '其他') for code, info in data.items()}
@@ -665,26 +652,12 @@ class CapitalFactors:
     def get_north_flow(days: int = 5) -> List[Dict]:
         """
         获取北向资金流向
-        优先 iFind EDB，失败降级新浪
+        使用新浪北向资金接口
         """
         cache_key = f"north_flow_{datetime.now().strftime('%Y%m%d')}"
         cached = cache_get(cache_key)
         if cached:
             return cached
-
-        # iFind EDB
-        try:
-            from market_data import get_provider_name, get_data_config
-            if get_provider_name() == 'ifind':
-                from ifind_fetcher import IFindFetcher
-                ifind = IFindFetcher(config=get_data_config().get('ifind', {}))
-                if ifind.available and ifind.edb_north_indicators:
-                    results = ifind.get_north_flow_edb(days)
-                    if results:
-                        cache_set(cache_key, results)
-                        return results[:days]
-        except Exception as e:
-            logger.debug(f'iFind 北向失败: {e}')
 
         try:
             # 新浪北向资金接口

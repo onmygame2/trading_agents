@@ -193,7 +193,8 @@ def track_market_state(date: str = None) -> Dict:
         'cyb_change_pct': indices.get('创业板指', {}).get('change_pct'),
         'sentiment': sentiment,
         'hot_sectors': [{'industry': s['industry'], 'pct': s['avg_change_pct']} for s in sectors[:5]],
-        'all_indices': indices
+        'all_indices': indices,
+        'source': 'live',
     }
     
     # 5. 记录到记忆系统

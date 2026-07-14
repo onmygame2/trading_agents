@@ -3,8 +3,8 @@ strategies_v2 统一回测引擎
 
 对齐 trade_engine_v2 规则:
 - 初始资金 10 万, 万1免5, 印花税 0.1%
-- 最大 5 仓, 单仓 20%
-- 硬止损 -7%, 止盈 +15%, 移动止盈回撤 5%
+- 最大 5 仓, 递减仓位 24/22/20/18/16%
+- 组合默认硬止损 -8%, 止盈 +72%, 移动止盈回撤 12%
 - 隔夜模式: 尾盘(close)买入, 次日检查止损/止盈, hold_days>=2 强制平仓
 
 用法:
@@ -728,9 +728,8 @@ def process_sells(account: BacktestAccount, date: str, kline_data: Dict[str, pd.
             pos["high_price"] = high_p
 
         # 涨停/封板: 继续持股; 连续涨停超过5天则尾盘减仓
-        from theme_engine import limit_up_threshold
-        lu_th = limit_up_threshold(code)
-        if LIMIT_UP_HOLD and day_chg >= lu_th:
+        from trade_engine_v2 import is_limit_up_move
+        if LIMIT_UP_HOLD and is_limit_up_move(code, day_chg):
             pos["limit_up_streak"] = pos.get("limit_up_streak", 0) + 1
             if pos.get("limit_up_streak", 0) < 5:
                 continue
@@ -837,8 +836,8 @@ def process_buys(
             if prev > 0:
                 chg = (price / prev - 1) * 100
         # 涨停日无法 realistically 买入，跳过新开仓
-        from theme_engine import limit_up_threshold
-        if chg >= limit_up_threshold(code) - 0.3:
+        from trade_engine_v2 import is_limit_up_move
+        if is_limit_up_move(code, chg, threshold_ratio=0.97):
             continue
         prices[code] = price
         sl, tp = _pick_stop_take(pick, price, account)
@@ -1225,7 +1224,7 @@ tr:hover{{background:#1a1f2e}}
 .card .l{{font-size:12px;color:#848e9c}}
 </style></head><body>
 <h1>📊 strategies_v2 回测报告</h1>
-<div class="meta">{start} ~ {end} | 股票池 {pool_size} | 3仓×33% | 止损-5% 止盈+18% | 生成 {summary.get('generated_at','')}</div>
+<div class="meta">{start} ~ {end} | 股票池 {pool_size} | 5仓递减 | 止损-8% 止盈+72% 移动止盈12% | 生成 {summary.get('generated_at','')}</div>
 <div class="stats">
   <div class="card"><div class="l">最佳策略</div><div class="v" style="color:#0ecb81">{strategies[0].get('display_name','-') if strategies else '-'}</div></div>
   <div class="card"><div class="l">最高收益</div><div class="v">{strategies[0].get('return_pct',0):+.1f}%</div></div>

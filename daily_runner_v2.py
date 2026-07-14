@@ -36,12 +36,12 @@ def get_trading_date():
     return _get_trading_date()
 
 
-def run_picker_flow(date: str):
+def run_picker_flow(date: str, top_n: int = 10, min_score: int = 40, pool_mode: str = "mainline"):
     """选股+买入"""
     from global_stock_picker import run_picker
     result = run_picker(
-        date=date, top_n=10, min_score=40,
-        pool_mode="mainline",
+        date=date, top_n=top_n, min_score=min_score,
+        pool_mode=pool_mode,
     )
     return result
 
@@ -71,6 +71,11 @@ def run_sell_flow(date: str):
 
         acct.advance_hold_days(date)
         stop_actions = acct.check_stop_loss_take_profit(current_prices, date)
+        try:
+            from agent_runtime.trading_memory_bridge import update_sell_outcomes
+            update_sell_outcomes(date, stop_actions, source="live")
+        except Exception as e:
+            logger.warning("卖出记忆回写跳过: %s", e)
         acct.save()
 
     paper_results = {}
@@ -93,13 +98,13 @@ def run_sell_flow(date: str):
     }
 
 
-def run_intraday_flow(date: str):
+def run_intraday_flow(date: str, top_n: int = 10, min_score: int = 40, pool_mode: str = "mainline"):
     """盘中一轮：先卖后买"""
     from trading_session import session_label, trade_datetime
     logger.info("=== 盘中交易 [%s] %s ===", session_label(), trade_datetime())
 
     sell_result = run_sell_flow(date)
-    pick_result = run_picker_flow(date)
+    pick_result = run_picker_flow(date, top_n=top_n, min_score=min_score, pool_mode=pool_mode)
 
     merged = dict(pick_result)
     merged['sell_actions'] = sell_result.get('sell_actions', [])

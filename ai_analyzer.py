@@ -111,7 +111,7 @@ class AIAnalyzer:
             code_to_industry = {}
             pool_path = os.path.join(BASE_DIR, 'data', 'stock_pool.json')
             if os.path.exists(pool_path):
-                with open(pool_path, 'r') as f:
+                with open(pool_path, 'r', encoding='utf-8') as f:
                     pool = json.load(f)
                 for p in pool:
                     code_to_industry[p['code']] = p.get('industry_name', '')
@@ -439,75 +439,6 @@ class AIAnalyzer:
 
         return '\n'.join(lines)
 
-    def analyze_for_hermes(self) -> str:
-        """
-        生成适合 Hermes 聊天推送的精简版报告
-
-        返回: 紧凑格式的报告
-        """
-        print("[AI Analyzer] 生成 Hermes 精简报告...")
-
-        overview = self.get_market_overview()
-        news = self.get_news_summary()
-        strategy = self.get_strategy_summary()
-
-        buy_signals = strategy.get('buy_signals', [])
-
-        # 精简版
-        parts = []
-        date = overview.get('date', datetime.now().strftime('%Y-%m-%d'))
-        parts.append(f"📊 AI选股 {date}")
-
-        # 大盘
-        indices = overview.get('indices', {})
-        idx_parts = []
-        if isinstance(indices, dict):
-            for name in ['上证指数', '深证成指', '创业板指']:
-                if name in indices:
-                    d = indices[name]
-                    try:
-                        pct = float(d.get('change_pct', d.get('change', 0)))
-                        sign = '+' if pct >= 0 else ''
-                        idx_parts.append(f"{name}{sign}{pct:.2f}%")
-                    except:
-                        pass
-        elif hasattr(indices, 'iterrows') and not indices.empty:
-            for _, row in indices.iterrows():
-                try:
-                    name = str(row.get('name', ''))
-                    pct = float(row.get('change_pct', 0))
-                    sign = '+' if pct >= 0 else ''
-                    idx_parts.append(f"{name}{sign}{pct:.2f}%")
-                except:
-                    pass
-        if idx_parts:
-            parts.append(' | '.join(idx_parts[:3]))
-
-        # 情绪
-        sent = overview.get('market_sentiment', 'neutral')
-        sent_icon = {'bullish': '🟢', 'bearish': '🔴', 'neutral': '🟡'}.get(sent, '🟡')
-        parts.append(f"情绪: {sent_icon}")
-
-        # 买入信号
-        if buy_signals:
-            parts.append(f"\n📈 推荐 ({len(buy_signals)}只):")
-            for sig in buy_signals[:5]:
-                code = sig.get('stock_code', '')
-                name = sig.get('stock_name', get_stock_name(code))
-                buy = sig.get('buy_price', sig.get('price', 0))
-                sl = sig.get('stop_loss', 0)
-                tp = sig.get('take_profit', 0)
-                conf = sig.get('confidence', 0)
-                parts.append(f"  {code} {name} 买@{buy:.2f} 止损{sl:.2f} 止盈{tp:.2f} ({conf:.0%})")
-
-        # 账户
-        total = strategy.get('total_value', 100000)
-        pnl = total - 100000
-        parts.append(f"\n💰 账户: {total:,.0f} ({pnl:+,.0f})")
-
-        return '\n'.join(parts)
-
-
 def main():
     logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 
@@ -524,11 +455,6 @@ def main():
     date_str = datetime.now().strftime('%Y%m%d')
     with open(os.path.join(kb_dir, f'ai_analysis_{date_str}.txt'), 'w', encoding='utf-8') as f:
         f.write(full_report)
-
-    # 精简版
-    brief = analyzer.analyze_for_hermes()
-    with open(os.path.join(kb_dir, f'ai_brief_{date_str}.txt'), 'w', encoding='utf-8') as f:
-        f.write(brief)
 
     print(f"\n报告已保存到 knowledge_base/")
 

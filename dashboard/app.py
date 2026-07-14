@@ -1,34 +1,33 @@
-"""
-Boss Dashboard v2 - A-Share Quant Trading Dashboard with K-line charts
+"""Trading Agents local Dashboard.
 
-Features:
-- Real-time portfolio overview with 10s refresh
-- Agent detail: positions, equity curve, trade history
-- Stock detail: candlestick chart (1d/1w/1M), minute chart (5m/15m/30m/60m)
-- Integrated Ashare data source (Sina + Tencent fallback)
-
-Run: python dashboard/app.py
-Access: http://localhost:5890
+Run ``python dashboard/app.py`` and open http://localhost:5890.
 """
 
 import os
 import sys
 import json
 import glob
+import csv
 import logging
 import datetime
 import functools
 from datetime import datetime
 from typing import Dict, List, Any
 
-import pandas as pd
-import numpy as np
+try:
+    import pandas as pd
+    import numpy as np
+except Exception as e:
+    pd = None
+    np = None
+    PANDAS_IMPORT_ERROR = e
+else:
+    PANDAS_IMPORT_ERROR = None
 from flask import Flask, render_template, jsonify, request
 
 # Add project root to path
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, PROJECT_ROOT)
-sys.path.insert(0, os.path.join(PROJECT_ROOT, 'ashare_repo'))
 
 app = Flask(__name__)
 app.logger.setLevel(logging.WARNING)
@@ -40,6 +39,7 @@ OPTIMIZER_DIR = os.path.join(BASE_DIR, 'boss_optimizer')
 ACCOUNT_DIR = os.path.join(BASE_DIR, 'account')
 V2_ACCOUNT_STATE = os.path.join(ACCOUNT_DIR, 'account_state_v2.json')
 V2_TRADE_LOG = os.path.join(ACCOUNT_DIR, 'trade_log_v2.json')
+SIMULATED_META = os.path.join(BASE_DIR, 'data', 'simulated_backfill_meta.json')
 
 
 # Simple in-memory cache
@@ -160,6 +160,26 @@ def load_v2_trade_log() -> List[Dict]:
     return []
 
 
+def detect_demo_state() -> Dict:
+    """Detect whether current runtime artifacts are from simulated backfill."""
+    hits = []
+    meta = _read_json_file(SIMULATED_META, {}) if os.path.exists(SIMULATED_META) else {}
+    if meta:
+        hits.append('data/simulated_backfill_meta.json')
+    account = load_v2_account()
+    if account.get('source') == 'simulated_backfill':
+        hits.append('account/account_state_v2.json')
+    latest_pick = load_latest_v2_pick()
+    if latest_pick.get('pool_mode') == 'simulated_backfill' or latest_pick.get('source') == 'simulated_backfill':
+        hits.append(os.path.relpath(latest_pick.get('_path', ''), BASE_DIR) if latest_pick.get('_path') else 'latest daily_pick')
+    return {
+        'is_demo': bool(hits),
+        'source': 'simulated_backfill' if hits else 'live_or_unknown',
+        'hits': hits,
+        'message': '当前包含演示回放数据，不能视为真实实盘结果。' if hits else '',
+    }
+
+
 def load_v2_pick_reports() -> List[Dict]:
     """Load all v2 daily pick reports sorted by date."""
     reports = []
@@ -277,8 +297,8 @@ def transform_v2_pick_item(pick: Dict, rank: int, nm: Dict[str, str]) -> Dict:
         'stop_loss': sl,
         'take_profit': tp,
         'invalid_price': sl,
-        'stop_loss_reason': '硬止损 -7%' if sl else '',
-        'take_profit_reason': '止盈 +15%' if tp else '',
+        'stop_loss_reason': '硬止损 -8%' if sl else '',
+        'take_profit_reason': '止盈 +72%' if tp else '',
         'atr': None,
         'risk_reward_ratio': rr,
     }
@@ -316,13 +336,17 @@ def build_v2_strategy_stats() -> List[Dict]:
         if not matched:
             strategy_pnl['other'] = strategy_pnl.get('other', 0) + pnl
 
-    names = sorted(set(list(strategy_counts.keys()) + list(strategy_pnl.keys())))
+    display_map = get_strategy_display_map()
+    names = sorted(display_map.keys())
     stats = []
     for name in names:
         stats.append({
+            'strategy_id': name,
             'name': name,
+            'display_name': display_map.get(name, name),
             'pick_count': strategy_counts.get(name, 0),
             'realized_pnl': round(strategy_pnl.get(name, 0), 2),
+            'enabled': name in display_map,
         })
     stats.sort(key=lambda x: (x['pick_count'], x['realized_pnl']), reverse=True)
     return stats
@@ -743,19 +767,30 @@ def api_summary():
     v2_account = load_v2_account()
     if v2_account:
         cash = v2_account.get('cash', 100000)
-        total_profit = v2_account.get('total_profit', 0)
         positions = v2_account.get('positions', {})
         position_value = sum(
-            p.get('shares', 0) * p.get('avg_cost', p.get('cost_price', 0))
+            p.get('shares', 0) * (
+                p.get('current_price')
+                or p.get('last_price')
+                or p.get('avg_price')
+                or p.get('avg_cost')
+                or p.get('cost_price')
+                or 0
+            )
             for p in positions.values()
         )
-        total_equity = cash + position_value
+        total_equity = v2_account.get('account_value') or v2_account.get('total_assets') or (cash + position_value)
         v2_pick = load_latest_v2_pick()
         if v2_pick.get('account_value'):
             total_equity = v2_pick['account_value']
+        initial_cash = v2_account.get('initial_cash') or 100000
+        total_return_pct = (total_equity / initial_cash - 1) * 100 if initial_cash else 0
         return jsonify({
             'total_equity': round(total_equity, 2),
-            'total_return_pct': round(total_profit / 100000 * 100, 2),
+            'total_return_pct': round(total_return_pct, 2),
+            'cash': round(cash, 2),
+            'position_value': round(position_value, 2),
+            'position_count': len(positions),
             'agent_count': 0,
             'date': (v2_account.get('updated_at') or v2_pick.get('date', ''))[:10],
             'agent_stats': [],
@@ -764,6 +799,7 @@ def api_summary():
             'realtime_market': {},
             'index_quotes': [],
             'source': 'v2',
+            'demo_state': detect_demo_state(),
         })
 
     report = load_latest_report()
@@ -816,6 +852,7 @@ def api_summary():
         'hot_sectors': report.get('hot_sectors', [])[:5],
         'realtime_market': report.get('realtime_market', {}),
         'index_quotes': report.get('index_quotes', []),
+        'demo_state': detect_demo_state(),
     })
 
 
@@ -964,11 +1001,25 @@ def api_v2_strategy_stats():
     account = load_v2_account()
     cash = account.get('cash', 0)
     v2_pick = load_latest_v2_pick()
-    total_equity = v2_pick.get('account_value') or cash
+    positions = account.get('positions') or {}
+    position_value = sum(
+        float(pos.get('shares', 0) or 0)
+        * float(
+            _latest_kline_price(code)
+            or pos.get('current_price')
+            or pos.get('avg_price')
+            or pos.get('avg_cost')
+            or 0
+        )
+        for code, pos in positions.items()
+    )
+    total_equity = v2_pick.get('account_value') or (cash + position_value)
     return jsonify({
         'strategies': build_v2_strategy_stats(),
         'account': {
             'cash': cash,
+            'position_value': round(position_value, 2),
+            'position_count': len(positions),
             'total_equity': round(total_equity, 2),
             'total_profit': account.get('total_profit', 0),
             'total_trades': account.get('total_trades', 0),
@@ -1112,6 +1163,14 @@ def api_picks():
         'date': date or '',
         'generated_at': generated_at or report.get('generated_at', ''),
         'picks': picks,
+        'buy_picks': [
+            transform_v2_pick_item(p, rank, nm)
+            for rank, p in enumerate((v2_report.get('buy_picks', []) if used_v2 else [])[:10], 1)
+        ],
+        'buy_actions': v2_report.get('buy_actions', []) if used_v2 else [],
+        'sell_actions': v2_report.get('stop_actions', []) if used_v2 else [],
+        'execution_status': v2_report.get('execution_status', 'executed') if used_v2 else 'unknown',
+        'execution_message': v2_report.get('execution_message', '') if used_v2 else '',
         'summary': summary,
         'index_quotes': index_quotes,
         'hot_sectors': hot_sectors,
@@ -1196,7 +1255,7 @@ def api_agent_detail(agent_name):
 @app.route('/api/kline/<code>')
 def api_kline(code):
     """
-    日/周/月 K 线 — 优先本地 CSV，iFind/新浪 fallback
+    日/周/月 K 线 — 优先本地 CSV，按需新浪 fallback
     frequency: 1d (default), 1w, 1M
     """
     raw_code = code.replace('sh', '').replace('sz', '')
@@ -1275,7 +1334,7 @@ def api_intraday(code):
             'prev_close': pc,
             'change': round(change, 3),
             'change_pct': change_pct,
-            'source': 'cache_or_ifind',
+            'source': 'cache_or_sina',
         })
     except Exception as e:
         return jsonify({'error': str(e), 'code': raw_code}), 500
@@ -1455,8 +1514,10 @@ def api_market_overview():
         return jsonify({
             'date': overview.get('date', ''),
             'market_sentiment': overview.get('market_sentiment', 'neutral'),
+            'sentiment': overview.get('market_sentiment', 'neutral'),
             'indices': indices_out,
             'sector_hot': sectors,
+            'hot_sectors': sectors,
         })
     except Exception as e:
         app.logger.error(f"Market overview error: {e}", exc_info=True)
@@ -1475,9 +1536,9 @@ def api_positions_monitor():
 
     monitor_items = []
     for code, pos in positions.items():
-        buy_price = pos.get('avg_cost', pos.get('cost_price', 0))
-        stop_loss = pos.get('stop_loss', buy_price * 0.93)
-        take_profit = pos.get('take_profit', buy_price * 1.15)
+        buy_price = pos.get('avg_price') or pos.get('avg_cost') or pos.get('cost_price') or 0
+        stop_loss = pos.get('stop_loss', buy_price * 0.92)
+        take_profit = pos.get('take_profit', buy_price * 1.72)
         invalid_price = stop_loss
         monitor_items.append({
             'code': code,
@@ -1595,9 +1656,20 @@ def api_positions_monitor():
             'confidence': item.get('confidence', 0),
             'realtime_error': realtime_error,
             'shares': item.get('shares', 0),
+            'status': alert,
         })
 
-    return jsonify({'date': monitor_date, 'picks': monitor, 'source': 'v2', 'mode': mode})
+    alerts = [m for m in monitor if m.get('alert') and m.get('alert') != 'normal']
+    positions_payload = monitor if mode == 'holdings' else []
+    return jsonify({
+        'date': monitor_date,
+        'picks': monitor,
+        'positions': positions_payload,
+        'watchlist': monitor if mode != 'holdings' else [],
+        'alerts': alerts,
+        'source': 'v2',
+        'mode': mode,
+    })
 
 
 @app.route('/api/historical_picks')
@@ -1623,9 +1695,18 @@ def api_historical_picks():
                     'take_profit': pick.get('take_profit'),
                     'strategy': ', '.join((pick.get('strategies') or {}).keys()),
                     'confidence': pick.get('confidence', 0),
+                    'score': pick.get('final_score', pick.get('total_score', pick.get('strategy_score', 0))),
                 })
             sells = daily.get('stop_actions', [])
-            return jsonify({'date': date, 'buys': picks, 'sells': sells, 'source': 'v2'})
+            return jsonify({
+                'date': date,
+                'picks': picks,
+                'buys': daily.get('buy_actions', []),
+                'sells': sells,
+                'execution_status': daily.get('execution_status', 'executed'),
+                'execution_message': daily.get('execution_message', ''),
+                'source': 'v2',
+            })
 
         fname = f'daily_{date.replace("-", "")}.json'
         fpath = os.path.join(KNOWLEDGE_DIR, fname)
@@ -1733,10 +1814,11 @@ def map_v2_strategy(s: Dict) -> Dict:
         sell_logic = f'隔夜: 止损/止盈/移动止盈 | hold≥{max_hold} 强制平'
         desc = s.get('description') or '隔夜策略 | 尾盘买入次日离场'
     else:
-        sell_logic = f'波段: -7%止损 +25%止盈 移动止盈6% | 最多持{max_hold}日'
+        sell_logic = f'波段: -8%止损 +72%止盈 移动止盈12% | 最多持{max_hold}日'
         desc = s.get('description') or f'波段策略 | 最多持有{max_hold}个交易日'
     return {
-        'name': s.get('name', ''),
+        'strategy_id': s.get('strategy_id') or s.get('strategy') or s.get('name', ''),
+        'name': s.get('strategy_id') or s.get('strategy') or s.get('name', ''),
         'display_name': s.get('display_name', s.get('name', '')),
         'final_value': s.get('final_value', 100000),
         'total_return': s.get('return_pct', 0),
@@ -2050,7 +2132,7 @@ def api_backtest_ranking():
         'initial_capital': 100000,
         'commission': '万1免5',
         'stamp_tax': '千1',
-        'rules': '涨停买不进/跌停卖不出/T+1/硬止损-7%/止盈+15%/移动止盈回撤5%/最大持仓5只/最大持仓天数20天',
+        'rules': '涨停继续持股/T+1/硬止损-8%/止盈+72%/移动止盈回撤12%/最大持仓5只/最长持仓32天',
     })
 
 @app.route('/api/backtest/<strategy_name>')
@@ -2187,13 +2269,86 @@ def api_task_run():
 
 # ---- Paper Trading v2 API ----
 
+PAPER_DIR = os.path.join(BASE_DIR, 'account', 'paper')
+PAPER_NAV_DIR = os.path.join(BASE_DIR, 'state', 'paper_nav')
+
+
+def _read_json_file(path: str, default=None):
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception:
+        return default
+
+
+def _latest_kline_price(code: str) -> float:
+    path = os.path.join(BASE_DIR, 'data', 'kline', f'{code}.csv')
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            rows = list(csv.DictReader(f))
+        if rows:
+            return float(rows[-1].get('close') or 0)
+    except Exception:
+        pass
+    return 0.0
+
+
+def _paper_account_value(account: Dict) -> float:
+    value = float(account.get('cash', 0) or 0)
+    for code, pos in (account.get('positions') or {}).items():
+        price = _latest_kline_price(code) or pos.get('avg_price') or pos.get('avg_cost') or 0
+        value += float(pos.get('shares', 0) or 0) * float(price or 0)
+    return value
+
+
+def _load_paper_stats_direct() -> List[Dict]:
+    stats = []
+    if not os.path.exists(PAPER_DIR):
+        return stats
+    for path in sorted(glob.glob(os.path.join(PAPER_DIR, '*.json'))):
+        if path.endswith('_trades.json'):
+            continue
+        sid = os.path.basename(path).replace('.json', '')
+        account = _read_json_file(path, {}) or {}
+        trades = _read_json_file(os.path.join(PAPER_DIR, f'{sid}_trades.json'), []) or []
+        sells = [t for t in trades if str(t.get('action', '')).upper() == 'SELL']
+        wins = [t for t in sells if (t.get('profit') or 0) > 0]
+        equity = _paper_account_value(account)
+        stats.append({
+            'name': sid,
+            'display_name': account.get('display_name', sid),
+            'equity': round(equity, 2),
+            'cash': round(account.get('cash', 0), 2),
+            'return_pct': round((equity / 100000 - 1) * 100, 2),
+            'total_profit': round(account.get('total_profit', 0), 2),
+            'total_trades': len(trades),
+            'closed_trades': len(sells),
+            'win_rate': round(len(wins) / len(sells) * 100, 1) if sells else 0,
+            'positions': [],
+            'position_count': len(account.get('positions') or {}),
+            'created_at': account.get('created_at', ''),
+            'updated_at': account.get('updated_at', ''),
+            'source': account.get('source', 'paper'),
+        })
+    stats.sort(key=lambda x: x.get('return_pct', 0), reverse=True)
+    return stats
+
+
+def _load_paper_nav_direct(limit: int = 120) -> List[Dict]:
+    files = sorted(glob.glob(os.path.join(PAPER_NAV_DIR, '*.json')))[-limit:]
+    history = []
+    for path in files:
+        item = _read_json_file(path)
+        if item:
+            history.append(item)
+    return history
+
+
 @app.route('/api/v2/paper/ranking')
 def api_paper_ranking():
     """5 策略纸面账户排名"""
     try:
-        from paper_trading_v2 import init_paper_accounts, build_paper_ranking
-        init_paper_accounts()
-        strategies = build_paper_ranking()
+        strategies = _load_paper_stats_direct()
         return jsonify({
             'strategies': strategies,
             'initial_capital': 100000,
@@ -2207,14 +2362,14 @@ def api_paper_ranking():
 def api_paper_overview():
     """纸面净值时序 (各策略 + 组合参考)"""
     try:
-        from paper_trading_v2 import load_nav_history, get_strategy_list
-        history = load_nav_history(120)
+        history = _load_paper_nav_direct(120)
         dates = [h.get('date') for h in history]
         series = {}
-        for sid, dname in get_strategy_list().items():
-            series[sid] = {'display_name': dname, 'values': [], 'returns': []}
         composite = {'display_name': '组合账户', 'values': [], 'returns': []}
         for h in history:
+            for sid, info in (h.get('strategies') or {}).items():
+                if sid not in series:
+                    series[sid] = {'display_name': info.get('display_name', sid), 'values': [], 'returns': []}
             for sid in series:
                 info = h.get('strategies', {}).get(sid, {})
                 series[sid]['values'].append(info.get('value', 100000))
@@ -2231,6 +2386,78 @@ def api_paper_overview():
 def api_paper_detail(strategy_id):
     """单策略纸面详情"""
     try:
+        stats = next((s for s in _load_paper_stats_direct() if s.get('name') == strategy_id), None)
+        if not stats:
+            return jsonify({'error': '策略不存在'}), 404
+        trades = _read_json_file(os.path.join(PAPER_DIR, f'{strategy_id}_trades.json'), []) or []
+        account = _read_json_file(os.path.join(PAPER_DIR, f'{strategy_id}.json'), {}) or {}
+        positions = []
+        for code, pos in (account.get('positions') or {}).items():
+            price = _latest_kline_price(code) or pos.get('avg_price') or 0
+            cost = float(pos.get('avg_price') or 0) * float(pos.get('shares') or 0)
+            value = float(price or 0) * float(pos.get('shares') or 0)
+            positions.append({
+                'code': code,
+                'shares': pos.get('shares', 0),
+                'avg_price': pos.get('avg_price', 0),
+                'current_price': round(price, 2),
+                'market_value': round(value, 2),
+                'profit': round(value - cost, 2),
+                'profit_pct': round((value / cost - 1) * 100, 2) if cost else 0,
+                'buy_date': pos.get('buy_date', ''),
+                'hold_days': pos.get('hold_days', 0),
+                'reason': pos.get('reason', ''),
+            })
+        stats['positions'] = positions
+        return jsonify({'strategy': stats, 'trades': trades[-100:]})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/api/v2/arena/compare')
+def api_arena_compare():
+    """纸面 vs 回测并排对比"""
+    paper = _load_paper_stats_direct()
+    backtest = []
+    summary, _tag, _kind = load_display_v2_backtest()
+    if summary:
+        backtest = [map_v2_strategy(s) for s in summary.get('strategies', [])]
+    active_ids = set(get_strategy_display_map().keys())
+    backtest = [s for s in backtest if (s.get('strategy_id') or s.get('name')) in active_ids]
+    bt_map = {s.get('strategy_id') or s['name']: s for s in backtest}
+    rows = []
+    strategy_ids = set([p['name'] for p in paper] + list(bt_map.keys()))
+    for strategy_id in sorted(strategy_ids):
+        p = next((x for x in paper if x['name'] == strategy_id), {})
+        b = bt_map.get(strategy_id, {})
+        if strategy_id == 'composite':
+            continue
+        has_paper = bool(p) and (p.get('total_trades', 0) > 0 or p.get('position_count', 0) > 0)
+        paper_return = p.get('return_pct') if has_paper else None
+        backtest_return = b.get('total_return', 0)
+        rows.append({
+            'strategy_id': strategy_id,
+            'name': strategy_id,
+            'display_name': p.get('display_name') or b.get('display_name', strategy_id),
+            'paper_return': paper_return,
+            'paper_equity': p.get('equity', 100000),
+            'paper_trades': p.get('total_trades', 0),
+            'paper_win_rate': p.get('win_rate', 0),
+            'backtest_return': backtest_return,
+            'backtest_sharpe': b.get('sharpe_ratio', 0),
+            'backtest_trades': b.get('trade_count', 0),
+            'gap': round(paper_return - backtest_return, 2) if paper_return is not None else None,
+            'paper_status': 'ready' if has_paper else ('initialized' if p else 'missing'),
+            'comparison_status': 'comparable' if has_paper and b else 'insufficient_sample',
+        })
+    rows.sort(key=lambda x: x.get('paper_return') if x.get('paper_return') is not None else -999, reverse=True)
+    return jsonify({'rows': rows, 'paper_count': len(paper), 'backtest_count': len(backtest)})
+
+
+@app.route('/api/v2/paper_legacy/<strategy_id>')
+def api_paper_detail_legacy(strategy_id):
+    """旧纸面详情接口保留为调试入口"""
+    try:
         from paper_trading_v2 import compute_paper_stats, get_strategy_list
         if strategy_id not in get_strategy_list():
             return jsonify({'error': '策略不存在'}), 404
@@ -2245,20 +2472,17 @@ def api_paper_detail(strategy_id):
         return jsonify({'error': str(e)}), 500
 
 
-@app.route('/api/v2/arena/compare')
-def api_arena_compare():
-    """纸面 vs 回测并排对比"""
-    paper = []
-    backtest = []
+@app.route('/api/v2/arena/compare_legacy')
+def api_arena_compare_legacy():
+    """旧纸面 vs 回测接口保留为调试入口"""
     try:
         from paper_trading_v2 import init_paper_accounts, build_paper_ranking
         init_paper_accounts()
         paper = build_paper_ranking()
     except Exception:
-        pass
+        paper = []
     summary, _tag, _kind = load_display_v2_backtest()
-    if summary:
-        backtest = [map_v2_strategy(s) for s in summary.get('strategies', [])]
+    backtest = [map_v2_strategy(s) for s in summary.get('strategies', [])] if summary else []
     bt_map = {s['name']: s for s in backtest}
     rows = []
     names = set([p['name'] for p in paper] + list(bt_map.keys()))
@@ -2281,7 +2505,6 @@ def api_arena_compare():
         })
     rows.sort(key=lambda x: x.get('paper_return', 0), reverse=True)
     return jsonify({'rows': rows, 'paper_count': len(paper), 'backtest_count': len(backtest)})
-
 
 @app.route('/api/memory/signals')
 def api_memory_signals():
@@ -2344,10 +2567,45 @@ def api_memory_strategy():
     """Get strategy performance comparison."""
     days = request.args.get('days', 90, type=int)
     try:
+        import sqlite3
+        from datetime import timedelta
         from core.memory import TradingMemory
-        mem = TradingMemory(db_path=os.path.join(BASE_DIR, 'knowledge_base', 'trading_memory.db'))
-        comparison = mem.get_strategy_comparison(days=days)
-        summary = mem.get_memory_summary()
+        db_path = os.path.join(BASE_DIR, 'knowledge_base', 'trading_memory.db')
+        TradingMemory(db_path=db_path)
+        since = (datetime.now() - timedelta(days=days)).strftime('%Y-%m-%d')
+        conn = sqlite3.connect(db_path)
+        conn.row_factory = sqlite3.Row
+        rows = conn.execute("""
+            SELECT strategy,
+                   SUM(total_signals) as total_signals,
+                   SUM(win_count) as wins,
+                   SUM(loss_count) as losses,
+                   AVG(total_pnl_pct) as avg_pnl_pct
+            FROM strategy_perf
+            WHERE date >= ? AND (source IS NULL OR source != 'simulated_backfill')
+            GROUP BY strategy ORDER BY avg_pnl_pct DESC
+        """, (since,)).fetchall()
+        comparison = []
+        for row in rows:
+            wins = row['wins'] or 0
+            losses = row['losses'] or 0
+            comparison.append({
+                'strategy': row['strategy'],
+                'total_signals': row['total_signals'] or 0,
+                'wins': wins,
+                'losses': losses,
+                'win_rate': wins / (wins + losses) * 100 if (wins + losses) else 0,
+                'avg_pnl_pct': row['avg_pnl_pct'] or 0,
+                'avg_return': row['avg_pnl_pct'] or 0,
+            })
+        summary = {
+            'signals': conn.execute("SELECT COUNT(*) FROM signals WHERE source IS NULL OR source != 'simulated_backfill'").fetchone()[0],
+            'market_snapshots': conn.execute("SELECT COUNT(*) FROM market_state WHERE source IS NULL OR source != 'simulated_backfill'").fetchone()[0],
+            'strategies_tracked': conn.execute("SELECT COUNT(DISTINCT strategy) FROM strategy_perf WHERE source IS NULL OR source != 'simulated_backfill'").fetchone()[0],
+            'lessons': conn.execute("SELECT COUNT(*) FROM lessons WHERE source IS NULL OR source != 'simulated_backfill'").fetchone()[0],
+            'db_path': db_path,
+        }
+        conn.close()
         return jsonify({
             'strategies': comparison,
             'summary': summary
@@ -2356,17 +2614,76 @@ def api_memory_strategy():
         return jsonify({'error': str(e), 'strategies': [], 'summary': {}})
 
 
+@app.route('/api/memory/health')
+def api_memory_health():
+    """TradingMemory source purity and freshness summary."""
+    try:
+        import sqlite3
+        from core.memory import TradingMemory
+        db_path = os.path.join(BASE_DIR, 'knowledge_base', 'trading_memory.db')
+        TradingMemory(db_path=db_path)
+        conn = sqlite3.connect(db_path)
+        conn.row_factory = sqlite3.Row
+        tables = ['signals', 'market_state', 'strategy_perf', 'lessons']
+        by_table = {}
+        latest = {}
+        for table in tables:
+            live = conn.execute(
+                f"SELECT COUNT(*) FROM {table} WHERE source IS NULL OR source != 'simulated_backfill'"
+            ).fetchone()[0]
+            simulated = conn.execute(
+                f"SELECT COUNT(*) FROM {table} WHERE source='simulated_backfill'"
+            ).fetchone()[0]
+            by_table[table] = {'live': live, 'simulated': simulated}
+            date_col = 'created_at' if table in ('signals', 'lessons') else 'date'
+            try:
+                latest[table] = conn.execute(
+                    f"SELECT MAX({date_col}) FROM {table} WHERE source IS NULL OR source != 'simulated_backfill'"
+                ).fetchone()[0]
+            except Exception:
+                latest[table] = None
+        pending = conn.execute(
+            "SELECT COUNT(*) FROM signals WHERE signal='buy' AND outcome IS NULL AND (source IS NULL OR source != 'simulated_backfill')"
+        ).fetchone()[0]
+        conn.close()
+        simulated_total = sum(v['simulated'] for v in by_table.values())
+        return jsonify({
+            'ok': simulated_total == 0,
+            'by_table': by_table,
+            'simulated_total': simulated_total,
+            'pending_buy_signals': pending,
+            'latest_live': latest,
+            'db_path': db_path,
+        })
+    except Exception as e:
+        return jsonify({'ok': False, 'error': str(e)}), 500
+
+
 @app.route('/api/memory/lessons')
 def api_memory_lessons():
     """Get lessons learned."""
     days = request.args.get('days', 30, type=int)
     lesson_type = request.args.get('type', '')
     try:
+        import sqlite3
+        from datetime import timedelta
         from core.memory import TradingMemory
-        mem = TradingMemory(db_path=os.path.join(BASE_DIR, 'knowledge_base', 'trading_memory.db'))
-        lessons = mem.get_lessons(days=days)
+        db_path = os.path.join(BASE_DIR, 'knowledge_base', 'trading_memory.db')
+        TradingMemory(db_path=db_path)
+        since = (datetime.now() - timedelta(days=days)).strftime('%Y-%m-%d')
+        conn = sqlite3.connect(db_path)
+        conn.row_factory = sqlite3.Row
+        params = [since]
+        where = "date >= ? AND (source IS NULL OR source != 'simulated_backfill')"
         if lesson_type:
-            lessons = [l for l in lessons if l.get('lesson_type') == lesson_type]
+            where += " AND lesson_type = ?"
+            params.append(lesson_type)
+        rows = conn.execute(
+            f"SELECT * FROM lessons WHERE {where} ORDER BY severity DESC, date DESC LIMIT 100",
+            params
+        ).fetchall()
+        conn.close()
+        lessons = [dict(row) for row in rows]
         lessons.sort(key=lambda x: x.get('created_at', ''), reverse=True)
         return jsonify({
             'total': len(lessons),
@@ -2412,6 +2729,86 @@ def api_memory_stock(code):
         })
     except Exception as e:
         return jsonify({'error': str(e), 'history': [], 'signals': []})
+
+
+def _route_json(fn, fallback=None):
+    """Call an existing JSON route and unwrap its payload."""
+    try:
+        result = fn()
+        if isinstance(result, tuple):
+            result = result[0]
+        if hasattr(result, 'get_json'):
+            data = result.get_json(silent=True)
+            return data if data is not None else (fallback or {})
+        return result if isinstance(result, dict) else (fallback or {})
+    except Exception as e:
+        data = fallback.copy() if isinstance(fallback, dict) else {}
+        data['error'] = str(e)
+        return data
+
+
+@app.route('/api/agent/daily_brief')
+def api_agent_daily_brief():
+    """Latest local Agent daily brief. Generation must be explicit."""
+    refresh = request.args.get('refresh', '0') in ('1', 'true', 'yes')
+    try:
+        from agent_runtime.orchestrator import AgentOrchestrator
+        orchestrator = AgentOrchestrator()
+        brief = orchestrator.run_daily_review() if refresh else orchestrator.latest_brief()
+        events = orchestrator.store.list_events(days=14, limit=20)
+        return jsonify({'brief': brief, 'events': events})
+    except Exception as e:
+        return jsonify({'error': str(e), 'brief': None, 'events': []}), 500
+
+
+@app.route('/api/dashboard/workspace')
+def api_dashboard_workspace():
+    """Aggregated payload for the Dashboard workspace tab."""
+    brief_payload = _route_json(api_agent_daily_brief, {'brief': None, 'events': []})
+    return jsonify({
+        'summary': _route_json(api_summary, {}),
+        'picks': _route_json(api_picks, {'picks': []}),
+        'monitor': _route_json(api_positions_monitor, {'positions': [], 'alerts': []}),
+        'market': _route_json(api_market_overview, {'market_sentiment': 'neutral', 'sector_hot': []}),
+        'tasks': _route_json(api_tasks_list, {'tasks': []}),
+        'lessons': _route_json(api_memory_lessons, {'total': 0, 'lessons': []}),
+        'memory_health': _route_json(api_memory_health, {'ok': False}),
+        'agent': brief_payload,
+        'demo_state': detect_demo_state(),
+    })
+
+
+@app.route('/api/dashboard/strategy_center')
+def api_dashboard_strategy_center():
+    """Aggregated payload for the strategy center tab."""
+    return jsonify({
+        'stats': _route_json(api_v2_strategy_stats, {'strategies': []}),
+        'arena': _route_json(api_arena_compare, {'rows': []}),
+        'memory': _route_json(api_memory_strategy, {'strategies': [], 'summary': {}}),
+        'memory_health': _route_json(api_memory_health, {'ok': False}),
+        'demo_state': detect_demo_state(),
+        'agent': _route_json(api_agent_daily_brief, {'brief': None, 'events': []}),
+    })
+
+
+@app.route('/api/dashboard/memory_center')
+def api_dashboard_memory_center():
+    """Aggregated payload for the memory and knowledge-base tab."""
+    try:
+        from agent_runtime.memory_store import AgentMemoryStore
+        agent_events = AgentMemoryStore().list_events(days=30, limit=50)
+    except Exception:
+        agent_events = []
+    return jsonify({
+        'signals': _route_json(api_memory_signals, {'total': 0, 'signals': []}),
+        'market': _route_json(api_memory_market, {'history': [], 'sentiment_dist': {}, 'total': 0}),
+        'strategy': _route_json(api_memory_strategy, {'strategies': [], 'summary': {}}),
+        'lessons': _route_json(api_memory_lessons, {'total': 0, 'lessons': []}),
+        'memory_health': _route_json(api_memory_health, {'ok': False}),
+        'demo_state': detect_demo_state(),
+        'agent_events': agent_events,
+        'agent': _route_json(api_agent_daily_brief, {'brief': None, 'events': []}),
+    })
 
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-重建股票池 — iFind/BaoStock 候选 + market_filter
+重建股票池 — BaoStock 候选 + market_filter
 
 用法:
     python scripts/rebuild_stock_pool.py
@@ -27,7 +27,7 @@ BACKUP_DIR = os.path.join(BASE_DIR, 'data', 'backups')
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--dry-run', action='store_true')
-    parser.add_argument('--source', default=None, choices=['ifind', 'baostock'])
+    parser.add_argument('--source', default='baostock', choices=['baostock'])
     args = parser.parse_args()
 
     reload_market_config()

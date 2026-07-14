@@ -6,15 +6,16 @@
 - 手续费: 0.01% (免5, min_commission=0)
 - 印花税: 0.1% (仅卖出)
 - 最大持仓: 5只
-- 单只最大仓位: 20%
-- 硬止损: -7%
-- 止盈: +15%
-- 移动止盈: 回撤5%
-- 最大持仓天数: 20个交易日
+- 递减仓位: 24% / 22% / 20% / 18% / 16%
+- 组合默认硬止损: -8%
+- 组合默认止盈: +72%
+- 组合默认移动止盈: 峰值盈利达标后回撤12%
+- 组合默认最大持仓天数: 32个交易日
 """
 import os
 import json
 import logging
+import csv
 from datetime import datetime
 from typing import Dict, List, Optional, Any
 
@@ -67,6 +68,75 @@ def resolve_trade_rules(strategy_id: str = None, meta: Dict = None) -> Dict:
         "force_exit_days": meta.get("force_exit_days", preset.get("force_exit_days", 0)),
         "min_trail_profit": MIN_TRAIL_PROFIT if preset_key == "overnight" else MIN_TRAIL_PROFIT_SWING,
     }
+
+
+def evaluate_sell_decision(pos: Dict, current_price: float, rules: Dict) -> str:
+    """Evaluate live sell reason from a position snapshot and current price."""
+    if not current_price:
+        return ""
+    buy_price = pos.get("avg_price") or pos.get("avg_cost") or pos.get("cost_price") or 0
+    if not buy_price:
+        return ""
+    stop_loss = rules["stop_loss"]
+    take_profit = rules["take_profit"]
+    trailing_stop = rules["trailing_stop"]
+    max_hold_days = rules["max_hold_days"]
+    min_trail_profit = rules["min_trail_profit"]
+    change_pct = (current_price - buy_price) / buy_price
+
+    if change_pct <= stop_loss:
+        return f"硬止损 ({change_pct:.1%})"
+    if change_pct >= take_profit:
+        return f"止盈 ({change_pct:.1%})"
+    high_price = pos.get("high_price")
+    if high_price and high_price > buy_price:
+        peak = (high_price - buy_price) / buy_price
+        if peak >= min_trail_profit:
+            drawdown = (current_price - high_price) / high_price
+            if drawdown <= -trailing_stop:
+                return f"移动止盈 (回撤{drawdown:.1%})"
+    if pos.get("hold_days", 0) >= max_hold_days:
+        return f"持仓超时 ({pos['hold_days']}天)"
+    return ""
+
+
+def is_limit_up_move(code: str, change_pct: float, threshold_ratio: float = 1.0) -> bool:
+    """Return True when today's pct change is close to the board-specific limit-up."""
+    if change_pct is None:
+        return False
+    try:
+        from theme_engine import limit_up_threshold
+        threshold = limit_up_threshold(code)
+    except Exception:
+        threshold = LIMIT_UP_THRESHOLD
+    return float(change_pct) >= threshold * threshold_ratio
+
+
+def load_prev_close(code: str, date: str = "") -> Optional[float]:
+    """Load previous trading close from local daily K-line cache."""
+    path = os.path.join(BASE_DIR, "data", "kline", f"{code}.csv")
+    if not os.path.exists(path):
+        return None
+    try:
+        rows = []
+        with open(path, "r", encoding="utf-8", errors="ignore", newline="") as f:
+            for row in csv.DictReader(f):
+                d = str(row.get("date", ""))[:10]
+                close = row.get("close")
+                if not d or close in (None, ""):
+                    continue
+                rows.append((d, float(close)))
+        rows.sort(key=lambda x: x[0])
+        if not rows:
+            return None
+        if not date:
+            return rows[-1][1]
+        prior = [close for d, close in rows if d < date]
+        if prior:
+            return prior[-1]
+        return rows[-1][1]
+    except Exception:
+        return None
 
 
 # 组合账户默认规则（向后兼容模块级常量）
@@ -146,15 +216,15 @@ class VirtualAccount:
         """是否可以买入（持仓未满）"""
         return len(self.positions) < MAX_POSITIONS
 
-    def get_buy_amount(self, price: float) -> float:
+    def get_buy_amount(self, price: float = None, current_prices: Dict[str, float] = None) -> float:
         """计算可买入金额 — 按当前持仓数取递减权重，与 backtest_v2 的 BUY_WEIGHTS 对齐"""
         from strategies_v2.trade_config import BUY_WEIGHTS
         rank_idx = len(self.positions)
         w = BUY_WEIGHTS[rank_idx] if rank_idx < len(BUY_WEIGHTS) else MAX_SINGLE_PCT
-        target = self.get_total_value() * w
+        target = self.get_total_value(current_prices) * w
         return max(0, min(self.cash, target))
 
-    def buy(self, code: str, price: float, amount: float, date: str, reason: str = "") -> Dict:
+    def buy(self, code: str, price: float, amount: float, date: str, reason: str = "", prev_close: float = None) -> Dict:
         """买入"""
         if code in self.positions:
             return {"ok": False, "error": f"已持有 {code}"}
@@ -189,6 +259,8 @@ class VirtualAccount:
             "hold_days": 0,
             "last_hold_date": date,
         }
+        if prev_close and prev_close > 0:
+            self.positions[code]["prev_close"] = prev_close
         self.total_trades += 1
 
         trade = {
@@ -212,6 +284,9 @@ class VirtualAccount:
             "price": price,
             "shares": shares,
             "amount": round(actual_cost, 2),
+            "date": date,
+            "reason": reason,
+            "strategy_id": self.strategy_id,
         }
 
     def _can_sell_today(self, pos: Dict, date: str) -> bool:
@@ -281,6 +356,10 @@ class VirtualAccount:
             "shares": shares,
             "profit": round(profit, 2),
             "profit_pct": round(profit / (shares * pos["avg_price"]) * 100, 2),
+            "hold_days": pos.get("hold_days", 0),
+            "date": date,
+            "reason": reason,
+            "strategy_id": self.strategy_id,
         }
 
     def check_stop_loss_take_profit(self, current_prices: Dict[str, float], date: str) -> List[Dict]:
@@ -308,35 +387,19 @@ class VirtualAccount:
             if current_price > pos.get("high_price", 0):
                 pos["high_price"] = current_price
 
-            # 涨停继续持股
+            # 涨停继续持股：只用当日涨幅判断，避免用买入价误判累计涨幅。
             if LIMIT_UP_HOLD:
-                day_gain = (current_price - pos["avg_price"]) / pos["avg_price"]
-                if day_gain >= LIMIT_UP_THRESHOLD / 100 * 0.85:
-                    prev_close = pos.get("prev_close") or pos["avg_price"]
-                    if prev_close > 0 and (current_price / prev_close - 1) >= LIMIT_UP_THRESHOLD / 100 * 0.9:
-                        continue
+                prev_close = load_prev_close(code, date) or pos.get("prev_close")
+                if prev_close and prev_close > 0:
+                    day_change_pct = (current_price / prev_close - 1) * 100
+                    if is_limit_up_move(code, day_change_pct, threshold_ratio=0.9):
+                        pos["limit_up_streak"] = pos.get("limit_up_streak", 0) + 1
+                        if pos["limit_up_streak"] < 5:
+                            continue
+                else:
+                    pos["limit_up_streak"] = 0
 
-            reason = ""
-
-            # 硬止损
-            if change_pct <= stop_loss:
-                reason = f"硬止损 ({change_pct:.1%})"
-
-            # 止盈
-            elif change_pct >= take_profit:
-                reason = f"止盈 ({change_pct:.1%})"
-
-            # 移动止盈: 峰值盈利达标后才启用
-            elif pos.get("high_price") and pos["high_price"] > pos["avg_price"]:
-                peak = (pos["high_price"] - pos["avg_price"]) / pos["avg_price"]
-                if peak >= min_trail_profit:
-                    drawdown = (current_price - pos["high_price"]) / pos["high_price"]
-                    if drawdown <= -trailing_stop:
-                        reason = f"移动止盈 (回撤{drawdown:.1%})"
-
-            # 最大持仓天数
-            if not reason and pos.get("hold_days", 0) >= max_hold_days:
-                reason = f"持仓超时 ({pos['hold_days']}天)"
+            reason = evaluate_sell_decision(pos, current_price, rules)
 
             if reason:
                 result = self.sell(code, current_price, date, reason)

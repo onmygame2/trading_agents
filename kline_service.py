@@ -53,15 +53,8 @@ def _ensure_daily(code: str, min_bars: int = 60) -> pd.DataFrame:
     if len(df) >= min_bars:
         return df
     try:
-        from market_data import get_provider_name, get_data_config
-        from ifind_fetcher import is_ifind_quota_exceeded
-        if get_provider_name() == 'ifind' and not is_ifind_quota_exceeded():
-            from ifind_fetcher import IFindFetcher
-            fetcher = IFindFetcher(config=get_data_config().get('ifind', {}))
-            remote = fetcher.get_daily_kline(code, days=120)
-        else:
-            from update_kline import _fetch_kline_baostock
-            remote = _fetch_kline_baostock(code, 120)
+        from update_kline import _fetch_kline_baostock
+        remote = _fetch_kline_baostock(code, 120)
         if remote is not None and not remote.empty:
             if 'date' not in remote.columns and 'day' in remote.columns:
                 remote['date'] = pd.to_datetime(remote['day'])
@@ -137,15 +130,7 @@ def _cache_valid(path: str, date: str) -> bool:
 
 
 def _fetch_intraday_remote(code: str, date: str) -> pd.DataFrame:
-    from market_data import get_provider_name, get_data_config
-    if get_provider_name() == 'ifind':
-        from ifind_fetcher import IFindFetcher
-        fetcher = IFindFetcher(config=get_data_config().get('ifind', {}))
-        if fetcher.available:
-            df = fetcher.get_minute_kline(code, date, interval='1')
-            if not df.empty:
-                return df
-    # fallback: sina via minute_kline module
+    # sina via minute_kline module
     try:
         from minute_kline import get_minute_kline, code_to_sina_format
         prefix = 'sh' if code.startswith('6') else 'sz'

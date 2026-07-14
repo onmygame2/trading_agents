@@ -1,9 +1,6 @@
 # Secrets & runtime config
 .env
 config/llm_config.json
-data/ifind_token.json
-data/ifind_usage.json
-data/ifind_quota_exceeded.json
 
 # Python
 __pycache__/
@@ -13,6 +10,10 @@ __pycache__/
 venv_akshare/
 *.egg-info/
 .pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
 
 # Large data (regenerate locally)
 data/kline/
@@ -21,11 +22,25 @@ data/news/
 data/ml_models/
 data/fundamentals/
 data/factor_cache/
+data/backups/
+data/market_enriched/
+data/sentiment/
+data/alert_log.jsonl
+data/monitor_state.json
+data/market_*.json
 
 # Runtime state & logs
 logs/
 state/
 account/
+knowledge_base/agent_runtime.db*
+knowledge_base/trading_memory.db*
+knowledge_base/daily_pick_*.json
+knowledge_base/daily_pick_*.md
+knowledge_base/daily_reviews/
+knowledge_base/daily_*.json
+knowledge_base/daily_report_*.txt
+knowledge_base/theme_state.json
 
 # Backtest artifacts (keep benchmark summary only)
 reports/backtest_v2/nav_*.json
@@ -34,9 +49,14 @@ reports/backtest_v2/report_*.html
 reports/backtest_v2/summary_2*.json
 !reports/backtest_v2/summary_benchmark.json
 !reports/backtest_v2/composite_pool.json
+reports/half_year_backtest/
+reports/multi_backtest_*
+reports/overnight_backtest_*
+reports/stock_pool_audit_*.json
+optimization/
 
 # IDE / editor
 .cursor/
 *.bak.*
 .DS_Store
-# vendored ashare (track as submodule if needed)
+Thumbs.db

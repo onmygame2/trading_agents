@@ -246,7 +246,7 @@ def _apply_ml_rerank(merged: List[Dict], scored: List[Dict]) -> List[Dict]:
 def run_picker(date: str = None, top_n: int = 10, min_score: int = 40,
                pool_top: int = 500, pool_mode: str = "mainline",
                sector_top: int = 10, per_sector: int = 10,
-               progress_cb=None) -> Dict:
+               progress_cb=None, execute_trades: bool = True) -> Dict:
     """
     运行选股流程
     
@@ -321,6 +321,24 @@ def run_picker(date: str = None, top_n: int = 10, min_score: int = 40,
     else:
         pool_meta = {"pool_mode": "full"}
     logger.info(f"股票池: {len(pool)} 只")
+    data_health = {}
+    data_allows_buy = True
+    try:
+        from kline_health import health_passes, summarize_kline_health
+        data_health = summarize_kline_health(pool, target_date=date)
+        data_allows_buy = health_passes(data_health, min_coverage=0.75, min_valid=0.70, min_fresh=0.70)
+        if not data_allows_buy:
+            logger.warning(
+                "数据门禁拦截买入: coverage=%.1f%% valid120=%.1f%% fresh=%.1f%% latest=%s",
+                data_health.get("coverage", 0) * 100,
+                data_health.get("valid_120_coverage", 0) * 100,
+                data_health.get("fresh_coverage", 0) * 100,
+                data_health.get("latest_date", ""),
+            )
+    except Exception as e:
+        data_allows_buy = False
+        data_health = {"error": str(e)}
+        logger.warning(f"数据健康检查失败，拦截买入: {e}")
 
     # 4. 采集个股因子 + 评分
     _progress(15, f"因子评分 0/{len(pool)}...")
@@ -424,7 +442,7 @@ def run_picker(date: str = None, top_n: int = 10, min_score: int = 40,
 
     merged = list(buy_picks)
 
-    # 刷新 Top 候选实时价格 (iFind/新浪 Provider)
+    # 刷新 Top 候选实时价格 (新浪 Provider)
     try:
         from market_data import refresh_realtime_on_picks, get_realtime_prices
         refresh_codes = [p['code'] for p in merged[:top_n * 2]]
@@ -437,8 +455,10 @@ def run_picker(date: str = None, top_n: int = 10, min_score: int = 40,
     except Exception as e:
         logger.warning(f"实时价格刷新失败: {e}")
 
-    # 盘中交易：强信号即买，不做时段/涨跌家数过滤
-    allow_buy = True
+    # 盘中交易使用与回测同方向的市场风控，避免弱势环境继续加仓。
+    allow_buy = _should_allow_buy(market_overview, capital_data) and data_allows_buy
+    if not allow_buy:
+        logger.info("市场风控或数据门禁拦截买入，本轮仅保留观察名单和卖出检查")
 
     # 6. 虚拟账户
     acct = get_account()
@@ -472,17 +492,30 @@ def run_picker(date: str = None, top_n: int = 10, min_score: int = 40,
             except Exception:
                 pass
 
-    acct.advance_hold_days(date)
-    stop_actions = acct.check_stop_loss_take_profit(current_prices, date)
+    stop_actions = []
+    if execute_trades:
+        acct.advance_hold_days(date)
+        stop_actions = acct.check_stop_loss_take_profit(current_prices, date)
 
     # 买入信号
     buy_actions = []
-    if allow_buy:
+    if allow_buy and execute_trades:
         for pick in buy_picks[:min(top_n, 5)]:
             if not acct.can_buy():
                 break
             if pick["code"] in acct.positions:
                 continue
+            pv = pick.get("price_volume", {}) or {}
+            day_change_pct = pick.get("change_pct")
+            if day_change_pct is None:
+                day_change_pct = pv.get("change_pct")
+            try:
+                from trade_engine_v2 import is_limit_up_move, load_prev_close
+                if is_limit_up_move(pick["code"], day_change_pct, threshold_ratio=0.97):
+                    logger.info(f"跳过涨停附近买入: {pick['code']} change_pct={day_change_pct}")
+                    continue
+            except Exception:
+                pass
 
             reason_parts = []
             sid = pick.get("strategy_id") or pick.get("strategy_name", "")
@@ -492,12 +525,18 @@ def run_picker(date: str = None, top_n: int = 10, min_score: int = 40,
                 reason_parts.append(sd.get("reason", ""))
 
             price = current_prices.get(pick["code"]) or pick["price"]
+            prev_close = None
+            try:
+                prev_close = load_prev_close(pick["code"], date)
+            except Exception:
+                prev_close = None
             result = acct.buy(
                 code=pick["code"],
                 price=price,
-                amount=acct.get_buy_amount(pick["price"]),
+                amount=acct.get_buy_amount(price, current_prices=current_prices),
                 date=date,
                 reason=" | ".join([r for r in reason_parts[:2] if r]),
+                prev_close=prev_close,
             )
             if result.get("ok"):
                 buy_actions.append(result)
@@ -507,16 +546,21 @@ def run_picker(date: str = None, top_n: int = 10, min_score: int = 40,
     # 6b. 分策略纸面账户 (各 10 万独立)
     paper_buys = {}
     try:
-        from paper_trading_v2 import init_paper_accounts, run_paper_buy, run_paper_sell
+        from paper_trading_v2 import init_paper_accounts, run_paper_buy, run_paper_sell, snapshot_nav
         init_paper_accounts()
-        run_paper_sell(date)
         for picks in strategy_results.values():
             for p in picks[:10]:
                 if p.get("price"):
                     current_prices[p["code"]] = p["price"]
-        paper_results = dict(strategy_results)
-        paper_buys = run_paper_buy(date, paper_results, allow_buy, current_prices)
-        logger.info(f"纸面交易: {sum(len(v) for v in paper_buys.values())} 笔买入")
+        if execute_trades:
+            run_paper_sell(date)
+            paper_results = dict(strategy_results)
+            paper_buys = run_paper_buy(date, paper_results, allow_buy, current_prices)
+            logger.info(f"纸面交易: {sum(len(v) for v in paper_buys.values())} 笔买入")
+        else:
+            snapshot_nav(date, current_prices)
+            paper_buys = {sid: [] for sid in strategy_results}
+            logger.info("研究预览模式: 已初始化纸面账户，不生成模拟成交")
     except Exception as e:
         logger.warning(f"纸面交易跳过: {e}")
 
@@ -565,10 +609,13 @@ def run_picker(date: str = None, top_n: int = 10, min_score: int = 40,
         "leader_theme": pool_meta.get("leader_theme", ""),
         "switched_in": pool_meta.get("switched_in", []),
         "hot_sectors": pool_meta.get("hot_sectors", pool_meta.get("mainlines", sector_data.get("hot_sectors", []))),
+        "data_health": data_health,
         "total_scored": len(scored),
         "top_picks": merged[:top_n],
         "buy_picks": buy_picks,
         "watchlist": watchlist,
+        "execution_status": "executed" if execute_trades else "preview_only",
+        "execution_message": "交易时段真实纸面执行" if execute_trades else "非交易时段研究预览，不产生买卖成交",
         "buy_actions": buy_actions,
         "stop_actions": stop_actions,
         "account_value": round(acct.get_total_value(current_prices), 2),
@@ -576,6 +623,21 @@ def run_picker(date: str = None, top_n: int = 10, min_score: int = 40,
         "strategy_results_count": {k: len(v) for k, v in strategy_results.items()},
         "weight_allocation": {n: c for n, c in weight_alloc},
     }
+
+    try:
+        from agent_runtime.trading_memory_bridge import record_picker_run
+        report_json["memory_write"] = record_picker_run(
+            date=date,
+            market_overview=market_overview,
+            sector_data=sector_report,
+            buy_picks=buy_picks,
+            strategy_results=strategy_results,
+            stop_actions=stop_actions,
+            source="live",
+        )
+    except Exception as e:
+        logger.warning(f"交易记忆写入跳过: {e}")
+
     json_file = os.path.join(KB_DIR, f"daily_pick_{date}.json")
     with open(json_file, "w", encoding="utf-8") as f:
         json.dump(sanitize_for_json(report_json), f, ensure_ascii=False, indent=2)

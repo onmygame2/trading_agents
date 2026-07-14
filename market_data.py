@@ -1,8 +1,7 @@
 """
 统一市场数据 Provider 工厂
 
-读取 config/settings.yaml 的 data.provider 配置，
-优先 iFind，失败或无 token 时降级新浪。
+日频系统只保留本地缓存 + 新浪 Provider。
 
 用法:
     from market_data import get_market_data_provider, get_realtime_prices
@@ -14,7 +13,6 @@ import logging
 import os
 from typing import Dict, List, Optional, Union
 
-import pandas as pd
 import yaml
 
 logger = logging.getLogger(__name__)
@@ -33,7 +31,7 @@ def load_env_file(path: str = None):
     if not os.path.exists(env_path):
         return
     try:
-        with open(env_path, 'r') as f:
+        with open(env_path, 'r', encoding='utf-8') as f:
             for line in f:
                 line = line.strip()
                 if not line or line.startswith('#') or '=' not in line:
@@ -53,7 +51,7 @@ def load_settings() -> dict:
         return _settings_cache
     load_env_file()
     try:
-        with open(SETTINGS_PATH, 'r') as f:
+        with open(SETTINGS_PATH, 'r', encoding='utf-8') as f:
             _settings_cache = yaml.safe_load(f) or {}
     except Exception as e:
         logger.warning(f'读取 settings.yaml 失败: {e}')
@@ -71,45 +69,12 @@ def get_provider_name() -> str:
     return _active_provider_name
 
 
-class FallbackProvider:
-    """包装主 Provider，失败时自动降级新浪"""
-
-    def __init__(self, primary, fallback, name: str = 'ifind'):
-        self.primary = primary
-        self.fallback = fallback
-        self.name = name
-
-    def __getattr__(self, item):
-        primary_fn = getattr(self.primary, item, None)
-        fallback_fn = getattr(self.fallback, item, None)
-        if not callable(primary_fn):
-            return primary_fn
-
-        def wrapper(*args, **kwargs):
-            try:
-                if hasattr(self.primary, 'available') and not self.primary.available:
-                    raise RuntimeError(f'{self.name} 不可用 (无 token)')
-                result = primary_fn(*args, **kwargs)
-                if isinstance(result, pd.DataFrame) and result.empty:
-                    raise RuntimeError(f'{self.name} 返回空数据')
-                if result is None:
-                    raise RuntimeError(f'{self.name} 返回 None')
-                return result
-            except Exception as e:
-                logger.warning(f'[IFIND-FALLBACK-SINA] {item}: {e}')
-                if fallback_fn:
-                    return fallback_fn(*args, **kwargs)
-                raise
-
-        return wrapper
-
-
 def get_market_data_provider(force: str = None):
     """
     获取市场数据 Provider
 
     Args:
-        force: 强制指定 'ifind' 或 'sina'
+        force: 仅保留兼容参数，实际始终使用新浪。
     """
     global _provider_cache, _active_provider_name
     if force:
@@ -120,27 +85,9 @@ def get_market_data_provider(force: str = None):
 
     from sina_fetcher import SinaFetcher
 
-    load_env_file()
-    data_cfg = get_data_config()
-    provider_name = force or data_cfg.get('provider', 'sina')
-    sina = SinaFetcher()
-
-    if provider_name == 'ifind':
-        from ifind_fetcher import IFindFetcher
-        ifind_cfg = data_cfg.get('ifind', {})
-        ifind = IFindFetcher(config=ifind_cfg)
-        if ifind.available:
-            _provider_cache = FallbackProvider(ifind, sina, 'ifind')
-            _active_provider_name = 'ifind'
-            logger.info('市场数据 Provider: iFind (新浪 fallback)')
-        else:
-            logger.warning('IFIND_REFRESH_TOKEN 未配置，使用新浪 Provider')
-            _provider_cache = sina
-            _active_provider_name = 'sina'
-    else:
-        _provider_cache = sina
-        _active_provider_name = 'sina'
-        logger.debug('市场数据 Provider: 新浪')
+    _provider_cache = SinaFetcher()
+    _active_provider_name = 'sina'
+    logger.debug('市场数据 Provider: 新浪')
 
     return _provider_cache
 

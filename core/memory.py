@@ -173,8 +173,17 @@ class TradingMemory:
             CREATE INDEX IF NOT EXISTS idx_lessons_type ON lessons(lesson_type);
             CREATE INDEX IF NOT EXISTS idx_stock_memory_code ON stock_memory(code);
         """)
+        self._ensure_column(conn, 'signals', 'source', "TEXT DEFAULT 'live'")
+        self._ensure_column(conn, 'market_state', 'source', "TEXT DEFAULT 'live'")
+        self._ensure_column(conn, 'strategy_perf', 'source', "TEXT DEFAULT 'live'")
+        self._ensure_column(conn, 'lessons', 'source', "TEXT DEFAULT 'live'")
         conn.commit()
         conn.close()
+
+    def _ensure_column(self, conn: sqlite3.Connection, table: str, column: str, definition: str):
+        columns = [row[1] for row in conn.execute(f"PRAGMA table_info({table})").fetchall()]
+        if column not in columns:
+            conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {definition}")
 
     # ==================== Signal Memory ====================
 
@@ -185,8 +194,8 @@ class TradingMemory:
             tech_reasons = json.dumps(signal.get('tech_reasons', []), ensure_ascii=False)
             cursor = conn.execute("""
                 INSERT INTO signals (date, code, name, strategy, signal, price, confidence,
-                    stop_loss, take_profit, invalid_price, risk_reward, reason, tech_reasons)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    stop_loss, take_profit, invalid_price, risk_reward, reason, tech_reasons, source)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, (
                 signal.get('date'),
                 signal.get('code'),
@@ -200,7 +209,8 @@ class TradingMemory:
                 signal.get('invalid_price'),
                 signal.get('risk_reward'),
                 signal.get('reason'),
-                tech_reasons
+                tech_reasons,
+                signal.get('source', 'live')
             ))
             conn.commit()
             return cursor.lastrowid
@@ -228,7 +238,8 @@ class TradingMemory:
 
     def query_signals(self, code: str = None, strategy: str = None,
                       signal_type: str = None, days: int = 30,
-                      has_outcome: bool = None) -> List[Dict]:
+                      has_outcome: bool = None, source: str = None,
+                      include_simulated: bool = False) -> List[Dict]:
         """查询信号历史"""
         conn = self._get_conn()
         try:
@@ -252,6 +263,11 @@ class TradingMemory:
                     conditions.append("outcome IS NOT NULL")
                 else:
                     conditions.append("outcome IS NULL")
+            if source:
+                conditions.append("source=?")
+                params.append(source)
+            elif not include_simulated:
+                conditions.append("(source IS NULL OR source != 'simulated_backfill')")
 
             where = " WHERE " + " AND ".join(conditions) if conditions else ""
             rows = conn.execute(f"SELECT * FROM signals{where} ORDER BY date DESC, id DESC", params)
@@ -259,7 +275,8 @@ class TradingMemory:
         finally:
             conn.close()
 
-    def get_signal_stats(self, strategy: str = None, days: int = 90) -> Dict:
+    def get_signal_stats(self, strategy: str = None, days: int = 90,
+                         source: str = None, include_simulated: bool = False) -> Dict:
         """获取信号统计"""
         conn = self._get_conn()
         try:
@@ -269,6 +286,11 @@ class TradingMemory:
             if strategy:
                 where += " AND strategy = ?"
                 params.append(strategy)
+            if source:
+                where += " AND source = ?"
+                params.append(source)
+            elif not include_simulated:
+                where += " AND (source IS NULL OR source != 'simulated_backfill')"
 
             total = conn.execute(f"SELECT COUNT(*) FROM signals {where}", params).fetchone()[0]
             with_outcome = conn.execute(
@@ -319,8 +341,8 @@ class TradingMemory:
             conn.execute("""
                 INSERT OR REPLACE INTO market_state
                 (date, sh_index, sh_change_pct, hs300, hs300_change_pct, cyb, cyb_change_pct,
-                 sentiment, hot_sectors, market_breadth, volume_ratio, volatility, extra)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                 sentiment, hot_sectors, market_breadth, volume_ratio, volatility, extra, source)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, (
                 state['date'],
                 state.get('sh_index'),
@@ -334,7 +356,8 @@ class TradingMemory:
                 state.get('market_breadth'),
                 state.get('volume_ratio'),
                 state.get('volatility'),
-                extra
+                extra,
+                state.get('source', 'live')
             ))
             conn.commit()
         finally:
@@ -351,19 +374,30 @@ class TradingMemory:
             if d.get('hot_sectors'):
                 d['hot_sectors'] = json.loads(d['hot_sectors'])
             if d.get('extra'):
-                d['extra'].update(json.loads(d['extra']))
+                extra = json.loads(d['extra'])
+                if isinstance(extra, dict):
+                    d.update(extra)
                 del d['extra']
             return d
         finally:
             conn.close()
 
-    def get_market_history(self, days: int = 30) -> List[Dict]:
+    def get_market_history(self, days: int = 30, source: str = None,
+                           include_simulated: bool = False) -> List[Dict]:
         """获取市场历史"""
         conn = self._get_conn()
         try:
             since = (datetime.now() - timedelta(days=days)).strftime('%Y-%m-%d')
+            conditions = ["date >= ?"]
+            params = [since]
+            if source:
+                conditions.append("source=?")
+                params.append(source)
+            elif not include_simulated:
+                conditions.append("(source IS NULL OR source != 'simulated_backfill')")
             rows = conn.execute(
-                "SELECT * FROM market_state WHERE date >= ? ORDER BY date DESC", (since,)
+                f"SELECT * FROM market_state WHERE {' AND '.join(conditions)} ORDER BY date DESC",
+                params,
             )
             result = []
             for r in rows.fetchall():
@@ -375,16 +409,24 @@ class TradingMemory:
         finally:
             conn.close()
 
-    def get_sentiment_distribution(self, days: int = 60) -> Dict:
+    def get_sentiment_distribution(self, days: int = 60, source: str = None,
+                                   include_simulated: bool = False) -> Dict:
         """获取情绪分布"""
         conn = self._get_conn()
         try:
             since = (datetime.now() - timedelta(days=days)).strftime('%Y-%m-%d')
+            conditions = ["date >= ?"]
+            params = [since]
+            if source:
+                conditions.append("source=?")
+                params.append(source)
+            elif not include_simulated:
+                conditions.append("(source IS NULL OR source != 'simulated_backfill')")
             rows = conn.execute(
-                "SELECT sentiment, COUNT(*) as cnt FROM market_state WHERE date >= ? GROUP BY sentiment",
-                (since,)
-            )
-            total = sum(r[1] for r in rows.fetchall())
+                f"SELECT sentiment, COUNT(*) as cnt FROM market_state WHERE {' AND '.join(conditions)} GROUP BY sentiment",
+                params,
+            ).fetchall()
+            total = sum(r[1] for r in rows)
             return {r[0]: round(r[1] / total * 100, 1) for r in rows} if total > 0 else {}
         finally:
             conn.close()
@@ -407,8 +449,8 @@ class TradingMemory:
                 INSERT OR REPLACE INTO strategy_perf
                 (strategy, date, market_sentiment, total_signals, realized_signals,
                  win_count, loss_count, avg_win_pct, avg_loss_pct, avg_hold_days,
-                 sharpe, max_drawdown, total_pnl_pct, extra)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                 sharpe, max_drawdown, total_pnl_pct, extra, source)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, (
                 strategy, date, perf.get('market_sentiment'),
                 perf.get('total_signals', 0), perf.get('realized_signals', 0),
@@ -416,7 +458,8 @@ class TradingMemory:
                 perf.get('avg_win_pct'), perf.get('avg_loss_pct'),
                 perf.get('avg_hold_days'), perf.get('sharpe'),
                 perf.get('max_drawdown'), perf.get('total_pnl_pct'),
-                extra
+                extra,
+                perf.get('source', 'live')
             ))
             conn.commit()
         finally:
@@ -461,34 +504,42 @@ class TradingMemory:
         finally:
             conn.close()
 
-    def get_strategy_comparison(self, days: int = 90) -> List[Dict]:
+    def get_strategy_comparison(self, days: int = 90, source: str = None,
+                                include_simulated: bool = False) -> List[Dict]:
         """策略对比排名"""
         conn = self._get_conn()
         try:
             since = (datetime.now() - timedelta(days=days)).strftime('%Y-%m-%d')
-            rows = conn.execute("""
+            conditions = ["date >= ?"]
+            params = [since]
+            if source:
+                conditions.append("source=?")
+                params.append(source)
+            elif not include_simulated:
+                conditions.append("(source IS NULL OR source != 'simulated_backfill')")
+            rows = conn.execute(f"""
                 SELECT strategy,
                        SUM(total_signals) as total,
                        SUM(win_count) as wins,
                        SUM(loss_count) as losses,
                        AVG(total_pnl_pct) as avg_pnl
-                FROM strategy_perf WHERE date >= ?
+                FROM strategy_perf WHERE {' AND '.join(conditions)}
                 GROUP BY strategy ORDER BY avg_pnl DESC
-            """, (since,))
+            """, params)
 
             result = []
             for r in rows.fetchall():
-                total = r[2] or 0
-                wins = r[3] or 0
-                losses = r[4] or 0
+                total = r[1] or 0
+                wins = r[2] or 0
+                losses = r[3] or 0
                 win_rate = wins / (wins + losses) * 100 if (wins + losses) > 0 else 0
                 result.append({
                     'strategy': r[0],
-                    'total_signals': r[1] or 0,
+                    'total_signals': total,
                     'wins': wins,
                     'losses': losses,
                     'win_rate': win_rate,
-                    'avg_pnl_pct': r[5] or 0
+                    'avg_pnl_pct': r[4] or 0
                 })
             return result
         finally:
@@ -503,14 +554,15 @@ class TradingMemory:
             tags = json.dumps(lesson.get('tags', []), ensure_ascii=False)
             cursor = conn.execute("""
                 INSERT INTO lessons (date, code, strategy, lesson_type, title,
-                    description, pattern, tags, severity)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    description, pattern, tags, severity, source)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, (
                 lesson.get('date'), lesson.get('code'), lesson.get('strategy'),
                 lesson.get('lesson_type', 'strategy_insight'),
                 lesson.get('title'), lesson.get('description'),
                 lesson.get('pattern'), tags,
-                lesson.get('severity', 5)
+                lesson.get('severity', 5),
+                lesson.get('source', 'live')
             ))
             conn.commit()
             return cursor.lastrowid
@@ -518,7 +570,8 @@ class TradingMemory:
             conn.close()
 
     def query_lessons(self, lesson_type: str = None, tags: List[str] = None,
-                      days: int = 90, limit: int = 20) -> List[Dict]:
+                      days: int = 90, limit: int = 20, source: str = None,
+                      include_simulated: bool = False) -> List[Dict]:
         """查询经验教训"""
         conn = self._get_conn()
         try:
@@ -531,6 +584,11 @@ class TradingMemory:
             if lesson_type:
                 conditions.append("lesson_type=?")
                 params.append(lesson_type)
+            if source:
+                conditions.append("source=?")
+                params.append(source)
+            elif not include_simulated:
+                conditions.append("(source IS NULL OR source != 'simulated_backfill')")
 
             where = " WHERE " + " AND ".join(conditions) if conditions else ""
             rows = conn.execute(
@@ -546,6 +604,11 @@ class TradingMemory:
             return result
         finally:
             conn.close()
+
+    def get_lessons(self, lesson_type: str = None, tags: List[str] = None,
+                    days: int = 90, limit: int = 20) -> List[Dict]:
+        """兼容 Dashboard API 的经验教训查询接口"""
+        return self.query_lessons(lesson_type=lesson_type, tags=tags, days=days, limit=limit)
 
     # ==================== Stock Memory ====================
 
@@ -588,22 +651,31 @@ class TradingMemory:
 
     # ==================== Cross-Analysis ====================
 
-    def get_best_strategy_for_market(self, sentiment: str) -> Optional[Dict]:
+    def get_best_strategy_for_market(self, sentiment: str, min_realized: int = 20,
+                                     source: str = None, include_simulated: bool = False) -> Optional[Dict]:
         """获取当前市场情绪下表现最好的策略"""
         conn = self._get_conn()
         try:
+            source_clause = ""
+            params = [sentiment]
+            if source:
+                source_clause = " AND source=?"
+                params.append(source)
+            elif not include_simulated:
+                source_clause = " AND (source IS NULL OR source != 'simulated_backfill')"
+            params.append(min_realized)
             row = conn.execute("""
                 SELECT strategy,
                        SUM(win_count) as wins,
                        SUM(loss_count) as losses,
                        AVG(total_pnl_pct) as avg_pnl
                 FROM strategy_perf
-                WHERE market_sentiment=?
+                WHERE market_sentiment=? {source_clause}
                 GROUP BY strategy
-                HAVING SUM(win_count) + SUM(loss_count) >= 3
+                HAVING SUM(win_count) + SUM(loss_count) >= ?
                 ORDER BY avg_pnl DESC
                 LIMIT 1
-            """, (sentiment,)).fetchone()
+            """.format(source_clause=source_clause), params).fetchone()
 
             if not row:
                 return None

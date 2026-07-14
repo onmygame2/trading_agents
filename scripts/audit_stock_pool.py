@@ -38,7 +38,7 @@ def load_current_pool():
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--source', default=None, choices=['ifind', 'baostock'])
+    parser.add_argument('--source', default='baostock', choices=['baostock'])
     args = parser.parse_args()
 
     current = load_current_pool()

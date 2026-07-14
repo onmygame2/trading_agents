@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-股票池候选集获取 — iFind 优先，BaoStock 备选
+股票池候选集获取 — BaoStock 候选 + market_filter
 """
 import logging
 import os
@@ -12,7 +12,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, BASE_DIR)
 
 from market_filter import is_allowed, load_market_config
-from market_data import load_env_file, get_data_config
 
 logger = logging.getLogger(__name__)
 
@@ -63,47 +62,7 @@ def fetch_from_baostock(date: str = None) -> List[Dict]:
     return records
 
 
-def fetch_from_ifind() -> List[Dict]:
-    load_env_file()
-    cfg = get_data_config().get('ifind', {})
-    from ifind_fetcher import IFindFetcher
-    fetcher = IFindFetcher(config=cfg)
-    if not fetcher.available:
-        return []
-    raw = fetcher.get_all_a_share_codes()
-    records = []
-    date = datetime.now().strftime('%Y-%m-%d')
-    for item in raw:
-        code = item['code']
-        name = item.get('name', '')
-        if is_allowed(code, name, ref_date=date):
-            records.append({
-                'code': code,
-                'name': name,
-                'industry_name': '',
-                'industry': '',
-                'exchange': 'SH' if code.startswith('6') else 'SZ',
-                'ipo_date': '',
-                'source': 'ifind',
-            })
-    return records
-
-
 def fetch_candidate_pool(source: str = None) -> List[Dict]:
-    source = source or get_data_config().get('stock_pool_rebuild_source', 'ifind')
-    if source == 'ifind':
-        records = fetch_from_ifind()
-        if len(records) >= 2000:
-            return records
-        logger.warning('iFind 列表不足，合并 BaoStock')
-        bs_records = fetch_from_baostock()
-        by_code = {r['code']: r for r in records}
-        for r in bs_records:
-            if r['code'] not in by_code:
-                by_code[r['code']] = r
-            elif not by_code[r['code']].get('industry_name'):
-                by_code[r['code']]['industry_name'] = r.get('industry_name', '')
-                by_code[r['code']]['industry'] = r.get('industry', '')
-                by_code[r['code']]['ipo_date'] = r.get('ipo_date', '')
-        return list(by_code.values())
+    if source and source != 'baostock':
+        logger.warning('不再支持股票池来源 %s，改用 BaoStock', source)
     return fetch_from_baostock()
